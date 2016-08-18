@@ -1,15 +1,96 @@
 ﻿<!DOCTYPE html>
 <html>
-
 <head>
-<title>Jopnal</title>
+    <meta charset="utf-8">
+
+    <style>
+        div.page {
+            width: 100%;
+            height: 100%;
+        }
+
+        header {
+            padding: 1em;
+            background-color: #366EFF;
+            color: #0000cc;
+            height: 256px;
+            border: 1px solid black;
+        }
+
+            header center {
+                margin-top: 90px;
+            }
+
+        nav {
+            float: left;
+            max-width: 160px;
+            margin: auto;
+            padding: 1em;
+            background-color: #0A59E8;
+            height: 600px;
+            border: 1px solid black;
+        }
+
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+                color:white;
+            }
+
+                nav ul a {
+                    text-decoration: none;
+                    color: white;
+                }
+
+        article {
+            margin-left: 170px;
+            padding: 1em;
+            overflow: hidden;
+            background: repeating-linear-gradient(#3BAFE8, #6F34FF);
+            height: 600px;
+            border: 1px solid black;
+        }
+
+        body {
+            background: repeating-linear-gradient( #0026ff,#b200ff);
+            background-size: 100% 100%;
+        }
+    </style>
+
+    <title> Jopnal</title>
+    <link rel="icon" href="icon.ico" />
+
 </head>
 
 <body>
 
-<h1>Site under construction...</h1>
-<br>
-<a href="https://github.com/Jopnal/Jopnal">See the Github repository</a>
+    <!--HEADER-->
+    <div class="page">
+        <header>
+            <a href="https://jopnal.net"><img src="Images/Jopnal_v20_png.png" width="256" height="256" align="left"></a>
+            <center>
+                <h1>Jopnal</h1>
+                <h2>Component based 3D game engine</h2>
+            </center>
+        </header>
+
+        <!--SIDEBAR-->
+        <nav>
+            <ul>
+                <li><b>Links</b></li>
+                <li><a href="home.html" target="frame"><br>Home</a></li>
+                <li><a href="downloads.html" target="frame"><br>Downloads</a></li>
+                <li><a href="https://github.com/Jopnal/Jopnal/wiki/Tutorial-Index"><br>Tutorials</a></li>
+                <li><a href="https://jopnal.net/Doxygen/index.html"><br>Reference</a></li>
+                <li><a href="https://github.com/Jopnal"><br>View project on GitHub</a></li>
+            </ul>
+        </nav>
+
+        <!--MAIN_DATA-->
+        <article>
+            <iframe src="home.html" style="border:none;" name="frame" height="100%" width="100%"></iframe>
+        </article>
+    </div>
 
 </body>
 </html>
