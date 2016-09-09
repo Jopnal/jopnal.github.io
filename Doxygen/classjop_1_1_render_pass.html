@@ -22,11 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Jopnal.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Jopnal Engine
    &#160;<span id="projectnumber">alpha 0.4</span>
    </div>
-   <div id="projectbrief">Simple Component Based 3D Game Engine</div>
+   <div id="projectbrief">Simple Component Based 2D/3D Game Engine</div>
   </td>
  </tr>
  </tbody>
@@ -108,8 +109,8 @@ Inheritance diagram for jop::RenderPass:</div>
  <div class="center">
   <img src="classjop_1_1_render_pass.png" usemap="#jop::RenderPass_map" alt=""/>
   <map id="jop::RenderPass_map" name="jop::RenderPass_map">
-<area href="classjop_1_1_default_post_pass.html" alt="jop::DefaultPostPass" shape="rect" coords="0,56,126,80"/>
-<area href="classjop_1_1_default_pre_pass.html" alt="jop::DefaultPrePass" shape="rect" coords="136,56,262,80"/>
+<area href="structjop_1_1_ordered_render_pass.html" title="Orderer render pass. " alt="jop::OrderedRenderPass" shape="rect" coords="0,56,151,80"/>
+<area href="structjop_1_1_sorted_render_pass.html" title="Distance-sorted render pass. " alt="jop::SortedRenderPass" shape="rect" coords="161,56,312,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -123,43 +124,58 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0ac1eb5799b8951c28b509c07a37b11b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_render_pass.html#a0ac1eb5799b8951c28b509c07a37b11b">RenderPass</a> (<a class="el" href="classjop_1_1_renderer.html">Renderer</a> &amp;renderer, const <a class="el" href="classjop_1_1_render_target.html">RenderTarget</a> &amp;target, const <a class="el" href="classjop_1_1_render_pass.html#af7d6f578fc98f155d44b2bddf018c405">Pass</a> pass, const <a class="el" href="namespacejop.html#a73e1cf7200a4729fd1c89af2f63ba79e">uint32</a> weight)</td></tr>
+<tr class="memdesc:a0ac1eb5799b8951c28b509c07a37b11b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a0ac1eb5799b8951c28b509c07a37b11b">More...</a><br /></td></tr>
 <tr class="separator:a0ac1eb5799b8951c28b509c07a37b11b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e47f8f7367facce0064dae156b0939e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_render_pass.html#a1e47f8f7367facce0064dae156b0939e">~RenderPass</a> ()=0</td></tr>
+<tr class="memdesc:a1e47f8f7367facce0064dae156b0939e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <a href="#a1e47f8f7367facce0064dae156b0939e">More...</a><br /></td></tr>
 <tr class="separator:a1e47f8f7367facce0064dae156b0939e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff9e6e625c384d26da2c1d15b33f9dd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_render_pass.html#aff9e6e625c384d26da2c1d15b33f9dd2">setActive</a> (const bool active)</td></tr>
+<tr class="memdesc:aff9e6e625c384d26da2c1d15b33f9dd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set this render pass active/inactive.  <a href="#aff9e6e625c384d26da2c1d15b33f9dd2">More...</a><br /></td></tr>
 <tr class="separator:aff9e6e625c384d26da2c1d15b33f9dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb5df448697430890c731288d3b3f939"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_render_pass.html#adb5df448697430890c731288d3b3f939">isActive</a> () const </td></tr>
+<tr class="memdesc:adb5df448697430890c731288d3b3f939"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this render pass is active.  <a href="#adb5df448697430890c731288d3b3f939">More...</a><br /></td></tr>
 <tr class="separator:adb5df448697430890c731288d3b3f939"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3656de147c5c581ecdeea4ad873fc36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjop_1_1_renderer.html">Renderer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_render_pass.html#ae3656de147c5c581ecdeea4ad873fc36">getRenderer</a> ()</td></tr>
+<tr class="memdesc:ae3656de147c5c581ecdeea4ad873fc36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the renderer this pass is bound to.  <a href="#ae3656de147c5c581ecdeea4ad873fc36">More...</a><br /></td></tr>
 <tr class="separator:ae3656de147c5c581ecdeea4ad873fc36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac01a1a1cb277f15b1620118b74bf0975"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjop_1_1_render_pass.html#af7d6f578fc98f155d44b2bddf018c405">Pass</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_render_pass.html#ac01a1a1cb277f15b1620118b74bf0975">getPass</a> () const </td></tr>
+<tr class="memdesc:ac01a1a1cb277f15b1620118b74bf0975"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the render pass type.  <a href="#ac01a1a1cb277f15b1620118b74bf0975">More...</a><br /></td></tr>
 <tr class="separator:ac01a1a1cb277f15b1620118b74bf0975"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a80f0d93c03b7fe8514dee0a01f9bc7f1"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="namespacejop.html#a73e1cf7200a4729fd1c89af2f63ba79e">uint32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_render_pass.html#a80f0d93c03b7fe8514dee0a01f9bc7f1">DefaultWeight</a></td></tr>
+<tr class="memdesc:a80f0d93c03b7fe8514dee0a01f9bc7f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default render pass weight.  <a href="#a80f0d93c03b7fe8514dee0a01f9bc7f1">More...</a><br /></td></tr>
 <tr class="separator:a80f0d93c03b7fe8514dee0a01f9bc7f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:aa8798d303d46e00523ab78fd3b80a272"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_render_pass.html#aa8798d303d46e00523ab78fd3b80a272">draw</a> ()=0</td></tr>
+<tr class="memdesc:aa8798d303d46e00523ab78fd3b80a272"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual draw function.  <a href="#aa8798d303d46e00523ab78fd3b80a272">More...</a><br /></td></tr>
 <tr class="separator:aa8798d303d46e00523ab78fd3b80a272"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3349df5b04b85fdff6be2d3410c908b6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_render_pass.html#a3349df5b04b85fdff6be2d3410c908b6">bind</a> (const <a class="el" href="classjop_1_1_drawable.html">Drawable</a> *drawable)=0</td></tr>
+<tr class="memdesc:a3349df5b04b85fdff6be2d3410c908b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind a drawable.  <a href="#a3349df5b04b85fdff6be2d3410c908b6">More...</a><br /></td></tr>
 <tr class="separator:a3349df5b04b85fdff6be2d3410c908b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a605941da08c8cea0faabc19d08ab5e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_render_pass.html#a7a605941da08c8cea0faabc19d08ab5e">unbind</a> (const <a class="el" href="classjop_1_1_drawable.html">Drawable</a> *drawable)=0</td></tr>
+<tr class="memdesc:a7a605941da08c8cea0faabc19d08ab5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unbind a drawable.  <a href="#a7a605941da08c8cea0faabc19d08ab5e">More...</a><br /></td></tr>
 <tr class="separator:a7a605941da08c8cea0faabc19d08ab5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:ad8e0a63f00d2adf4f30259a497241161"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjop_1_1_renderer.html">Renderer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_render_pass.html#ad8e0a63f00d2adf4f30259a497241161">m_rendererRef</a></td></tr>
+<tr class="memdesc:ad8e0a63f00d2adf4f30259a497241161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the renderer.  <a href="#ad8e0a63f00d2adf4f30259a497241161">More...</a><br /></td></tr>
 <tr class="separator:ad8e0a63f00d2adf4f30259a497241161"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c9358d0356c22cae230940cad01fc38"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classjop_1_1_render_target.html">RenderTarget</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_render_pass.html#a6c9358d0356c22cae230940cad01fc38">m_target</a></td></tr>
+<tr class="memdesc:a6c9358d0356c22cae230940cad01fc38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the render target.  <a href="#a6c9358d0356c22cae230940cad01fc38">More...</a><br /></td></tr>
 <tr class="separator:a6c9358d0356c22cae230940cad01fc38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa47df07a3e9eafe9e70257e926ab449"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacejop.html#a73e1cf7200a4729fd1c89af2f63ba79e">uint32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_render_pass.html#afa47df07a3e9eafe9e70257e926ab449">m_weight</a></td></tr>
+<tr class="memdesc:afa47df07a3e9eafe9e70257e926ab449"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weight value.  <a href="#afa47df07a3e9eafe9e70257e926ab449">More...</a><br /></td></tr>
 <tr class="separator:afa47df07a3e9eafe9e70257e926ab449"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87deee377e4208b86be26aada3c04c8f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classjop_1_1_render_pass.html#af7d6f578fc98f155d44b2bddf018c405">Pass</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_render_pass.html#a87deee377e4208b86be26aada3c04c8f">m_pass</a></td></tr>
+<tr class="memdesc:a87deee377e4208b86be26aada3c04c8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render pass type.  <a href="#a87deee377e4208b86be26aada3c04c8f">More...</a><br /></td></tr>
 <tr class="separator:a87deee377e4208b86be26aada3c04c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30ada38ec3d4ce76deebba94dc0d194f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_render_pass.html#a30ada38ec3d4ce76deebba94dc0d194f">m_active</a></td></tr>
+<tr class="memdesc:a30ada38ec3d4ce76deebba94dc0d194f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is this render pass active?  <a href="#a30ada38ec3d4ce76deebba94dc0d194f">More...</a><br /></td></tr>
 <tr class="separator:a30ada38ec3d4ce76deebba94dc0d194f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -190,14 +206,17 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Render pass type </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="af7d6f578fc98f155d44b2bddf018c405a7e8a79fa1ff0b963ca09919f40c86101"></a>BeforePost&#160;</td><td class="fielddoc">
+<p>Before post-processing. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="af7d6f578fc98f155d44b2bddf018c405a6415a3f4986108d1658bc65c1639d236"></a>AfterPost&#160;</td><td class="fielddoc">
+<p>After post-processing. </p>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="_render_pass_8hpp_source.html#l00053">53</a> of file <a class="el" href="_render_pass_8hpp_source.html">RenderPass.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_render_pass_8hpp_source.html#l00059">59</a> of file <a class="el" href="_render_pass_8hpp_source.html">RenderPass.hpp</a>.</p>
 
 </div>
 </div>
@@ -238,6 +257,17 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">renderer</td><td>Reference to the renderer </td></tr>
+    <tr><td class="paramname">target</td><td>Reference to the render target </td></tr>
+    <tr><td class="paramname">pass</td><td>The render pass type </td></tr>
+    <tr><td class="paramname">weight</td><td>The weight of this render pass </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a1e47f8f7367facce0064dae156b0939e"></a>
@@ -260,6 +290,8 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Virtual destructor. </p>
 
 </div>
 </div>
@@ -286,7 +318,15 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classjop_1_1_default_post_pass.html#a3016d84043ee6830e89acc51afb174ce">jop::DefaultPostPass</a>, and <a class="el" href="classjop_1_1_default_pre_pass.html#a7687fbeceff3b638f12a86632a440d3b">jop::DefaultPrePass</a>.</p>
+<p>Bind a drawable. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drawable</td><td>The drawable to bind </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="structjop_1_1_ordered_render_pass.html#a48a85026735f911a963813fbf102394b">jop::OrderedRenderPass</a>, and <a class="el" href="structjop_1_1_sorted_render_pass.html#a10a3507c89ccf02f1cbe87455b5aa0ad">jop::SortedRenderPass</a>.</p>
 
 </div>
 </div>
@@ -311,7 +351,9 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classjop_1_1_default_post_pass.html#a2accb42c70a0ff55b45510e10307e1c9">jop::DefaultPostPass</a>, and <a class="el" href="classjop_1_1_default_pre_pass.html#af7f2f7028e1b14e0c6b4a6acf8f2800b">jop::DefaultPrePass</a>.</p>
+<p>Virtual draw function. </p>
+
+<p>Implemented in <a class="el" href="structjop_1_1_ordered_render_pass.html#a98e9a9369142a93bb1abdc720efe66f5">jop::OrderedRenderPass</a>, and <a class="el" href="structjop_1_1_sorted_render_pass.html#adb9e3fa9a13edb97c1ee2e1bfd1af75c">jop::SortedRenderPass</a>.</p>
 
 </div>
 </div>
@@ -328,6 +370,9 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get the render pass type. </p>
+<dl class="section return"><dt>Returns</dt><dd>The render pass type </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="ae3656de147c5c581ecdeea4ad873fc36"></a>
@@ -342,6 +387,9 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the renderer this pass is bound to. </p>
+<dl class="section return"><dt>Returns</dt><dd>Reference to the renderer </dd></dl>
 
 </div>
 </div>
@@ -358,6 +406,9 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Check if this render pass is active. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if active </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="aff9e6e625c384d26da2c1d15b33f9dd2"></a>
@@ -373,6 +424,14 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set this render pass active/inactive. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">active</td><td>True to set active </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -398,7 +457,15 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classjop_1_1_default_post_pass.html#a602607c97e6dbda01c807f4fed1e8778">jop::DefaultPostPass</a>, and <a class="el" href="classjop_1_1_default_pre_pass.html#a61cca3fb7baeda19b78663ecf35c735d">jop::DefaultPrePass</a>.</p>
+<p>Unbind a drawable. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drawable</td><td>The drawable to unbind </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="structjop_1_1_ordered_render_pass.html#a24fc2912efd3a946587996e46b14aedc">jop::OrderedRenderPass</a>, and <a class="el" href="structjop_1_1_sorted_render_pass.html#a9542145fde8374ef55cd0af2e014f740">jop::SortedRenderPass</a>.</p>
 
 </div>
 </div>
@@ -466,7 +533,10 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_render_pass_8hpp_source.html#l00051">51</a> of file <a class="el" href="_render_pass_8hpp_source.html">RenderPass.hpp</a>.</p>
+<p>The default render pass weight. </p>
+<p>Defined as 0x88888888 </p>
+
+<p>Definition at line <a class="el" href="_render_pass_8hpp_source.html#l00055">55</a> of file <a class="el" href="_render_pass_8hpp_source.html">RenderPass.hpp</a>.</p>
 
 </div>
 </div>
@@ -488,7 +558,9 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_render_pass_8hpp_source.html#l00087">87</a> of file <a class="el" href="_render_pass_8hpp_source.html">RenderPass.hpp</a>.</p>
+<p>Is this render pass active? </p>
+
+<p>Definition at line <a class="el" href="_render_pass_8hpp_source.html#l00128">128</a> of file <a class="el" href="_render_pass_8hpp_source.html">RenderPass.hpp</a>.</p>
 
 </div>
 </div>
@@ -510,7 +582,9 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_render_pass_8hpp_source.html#l00086">86</a> of file <a class="el" href="_render_pass_8hpp_source.html">RenderPass.hpp</a>.</p>
+<p>Render pass type. </p>
+
+<p>Definition at line <a class="el" href="_render_pass_8hpp_source.html#l00127">127</a> of file <a class="el" href="_render_pass_8hpp_source.html">RenderPass.hpp</a>.</p>
 
 </div>
 </div>
@@ -532,7 +606,9 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_render_pass_8hpp_source.html#l00083">83</a> of file <a class="el" href="_render_pass_8hpp_source.html">RenderPass.hpp</a>.</p>
+<p>Reference to the renderer. </p>
+
+<p>Definition at line <a class="el" href="_render_pass_8hpp_source.html#l00124">124</a> of file <a class="el" href="_render_pass_8hpp_source.html">RenderPass.hpp</a>.</p>
 
 </div>
 </div>
@@ -554,7 +630,9 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_render_pass_8hpp_source.html#l00084">84</a> of file <a class="el" href="_render_pass_8hpp_source.html">RenderPass.hpp</a>.</p>
+<p>Reference to the render target. </p>
+
+<p>Definition at line <a class="el" href="_render_pass_8hpp_source.html#l00125">125</a> of file <a class="el" href="_render_pass_8hpp_source.html">RenderPass.hpp</a>.</p>
 
 </div>
 </div>
@@ -576,7 +654,9 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_render_pass_8hpp_source.html#l00085">85</a> of file <a class="el" href="_render_pass_8hpp_source.html">RenderPass.hpp</a>.</p>
+<p>Weight value. </p>
+
+<p>Definition at line <a class="el" href="_render_pass_8hpp_source.html#l00126">126</a> of file <a class="el" href="_render_pass_8hpp_source.html">RenderPass.hpp</a>.</p>
 
 </div>
 </div>
@@ -586,7 +666,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 18 2016 12:34:42 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 9 2016 08:47:40 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

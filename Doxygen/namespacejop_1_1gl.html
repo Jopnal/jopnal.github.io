@@ -22,11 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Jopnal.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Jopnal Engine
    &#160;<span id="projectnumber">alpha 0.4</span>
    </div>
-   <div id="projectbrief">Simple Component Based 3D Game Engine</div>
+   <div id="projectbrief">Simple Component Based 2D/3D Game Engine</div>
   </td>
  </tr>
  </tbody>
@@ -96,15 +97,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ab815aabbce95391890182e7c5d554d4a"><td class="memItemLeft" align="right" valign="top">JOP_API unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejop_1_1gl.html#ab815aabbce95391890182e7c5d554d4a">getVersionMajor</a> ()</td></tr>
+<tr class="memdesc:ab815aabbce95391890182e7c5d554d4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the major OpenGL version.  <a href="#ab815aabbce95391890182e7c5d554d4a">More...</a><br /></td></tr>
 <tr class="separator:ab815aabbce95391890182e7c5d554d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addfc000d16669a91805a02f6e83e8e0c"><td class="memItemLeft" align="right" valign="top">JOP_API unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejop_1_1gl.html#addfc000d16669a91805a02f6e83e8e0c">getVersionMinor</a> ()</td></tr>
+<tr class="memdesc:addfc000d16669a91805a02f6e83e8e0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the minor OpenGL version.  <a href="#addfc000d16669a91805a02f6e83e8e0c">More...</a><br /></td></tr>
 <tr class="separator:addfc000d16669a91805a02f6e83e8e0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96567a1abb5c5ec2cfb27b51d1d6a05c"><td class="memItemLeft" align="right" valign="top">JOP_API unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejop_1_1gl.html#a96567a1abb5c5ec2cfb27b51d1d6a05c">getGLSLVersion</a> ()</td></tr>
+<tr class="memdesc:a96567a1abb5c5ec2cfb27b51d1d6a05c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the GLSL version.  <a href="#a96567a1abb5c5ec2cfb27b51d1d6a05c">More...</a><br /></td></tr>
 <tr class="separator:a96567a1abb5c5ec2cfb27b51d1d6a05c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a5f4701513c3516f894974d15f74474bd"><td class="memItemLeft" align="right" valign="top">JOP_API const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejop_1_1gl.html#a5f4701513c3516f894974d15f74474bd">es</a></td></tr>
+<tr class="memdesc:a5f4701513c3516f894974d15f74474bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will be true when using OpenGL ES.  <a href="#a5f4701513c3516f894974d15f74474bd">More...</a><br /></td></tr>
 <tr class="separator:a5f4701513c3516f894974d15f74474bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -121,6 +126,10 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get the GLSL version. </p>
+<p>The version will be represented by a single number, e.g. 300.</p>
+<dl class="section return"><dt>Returns</dt><dd>GLSL version number </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="ab815aabbce95391890182e7c5d554d4a"></a>
@@ -135,6 +144,9 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the major OpenGL version. </p>
+<dl class="section return"><dt>Returns</dt><dd>Major OpenGL version number </dd></dl>
 
 </div>
 </div>
@@ -151,6 +163,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get the minor OpenGL version. </p>
+<dl class="section return"><dt>Returns</dt><dd>Minor OpenGL version number </dd></dl>
+
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
@@ -164,12 +179,14 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>This will be true when using OpenGL ES. </p>
+
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 18 2016 12:34:42 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 9 2016 08:47:43 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

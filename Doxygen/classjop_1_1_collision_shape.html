@@ -22,11 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Jopnal.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Jopnal Engine
    &#160;<span id="projectnumber">alpha 0.4</span>
    </div>
-   <div id="projectbrief">Simple Component Based 3D Game Engine</div>
+   <div id="projectbrief">Simple Component Based 2D/3D Game Engine</div>
   </td>
  </tr>
  </tbody>
@@ -127,6 +128,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aadb55a418cc62165780014312f92598c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_collision_shape.html#aadb55a418cc62165780014312f92598c">~CollisionShape</a> () override=0</td></tr>
 <tr class="memdesc:aadb55a418cc62165780014312f92598c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <a href="#aadb55a418cc62165780014312f92598c">More...</a><br /></td></tr>
 <tr class="separator:aadb55a418cc62165780014312f92598c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97ca9ddd076151633cdcff106c9c73be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_collision_shape.html#a97ca9ddd076151633cdcff106c9c73be">setMargin</a> (const float margin)</td></tr>
+<tr class="memdesc:a97ca9ddd076151633cdcff106c9c73be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the margin of this shape.  <a href="#a97ca9ddd076151633cdcff106c9c73be">More...</a><br /></td></tr>
+<tr class="separator:a97ca9ddd076151633cdcff106c9c73be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae11306d7dd871e2481c63a2693cc073b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_collision_shape.html#ae11306d7dd871e2481c63a2693cc073b">getMargin</a> () const </td></tr>
+<tr class="memdesc:ae11306d7dd871e2481c63a2693cc073b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the margin of this shape.  <a href="#ae11306d7dd871e2481c63a2693cc073b">More...</a><br /></td></tr>
+<tr class="separator:ae11306d7dd871e2481c63a2693cc073b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a874bbb631b318099cb39e177072c53cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_collision_shape.html#a874bbb631b318099cb39e177072c53cb">setLocalScale</a> (const glm::vec3 &amp;scale)</td></tr>
+<tr class="memdesc:a874bbb631b318099cb39e177072c53cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the local scaling.  <a href="#a874bbb631b318099cb39e177072c53cb">More...</a><br /></td></tr>
+<tr class="separator:a874bbb631b318099cb39e177072c53cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6440b380c8777d3ab190588903561b2e"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_collision_shape.html#a6440b380c8777d3ab190588903561b2e">getLocalScale</a> () const </td></tr>
+<tr class="memdesc:a6440b380c8777d3ab190588903561b2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current local scaling.  <a href="#a6440b380c8777d3ab190588903561b2e">More...</a><br /></td></tr>
+<tr class="separator:a6440b380c8777d3ab190588903561b2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classjop_1_1_resource"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classjop_1_1_resource')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classjop_1_1_resource.html">jop::Resource</a></td></tr>
 <tr class="memitem:aed0f13541ccb3b57e1e005121651b4de inherit pub_methods_classjop_1_1_resource"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_resource.html#aed0f13541ccb3b57e1e005121651b4de">Resource</a> (const std::string &amp;name)</td></tr>
 <tr class="memdesc:aed0f13541ccb3b57e1e005121651b4de inherit pub_methods_classjop_1_1_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#aed0f13541ccb3b57e1e005121651b4de">More...</a><br /></td></tr>
@@ -200,10 +213,12 @@ Friends</h2></td></tr>
 <tr class="separator:a6eccd5ab31327c8f3fc9daad75b17568"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a069c53f076d1d0040674d55d5567a457"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_collision_shape.html#a069c53f076d1d0040674d55d5567a457">CompoundShape</a></td></tr>
 <tr class="separator:a069c53f076d1d0040674d55d5567a457"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95f9c6cfd56f684a85ac83dd3f5a4e51"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_collision_shape.html#a95f9c6cfd56f684a85ac83dd3f5a4e51">Collider</a></td></tr>
+<tr class="separator:a95f9c6cfd56f684a85ac83dd3f5a4e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="_collision_shape_8hpp_source.html#l00037">37</a> of file <a class="el" href="_collision_shape_8hpp_source.html">CollisionShape.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_collision_shape_8hpp_source.html#l00038">38</a> of file <a class="el" href="_collision_shape_8hpp_source.html">CollisionShape.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a7c391f8c27018007c28fdb2293295ea3"></a>
 <div class="memitem">
@@ -230,7 +245,7 @@ Friends</h2></td></tr>
 <p>Constructor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td>Name of the resource </td></tr>
+    <tr><td class="paramname">name</td><td>Name of the resource. This must be the file path if this resource is loaded from a file. </td></tr>
   </table>
   </dd>
 </dl>
@@ -262,7 +277,116 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a6440b380c8777d3ab190588903561b2e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">glm::vec3 jop::CollisionShape::getLocalScale </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the current local scaling. </p>
+<dl class="section return"><dt>Returns</dt><dd>The local scaling </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae11306d7dd871e2481c63a2693cc073b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float jop::CollisionShape::getMargin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the margin of this shape. </p>
+<dl class="section return"><dt>Returns</dt><dd>The margin </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a874bbb631b318099cb39e177072c53cb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void jop::CollisionShape::setLocalScale </td>
+          <td>(</td>
+          <td class="paramtype">const glm::vec3 &amp;&#160;</td>
+          <td class="paramname"><em>scale</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the local scaling. </p>
+<p>This will scale the collision shape itself, but changes won't be seen in colliders until <a class="el" href="classjop_1_1_collider.html#aa3b26382ba2c6e89f5c97179d83ca3ed" title="Force update of the world space bounds. ">Collider::updateWorldBounds()</a> is called on each one.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">The</td><td>new scale to set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a97ca9ddd076151633cdcff106c9c73be"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void jop::CollisionShape::setMargin </td>
+          <td>(</td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>margin</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the margin of this shape. </p>
+<p>Usually you can leave this at the default.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">margin</td><td>The margin to set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a class="anchor" id="a95f9c6cfd56f684a85ac83dd3f5a4e51"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classjop_1_1_collider.html">Collider</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_collision_shape_8hpp_source.html#l00047">47</a> of file <a class="el" href="_collision_shape_8hpp_source.html">CollisionShape.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a069c53f076d1d0040674d55d5567a457"></a>
 <div class="memitem">
 <div class="memproto">
@@ -281,7 +405,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_collision_shape_8hpp_source.html#l00045">45</a> of file <a class="el" href="_collision_shape_8hpp_source.html">CollisionShape.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_collision_shape_8hpp_source.html#l00046">46</a> of file <a class="el" href="_collision_shape_8hpp_source.html">CollisionShape.hpp</a>.</p>
 
 </div>
 </div>
@@ -303,7 +427,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_collision_shape_8hpp_source.html#l00044">44</a> of file <a class="el" href="_collision_shape_8hpp_source.html">CollisionShape.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_collision_shape_8hpp_source.html#l00045">45</a> of file <a class="el" href="_collision_shape_8hpp_source.html">CollisionShape.hpp</a>.</p>
 
 </div>
 </div>
@@ -325,7 +449,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_collision_shape_8hpp_source.html#l00043">43</a> of file <a class="el" href="_collision_shape_8hpp_source.html">CollisionShape.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_collision_shape_8hpp_source.html#l00044">44</a> of file <a class="el" href="_collision_shape_8hpp_source.html">CollisionShape.hpp</a>.</p>
 
 </div>
 </div>
@@ -350,7 +474,7 @@ Friends</h2></td></tr>
 
 <p>Shape data. </p>
 
-<p>Definition at line <a class="el" href="_collision_shape_8hpp_source.html#l00068">68</a> of file <a class="el" href="_collision_shape_8hpp_source.html">CollisionShape.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_collision_shape_8hpp_source.html#l00094">94</a> of file <a class="el" href="_collision_shape_8hpp_source.html">CollisionShape.hpp</a>.</p>
 
 </div>
 </div>
@@ -360,7 +484,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 18 2016 12:34:41 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 9 2016 08:47:38 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

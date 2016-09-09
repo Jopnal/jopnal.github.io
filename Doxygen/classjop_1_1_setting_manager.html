@@ -22,11 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Jopnal.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Jopnal Engine
    &#160;<span id="projectnumber">alpha 0.4</span>
    </div>
-   <div id="projectbrief">Simple Component Based 3D Game Engine</div>
+   <div id="projectbrief">Simple Component Based 2D/3D Game Engine</div>
   </td>
  </tr>
  </tbody>
@@ -162,10 +163,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a3fb2db0e65499dd5a433a88619ca8ad0"><td class="memTemplItemLeft" align="right" valign="top">static T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classjop_1_1_setting_manager.html#a3fb2db0e65499dd5a433a88619ca8ad0">get</a> (const std::string &amp;path, const T &amp;defaultValue)</td></tr>
 <tr class="memdesc:a3fb2db0e65499dd5a433a88619ca8ad0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a setting value.  <a href="#a3fb2db0e65499dd5a433a88619ca8ad0">More...</a><br /></td></tr>
 <tr class="separator:a3fb2db0e65499dd5a433a88619ca8ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19ccb8626f62c75bcf62f9c3a3f2a151"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a19ccb8626f62c75bcf62f9c3a3f2a151"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classjop_1_1_setting_manager.html#a19ccb8626f62c75bcf62f9c3a3f2a151">set</a> (const std::string &amp;path, const T &amp;value)</td></tr>
-<tr class="memdesc:a19ccb8626f62c75bcf62f9c3a3f2a151"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a setting value.  <a href="#a19ccb8626f62c75bcf62f9c3a3f2a151">More...</a><br /></td></tr>
-<tr class="separator:a19ccb8626f62c75bcf62f9c3a3f2a151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0f2031cd4c9644ed2f86df35773621a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:af0f2031cd4c9644ed2f86df35773621a"><td class="memTemplItemLeft" align="right" valign="top">static T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classjop_1_1_setting_manager.html#af0f2031cd4c9644ed2f86df35773621a">set</a> (const std::string &amp;path, const T &amp;value)</td></tr>
+<tr class="memdesc:af0f2031cd4c9644ed2f86df35773621a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a setting value.  <a href="#af0f2031cd4c9644ed2f86df35773621a">More...</a><br /></td></tr>
+<tr class="separator:af0f2031cd4c9644ed2f86df35773621a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a417583d6909bdb15ecc5a266194e23ec"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_setting_manager.html#a417583d6909bdb15ecc5a266194e23ec">registerCallback</a> (const std::string &amp;path, detail::SettingCallbackBase &amp;callback)</td></tr>
 <tr class="memdesc:a417583d6909bdb15ecc5a266194e23ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a setting change callback.  <a href="#a417583d6909bdb15ecc5a266194e23ec">More...</a><br /></td></tr>
 <tr class="separator:a417583d6909bdb15ecc5a266194e23ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,8 +191,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a4091116bd399599c442e80a2fe9580c8 inherit pro_methods_classjop_1_1_subsystem"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>#TODO Detailed description </p>
-
+<div class="textblock">
 <p>Definition at line <a class="el" href="_setting_manager_8hpp_source.html#l00042">42</a> of file <a class="el" href="_setting_manager_8hpp_source.html">SettingManager.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="add7786e4c92243916ebba4c78d449881"></a>
@@ -387,7 +387,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Register a setting change callback. </p>
-<p>The callback will be invoked when you change a corresponding setting using <a class="el" href="classjop_1_1_setting_manager.html#a19ccb8626f62c75bcf62f9c3a3f2a151" title="Set a setting value. ">set()</a> or modify the setting file. The new value has to differ from the old one, or the invocation won't happen.</p>
+<p>The callback will be invoked when you change a corresponding setting using <a class="el" href="classjop_1_1_setting_manager.html#af0f2031cd4c9644ed2f86df35773621a" title="Set a setting value. ">set()</a> or modify the setting file. The new value has to differ from the old one, or the invocation won't happen.</p>
 <p>You are responsible for ensuring that the callback stays alive as long as it's meant to be used. You won't need to explicitly unbind it. The callback will be unbound during its destruction.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -423,7 +423,7 @@ template&lt;typename T &gt; </div>
 
 <p>Reload the settings from file. </p>
 <p>Avoid calling this function. It will replace all current settings with those found in the files, discarding all unsaved changes. It will also invoke all registered change callbacks, even when the value hadn't changed.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classjop_1_1_setting_manager.html#a19ccb8626f62c75bcf62f9c3a3f2a151" title="Set a setting value. ">set()</a> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classjop_1_1_setting_manager.html#af0f2031cd4c9644ed2f86df35773621a" title="Set a setting value. ">set()</a> </dd>
 <dd>
 <a class="el" href="classjop_1_1_setting_manager.html#a417583d6909bdb15ecc5a266194e23ec" title="Register a setting change callback. ">registerCallback()</a> </dd></dl>
 
@@ -454,7 +454,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a19ccb8626f62c75bcf62f9c3a3f2a151"></a>
+<a class="anchor" id="af0f2031cd4c9644ed2f86df35773621a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -464,7 +464,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void jop::SettingManager::set </td>
+          <td class="memname">static T jop::SettingManager::set </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>path</em>, </td>
@@ -494,10 +494,11 @@ template&lt;typename T &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">path</td><td>The setting path </td></tr>
-    <tr><td class="paramname">value</td><td>The value to set </td></tr>
+    <tr><td class="paramname">value</td><td>The value to set</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The same value as 'value' </dd></dl>
 
 </div>
 </div>
@@ -601,7 +602,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 18 2016 12:34:42 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 9 2016 08:47:41 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

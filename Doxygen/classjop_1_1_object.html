@@ -22,11 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Jopnal.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Jopnal Engine
    &#160;<span id="projectnumber">alpha 0.4</span>
    </div>
-   <div id="projectbrief">Simple Component Based 3D Game Engine</div>
+   <div id="projectbrief">Simple Component Based 2D/3D Game Engine</div>
   </td>
  </tr>
  </tbody>
@@ -1209,7 +1210,7 @@ template&lt;typename T , typename... Args&gt; </div>
 </div><div class="memdoc">
 
 <p>Get all children. </p>
-<dl class="section return"><dt>Returns</dt><dd>Reference to the internal vector with the components </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to the internal vector with the children </dd></dl>
 
 </div>
 </div>
@@ -1227,7 +1228,7 @@ template&lt;typename T , typename... Args&gt; </div>
 </div><div class="memdoc">
 
 <p>Get all children. </p>
-<dl class="section return"><dt>Returns</dt><dd>Reference to the internal vector with the components </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to the internal vector with the children </dd></dl>
 
 </div>
 </div>
@@ -1931,15 +1932,6 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Set this transform to look at a certain point. </p>
-<p>The rotation is applied locally. If you want to set the rotation to point at an absolute world position, use <a class="el" href="classjop_1_1_object.html#a9b5a1eb44260dd85ee66497addb6352a" title="Set transform restriction flags. ">setIgnoreTransform()</a> to restrict the rotation.</p>
-<p>This overload will use <a class="el" href="classjop_1_1_transform.html#a8446a046ade76bd8407d880566661c4a" title="The default normalized up vector. ">Transform::Up</a> as the up vector.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">point</td><td>The point to look at</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Reference to self</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>The X point </td></tr>
@@ -2129,14 +2121,6 @@ template&lt;typename T &gt; </div>
 
 <p>Remove all children with the given tag. </p>
 <p>The children will actually be removed only at the beginning of the next update call.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ID</td><td>The id to search with</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Reference to self</dd></dl>
-<dl class="section user"><dt>This method is exposed as command named removeChildren</dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tag</td><td>The tag to search with </td></tr>
@@ -3023,7 +3007,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 18 2016 12:34:42 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 9 2016 08:47:40 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

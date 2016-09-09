@@ -22,6 +22,6 @@ var searchData=
   ['keypadzero',['KeypadZero',['../classjop_1_1_keyboard.html#a031d3cfecc413d6690697b49ddfdbfada61f5c3e557a13860d44f5ec18154ab64',1,'jop::Keyboard']]],
   ['keypressed',['keyPressed',['../classjop_1_1_window_event_handler.html#a7fcedf2b9b504df5ebc75d25c7544d79',1,'jop::WindowEventHandler']]],
   ['keyreleased',['keyReleased',['../classjop_1_1_window_event_handler.html#a3cd6656fe0724dc7bb1c4fd20a36153c',1,'jop::WindowEventHandler']]],
-  ['kinematic',['Kinematic',['../classjop_1_1_phantom_body.html#ac1d7677a4b3010817e8b59ff97edc7e6a40c78b58b86002ee38fad2d3c9dd787e',1,'jop::PhantomBody::Kinematic()'],['../classjop_1_1_rigid_body.html#a2a214f8473e5b153f836b9815ab507dda40c78b58b86002ee38fad2d3c9dd787e',1,'jop::RigidBody::Kinematic()'],['../classjop_1_1_rigid_body2_d.html#a06a154a18d23cc22913d61aa63286533a40c78b58b86002ee38fad2d3c9dd787e',1,'jop::RigidBody2D::Kinematic()']]],
-  ['kinematicsensor',['KinematicSensor',['../classjop_1_1_rigid_body.html#a2a214f8473e5b153f836b9815ab507dda292edc25f3a616a2d153e31af00eca11',1,'jop::RigidBody::KinematicSensor()'],['../classjop_1_1_rigid_body2_d.html#a06a154a18d23cc22913d61aa63286533a292edc25f3a616a2d153e31af00eca11',1,'jop::RigidBody2D::KinematicSensor()']]]
+  ['kinematic',['Kinematic',['../classjop_1_1_rigid_body.html#a2a214f8473e5b153f836b9815ab507dda40c78b58b86002ee38fad2d3c9dd787e',1,'jop::RigidBody']]],
+  ['kinematicsensor',['KinematicSensor',['../classjop_1_1_rigid_body.html#a2a214f8473e5b153f836b9815ab507dda292edc25f3a616a2d153e31af00eca11',1,'jop::RigidBody']]]
 ];

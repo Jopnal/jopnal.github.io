@@ -22,11 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Jopnal.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Jopnal Engine
    &#160;<span id="projectnumber">alpha 0.4</span>
    </div>
-   <div id="projectbrief">Simple Component Based 3D Game Engine</div>
+   <div id="projectbrief">Simple Component Based 2D/3D Game Engine</div>
   </td>
  </tr>
  </tbody>
@@ -123,13 +124,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a0b9a838fc1dc2020cdf7cd68698a627e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load shaders.  <a href="#a0b9a838fc1dc2020cdf7cd68698a627e">More...</a><br /></td></tr>
 <tr class="separator:a0b9a838fc1dc2020cdf7cd68698a627e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2fc341506751beb1220c1c357cac0d3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_shader_program.html#ae2fc341506751beb1220c1c357cac0d3">attachShader</a> (const <a class="el" href="classjop_1_1_shader.html">Shader</a> &amp;shader)</td></tr>
-<tr class="memdesc:ae2fc341506751beb1220c1c357cac0d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attach shader to program.  <a href="#ae2fc341506751beb1220c1c357cac0d3">More...</a><br /></td></tr>
+<tr class="memdesc:ae2fc341506751beb1220c1c357cac0d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attach shader to the program.  <a href="#ae2fc341506751beb1220c1c357cac0d3">More...</a><br /></td></tr>
 <tr class="separator:ae2fc341506751beb1220c1c357cac0d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69e3b155166b3da5d6fab46105ff5c86"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_shader_program.html#a69e3b155166b3da5d6fab46105ff5c86">link</a> ()</td></tr>
-<tr class="memdesc:a69e3b155166b3da5d6fab46105ff5c86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Link shader program.  <a href="#a69e3b155166b3da5d6fab46105ff5c86">More...</a><br /></td></tr>
+<tr class="memdesc:a69e3b155166b3da5d6fab46105ff5c86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Link the shader program.  <a href="#a69e3b155166b3da5d6fab46105ff5c86">More...</a><br /></td></tr>
 <tr class="separator:a69e3b155166b3da5d6fab46105ff5c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59ee90e9f7ef75c139deaafee306e8f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_shader_program.html#a59ee90e9f7ef75c139deaafee306e8f5">unlink</a> ()</td></tr>
-<tr class="memdesc:a59ee90e9f7ef75c139deaafee306e8f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlink shader program.  <a href="#a59ee90e9f7ef75c139deaafee306e8f5">More...</a><br /></td></tr>
+<tr class="memdesc:a59ee90e9f7ef75c139deaafee306e8f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlink the shader program.  <a href="#a59ee90e9f7ef75c139deaafee306e8f5">More...</a><br /></td></tr>
 <tr class="separator:a59ee90e9f7ef75c139deaafee306e8f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5f2be7024f534da3a7dd62a00665b8b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_shader_program.html#ad5f2be7024f534da3a7dd62a00665b8b">bind</a> () const </td></tr>
 <tr class="memdesc:ad5f2be7024f534da3a7dd62a00665b8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind this shader program for use.  <a href="#ad5f2be7024f534da3a7dd62a00665b8b">More...</a><br /></td></tr>
@@ -144,25 +145,25 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:abcdfe018654a1460c69ea0f61f6d033a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this program is valid.  <a href="#abcdfe018654a1460c69ea0f61f6d033a">More...</a><br /></td></tr>
 <tr class="separator:abcdfe018654a1460c69ea0f61f6d033a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdd6b6ecd87e203033705a81af7d5181"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_shader_program.html#acdd6b6ecd87e203033705a81af7d5181">setUniform</a> (const std::string &amp;name, const glm::mat4 &amp;matrix)</td></tr>
-<tr class="memdesc:acdd6b6ecd87e203033705a81af7d5181"><td class="mdescLeft">&#160;</td><td class="mdescRight">method setting matrix 4x4  <a href="#acdd6b6ecd87e203033705a81af7d5181">More...</a><br /></td></tr>
+<tr class="memdesc:acdd6b6ecd87e203033705a81af7d5181"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a mat4 uniform.  <a href="#acdd6b6ecd87e203033705a81af7d5181">More...</a><br /></td></tr>
 <tr class="separator:acdd6b6ecd87e203033705a81af7d5181"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78a655238c588f58342fddeb2c6cfd6f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_shader_program.html#a78a655238c588f58342fddeb2c6cfd6f">setUniform</a> (const std::string &amp;name, const float *matrices, const unsigned int amount)</td></tr>
 <tr class="memdesc:a78a655238c588f58342fddeb2c6cfd6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set an array of matrices.  <a href="#a78a655238c588f58342fddeb2c6cfd6f">More...</a><br /></td></tr>
 <tr class="separator:a78a655238c588f58342fddeb2c6cfd6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bb4636a9140cc59886b25e81ce35b8d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_shader_program.html#a7bb4636a9140cc59886b25e81ce35b8d">setUniform</a> (const std::string &amp;name, const glm::mat3 &amp;matrix)</td></tr>
-<tr class="memdesc:a7bb4636a9140cc59886b25e81ce35b8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">method setting 3x3 matrix with unique name  <a href="#a7bb4636a9140cc59886b25e81ce35b8d">More...</a><br /></td></tr>
+<tr class="memdesc:a7bb4636a9140cc59886b25e81ce35b8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a mat3 uniform.  <a href="#a7bb4636a9140cc59886b25e81ce35b8d">More...</a><br /></td></tr>
 <tr class="separator:a7bb4636a9140cc59886b25e81ce35b8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f0c7cf88465f6d92fc7b175cd14d341"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_shader_program.html#a4f0c7cf88465f6d92fc7b175cd14d341">setUniform</a> (const std::string &amp;name, const glm::vec2 &amp;vector)</td></tr>
 <tr class="memdesc:a4f0c7cf88465f6d92fc7b175cd14d341"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a two-dimensional float vector uniform.  <a href="#a4f0c7cf88465f6d92fc7b175cd14d341">More...</a><br /></td></tr>
 <tr class="separator:a4f0c7cf88465f6d92fc7b175cd14d341"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5a105e6b17f6f396f951a7d02dce318"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_shader_program.html#ad5a105e6b17f6f396f951a7d02dce318">setUniform</a> (const std::string &amp;name, const glm::vec3 &amp;vector)</td></tr>
-<tr class="memdesc:ad5a105e6b17f6f396f951a7d02dce318"><td class="mdescLeft">&#160;</td><td class="mdescRight">method setting vector with 3 dimensions and unique name  <a href="#ad5a105e6b17f6f396f951a7d02dce318">More...</a><br /></td></tr>
+<tr class="memdesc:ad5a105e6b17f6f396f951a7d02dce318"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a vec3 uniform.  <a href="#ad5a105e6b17f6f396f951a7d02dce318">More...</a><br /></td></tr>
 <tr class="separator:ad5a105e6b17f6f396f951a7d02dce318"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab099664b601e3e85d49f6bf98023d26d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_shader_program.html#ab099664b601e3e85d49f6bf98023d26d">setUniform</a> (const std::string &amp;name, const glm::vec4 &amp;vector)</td></tr>
-<tr class="memdesc:ab099664b601e3e85d49f6bf98023d26d"><td class="mdescLeft">&#160;</td><td class="mdescRight">method setting vector with 4 dimensions and unique name  <a href="#ab099664b601e3e85d49f6bf98023d26d">More...</a><br /></td></tr>
+<tr class="memdesc:ab099664b601e3e85d49f6bf98023d26d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a vec4 uniform.  <a href="#ab099664b601e3e85d49f6bf98023d26d">More...</a><br /></td></tr>
 <tr class="separator:ab099664b601e3e85d49f6bf98023d26d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30810a94741e10844d9be3e69500a4a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_shader_program.html#a30810a94741e10844d9be3e69500a4a8">setUniform</a> (const std::string &amp;name, const <a class="el" href="classjop_1_1_texture.html">Texture</a> &amp;texture, const unsigned int unit)</td></tr>
-<tr class="memdesc:a30810a94741e10844d9be3e69500a4a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">method setting texture with unique name and Uint  <a href="#a30810a94741e10844d9be3e69500a4a8">More...</a><br /></td></tr>
+<tr class="memdesc:a30810a94741e10844d9be3e69500a4a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a texture uniform.  <a href="#a30810a94741e10844d9be3e69500a4a8">More...</a><br /></td></tr>
 <tr class="separator:a30810a94741e10844d9be3e69500a4a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2b1d06a17a54d951a416411ba0e4731"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_shader_program.html#ac2b1d06a17a54d951a416411ba0e4731">setUniform</a> (const std::string &amp;name, const float value)</td></tr>
 <tr class="memdesc:ac2b1d06a17a54d951a416411ba0e4731"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a float uniform.  <a href="#ac2b1d06a17a54d951a416411ba0e4731">More...</a><br /></td></tr>
@@ -212,11 +213,14 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:af39b16c3bd49dfa117e46a9dddc3749f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classjop_1_1_shader_program.html">ShaderProgram</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_shader_program.html#af39b16c3bd49dfa117e46a9dddc3749f">getDefault</a> ()</td></tr>
-<tr class="memdesc:af39b16c3bd49dfa117e46a9dddc3749f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default shader.  <a href="#af39b16c3bd49dfa117e46a9dddc3749f">More...</a><br /></td></tr>
+<tr class="memdesc:af39b16c3bd49dfa117e46a9dddc3749f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default shader program.  <a href="#af39b16c3bd49dfa117e46a9dddc3749f">More...</a><br /></td></tr>
 <tr class="separator:af39b16c3bd49dfa117e46a9dddc3749f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17213350e927aa2b23c3061c88939f02"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classjop_1_1_shader_program.html">ShaderProgram</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_shader_program.html#a17213350e927aa2b23c3061c88939f02">getError</a> ()</td></tr>
-<tr class="memdesc:a17213350e927aa2b23c3061c88939f02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the error shader.  <a href="#a17213350e927aa2b23c3061c88939f02">More...</a><br /></td></tr>
+<tr class="memdesc:a17213350e927aa2b23c3061c88939f02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the error shader program.  <a href="#a17213350e927aa2b23c3061c88939f02">More...</a><br /></td></tr>
 <tr class="separator:a17213350e927aa2b23c3061c88939f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6c85b8d68f8b81f3bc15958a33535e3"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_shader_program.html#ab6c85b8d68f8b81f3bc15958a33535e3">getMaxAttributes</a> ()</td></tr>
+<tr class="memdesc:ab6c85b8d68f8b81f3bc15958a33535e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum vertex attributes.  <a href="#ab6c85b8d68f8b81f3bc15958a33535e3">More...</a><br /></td></tr>
+<tr class="separator:ab6c85b8d68f8b81f3bc15958a33535e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -240,7 +244,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="_shader_program_8hpp_source.html#l00035">35</a> of file <a class="el" href="_shader_program_8hpp_source.html">ShaderProgram.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_shader_program_8hpp_source.html#l00040">40</a> of file <a class="el" href="_shader_program_8hpp_source.html">ShaderProgram.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a9b166a1ceceb42334ded1558157350fd"></a>
 <div class="memitem">
@@ -257,6 +261,12 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Name of the resource </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -292,13 +302,14 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Attach shader to program. </p>
+<p>Attach shader to the program. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">shader</td><td>Reference to shader object </td></tr>
+    <tr><td class="paramname">shader</td><td>Reference to shader object</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>True if successful </dd></dl>
 
 </div>
 </div>
@@ -341,7 +352,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the default shader. </p>
+<p>Get the default shader program. </p>
 <dl class="section return"><dt>Returns</dt><dd>Reference to the default shader </dd></dl>
 
 </div>
@@ -367,9 +378,35 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the error shader. </p>
+<p>Get the error shader program. </p>
 <p>This shader will paint any drawn object bright red.</p>
 <dl class="section return"><dt>Returns</dt><dd>Reference to the error shader </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab6c85b8d68f8b81f3bc15958a33535e3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static unsigned int jop::ShaderProgram::getMaxAttributes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the maximum vertex attributes. </p>
+<dl class="section return"><dt>Returns</dt><dd>The maximum number of vertex attributes supported </dd></dl>
 
 </div>
 </div>
@@ -387,6 +424,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Check if this program is valid. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if valid </dd></dl>
 
 </div>
 </div>
@@ -403,7 +441,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Link shader program. </p>
+<p>Link the shader program. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if successful </dd></dl>
 
 </div>
 </div>
@@ -434,15 +473,16 @@ template&lt;typename... Args&gt; </div>
 </div><div class="memdoc">
 
 <p>Load shaders. </p>
-<p>Attaches a variable number of shaders to shader program. NOTE: Can load some shaders as objects and others as source codes simultaneously.</p>
+<p>Attaches a variable number of shaders to shader program. </p><dl class="section note"><dt>Note</dt><dd>Can load some shaders as objects and others as source codes simultaneously.</dd></dl>
 <p>Invalid shader objects or empty sources will be silently ignored and won't be used in the final link operation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pp</td><td>Preprocessor string </td></tr>
-    <tr><td class="paramname">args</td><td>Variable amount of shaders objects or shader sources </td></tr>
+    <tr><td class="paramname">args</td><td>Variable amount of shaders objects or shader sources</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>True if successful </dd></dl>
 
 </div>
 </div>
@@ -470,11 +510,11 @@ template&lt;typename... Args&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>method setting matrix 4x4 </p>
+<p>Set a mat4 uniform. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td>unique name </td></tr>
-    <tr><td class="paramname">matrix</td><td>4x4 matrix</td></tr>
+    <tr><td class="paramname">name</td><td>Uniform name </td></tr>
+    <tr><td class="paramname">matrix</td><td>A 4x4 matrix</td></tr>
   </table>
   </dd>
 </dl>
@@ -550,11 +590,11 @@ template&lt;typename... Args&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>method setting 3x3 matrix with unique name </p>
+<p>Set a mat3 uniform. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td>unique name </td></tr>
-    <tr><td class="paramname">matrix</td><td>3x3 matrix</td></tr>
+    <tr><td class="paramname">name</td><td>Uniform name </td></tr>
+    <tr><td class="paramname">matrix</td><td>A 3x3 matrix</td></tr>
   </table>
   </dd>
 </dl>
@@ -622,11 +662,11 @@ template&lt;typename... Args&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>method setting vector with 3 dimensions and unique name </p>
+<p>Set a vec3 uniform. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td>unique name </td></tr>
-    <tr><td class="paramname">vector</td><td>3 dimensional vector</td></tr>
+    <tr><td class="paramname">name</td><td>Uniform name </td></tr>
+    <tr><td class="paramname">vector</td><td>A 3-dimensional vector</td></tr>
   </table>
   </dd>
 </dl>
@@ -658,11 +698,11 @@ template&lt;typename... Args&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>method setting vector with 4 dimensions and unique name </p>
+<p>Set a vec4 uniform. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td>unique name </td></tr>
-    <tr><td class="paramname">vector</td><td>4 dimensional vector</td></tr>
+    <tr><td class="paramname">name</td><td>Uniform name </td></tr>
+    <tr><td class="paramname">vector</td><td>A 4-dimensional vector</td></tr>
   </table>
   </dd>
 </dl>
@@ -700,11 +740,11 @@ template&lt;typename... Args&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>method setting texture with unique name and Uint </p>
+<p>Set a texture uniform. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td>unique name </td></tr>
-    <tr><td class="paramname">texture</td><td>The texture </td></tr>
+    <tr><td class="paramname">name</td><td>Uniform name </td></tr>
+    <tr><td class="paramname">texture</td><td>A texture </td></tr>
     <tr><td class="paramname">unit</td><td>The texture unit</td></tr>
   </table>
   </dd>
@@ -852,8 +892,8 @@ template&lt;typename... Args&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Unlink shader program. </p>
-<p>Unbinds shader program and destroys it </p>
+<p>Unlink the shader program. </p>
+<p>Unbinds shader program and destroys it. </p>
 
 </div>
 </div>
@@ -871,6 +911,7 @@ template&lt;typename... Args&gt; </div>
 </div><div class="memdoc">
 
 <p>Validate program status. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if successfully validated </dd></dl>
 
 </div>
 </div>
@@ -880,7 +921,7 @@ template&lt;typename... Args&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 18 2016 12:34:42 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 9 2016 08:47:41 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

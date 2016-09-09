@@ -22,11 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Jopnal.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Jopnal Engine
    &#160;<span id="projectnumber">alpha 0.4</span>
    </div>
-   <div id="projectbrief">Simple Component Based 3D Game Engine</div>
+   <div id="projectbrief">Simple Component Based 2D/3D Game Engine</div>
   </td>
  </tr>
  </tbody>
@@ -105,14 +106,27 @@ Inheritance diagram for jop::Component:</div>
  <div class="center">
   <img src="classjop_1_1_component.png" usemap="#jop::Component_map" alt=""/>
   <map id="jop::Component_map" name="jop::Component_map">
-<area href="classjop_1_1_camera.html" alt="jop::Camera" shape="rect" coords="122,56,234,80"/>
-<area href="classjop_1_1_collider.html" alt="jop::Collider" shape="rect" coords="122,112,234,136"/>
-<area href="classjop_1_1_collider2_d.html" alt="jop::Collider2D" shape="rect" coords="122,168,234,192"/>
-<area href="classjop_1_1_drawable.html" alt="jop::Drawable" shape="rect" coords="122,224,234,248"/>
-<area href="classjop_1_1_light_source.html" alt="jop::LightSource" shape="rect" coords="122,280,234,304"/>
-<area href="classjop_1_1_listener.html" alt="jop::Listener" shape="rect" coords="122,336,234,360"/>
-<area href="classjop_1_1_model_loader.html" alt="jop::ModelLoader" shape="rect" coords="122,392,234,416"/>
-<area href="classjop_1_1_sound_source.html" alt="jop::SoundSource" shape="rect" coords="122,448,234,472"/>
+<area href="classjop_1_1_camera.html" alt="jop::Camera" shape="rect" coords="0,56,132,80"/>
+<area href="classjop_1_1_collider.html" alt="jop::Collider" shape="rect" coords="497,56,629,80"/>
+<area href="classjop_1_1_collider2_d.html" alt="jop::Collider2D" shape="rect" coords="710,56,842,80"/>
+<area href="classjop_1_1_light_source.html" alt="jop::LightSource" shape="rect" coords="852,56,984,80"/>
+<area href="classjop_1_1_listener.html" alt="jop::Listener" shape="rect" coords="994,56,1126,80"/>
+<area href="classjop_1_1_model_loader.html" alt="jop::ModelLoader" shape="rect" coords="1136,56,1268,80"/>
+<area href="classjop_1_1_sound_source.html" alt="jop::SoundSource" shape="rect" coords="1278,56,1410,80"/>
+<area href="classjop_1_1_phantom_body.html" alt="jop::PhantomBody" shape="rect" coords="426,112,558,136"/>
+<area href="classjop_1_1_rigid_body.html" alt="jop::RigidBody" shape="rect" coords="568,112,700,136"/>
+<area href="classjop_1_1_rigid_body2_d.html" alt="jop::RigidBody2D" shape="rect" coords="710,112,842,136"/>
+<area href="classjop_1_1_sound_effect.html" alt="jop::SoundEffect" shape="rect" coords="1207,112,1339,136"/>
+<area href="classjop_1_1_sound_stream.html" alt="jop::SoundStream" shape="rect" coords="1349,112,1481,136"/>
+<area href="classjop_1_1_culler_component.html" alt="jop::CullerComponent" shape="rect" coords="426,168,558,192"/>
+<area href="classjop_1_1_drawable.html" alt="jop::Drawable" shape="rect" coords="426,224,558,248"/>
+<area href="classjop_1_1_animated_sprite.html" alt="jop::AnimatedSprite" shape="rect" coords="0,280,132,304"/>
+<area href="classjop_1_1_sky_box.html" alt="jop::SkyBox" shape="rect" coords="142,280,274,304"/>
+<area href="classjop_1_1_sky_sphere.html" alt="jop::SkySphere" shape="rect" coords="284,280,416,304"/>
+<area href="classjop_1_1_sprite.html" alt="jop::Sprite" shape="rect" coords="426,280,558,304"/>
+<area href="classjop_1_1_text.html" alt="jop::Text" shape="rect" coords="568,280,700,304"/>
+<area href="classjop_1_1_world.html" alt="jop::World" shape="rect" coords="710,280,842,304"/>
+<area href="classjop_1_1_world2_d.html" alt="jop::World2D" shape="rect" coords="852,280,984,304"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -385,7 +399,7 @@ Friends</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The message result </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classjop_1_1_light_source.html#a92772da224361d6ccecebfec178bb504">jop::LightSource</a>, <a class="el" href="classjop_1_1_rigid_body.html#a07fcb0c9695c4ebe9148e3f58e8d8447">jop::RigidBody</a>, <a class="el" href="classjop_1_1_camera.html#a1ccf05eb0afc430fe2aec2203b9363a5">jop::Camera</a>, <a class="el" href="classjop_1_1_rigid_body2_d.html#a8aa5cb80bf535addc4740df05da0cf43">jop::RigidBody2D</a>, <a class="el" href="classjop_1_1_drawable.html#aee4266166d74b58617ba25d998f06171">jop::Drawable</a>, and <a class="el" href="classjop_1_1_world.html#ad3b1d0792d8cc1623d602b08dd6e5df8">jop::World</a>.</p>
+<p>Reimplemented in <a class="el" href="classjop_1_1_rigid_body.html#a07fcb0c9695c4ebe9148e3f58e8d8447">jop::RigidBody</a>, <a class="el" href="classjop_1_1_light_source.html#a92772da224361d6ccecebfec178bb504">jop::LightSource</a>, <a class="el" href="classjop_1_1_camera.html#a1ccf05eb0afc430fe2aec2203b9363a5">jop::Camera</a>, <a class="el" href="classjop_1_1_drawable.html#aee4266166d74b58617ba25d998f06171">jop::Drawable</a>, <a class="el" href="classjop_1_1_rigid_body2_d.html#a8aa5cb80bf535addc4740df05da0cf43">jop::RigidBody2D</a>, and <a class="el" href="classjop_1_1_world.html#ad3b1d0792d8cc1623d602b08dd6e5df8">jop::World</a>.</p>
 
 </div>
 </div>
@@ -487,7 +501,7 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="classjop_1_1_sound_source.html#a0f104774d75cfac5dfb83ab06361586d">jop::SoundSource</a>, <a class="el" href="classjop_1_1_collider.html#a0c74db4c85b99335a37c053cfc31cb7f">jop::Collider</a>, <a class="el" href="classjop_1_1_collider2_d.html#a6b1e82e133fcb42f21e9499875c5cfe8">jop::Collider2D</a>, <a class="el" href="classjop_1_1_world.html#a05edbda052faa1e33c33f6fe0b422e88">jop::World</a>, <a class="el" href="classjop_1_1_world2_d.html#abb425fa2dccfbc11de4a4212ffaab9b9">jop::World2D</a>, <a class="el" href="classjop_1_1_sound_stream.html#a54c182584c0ca592526ef6a69a619bc6">jop::SoundStream</a>, <a class="el" href="classjop_1_1_animated_sprite.html#ae5f07b58b546cb5d56813a21f71d7991">jop::AnimatedSprite</a>, <a class="el" href="classjop_1_1_sound_effect.html#a0b80a875ebf09318cff0f5c6b213e957">jop::SoundEffect</a>, <a class="el" href="classjop_1_1_listener.html#a60cbf0883df321ae606d11678c8799bf">jop::Listener</a>, and <a class="el" href="classjop_1_1_phantom_body.html#af083c18cc0f3105106dfbb98ad14fa79">jop::PhantomBody</a>.</p>
+<p>Reimplemented in <a class="el" href="classjop_1_1_world.html#a05edbda052faa1e33c33f6fe0b422e88">jop::World</a>, <a class="el" href="classjop_1_1_collider.html#a0c74db4c85b99335a37c053cfc31cb7f">jop::Collider</a>, <a class="el" href="classjop_1_1_sound_source.html#a0f104774d75cfac5dfb83ab06361586d">jop::SoundSource</a>, <a class="el" href="classjop_1_1_collider2_d.html#a6b1e82e133fcb42f21e9499875c5cfe8">jop::Collider2D</a>, <a class="el" href="classjop_1_1_world2_d.html#abb425fa2dccfbc11de4a4212ffaab9b9">jop::World2D</a>, <a class="el" href="classjop_1_1_sound_stream.html#a54c182584c0ca592526ef6a69a619bc6">jop::SoundStream</a>, <a class="el" href="classjop_1_1_animated_sprite.html#ae5f07b58b546cb5d56813a21f71d7991">jop::AnimatedSprite</a>, <a class="el" href="classjop_1_1_sound_effect.html#a0b80a875ebf09318cff0f5c6b213e957">jop::SoundEffect</a>, <a class="el" href="classjop_1_1_phantom_body.html#af083c18cc0f3105106dfbb98ad14fa79">jop::PhantomBody</a>, and <a class="el" href="classjop_1_1_listener.html#a60cbf0883df321ae606d11678c8799bf">jop::Listener</a>.</p>
 
 </div>
 </div>
@@ -520,7 +534,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 18 2016 12:34:41 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 9 2016 08:47:38 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

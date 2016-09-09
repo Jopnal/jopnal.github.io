@@ -22,11 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Jopnal.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Jopnal Engine
    &#160;<span id="projectnumber">alpha 0.4</span>
    </div>
-   <div id="projectbrief">Simple Component Based 3D Game Engine</div>
+   <div id="projectbrief">Simple Component Based 2D/3D Game Engine</div>
   </td>
  </tr>
  </tbody>
@@ -122,15 +123,16 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a461917f173e81d62e6e996cc30f07601"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_shader.html#a461917f173e81d62e6e996cc30f07601">Shader</a> (const std::string &amp;name)</td></tr>
-<tr class="memdesc:a461917f173e81d62e6e996cc30f07601"><td class="mdescLeft">&#160;</td><td class="mdescRight">default constructor  <a href="#a461917f173e81d62e6e996cc30f07601">More...</a><br /></td></tr>
+<tr class="memdesc:a461917f173e81d62e6e996cc30f07601"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a461917f173e81d62e6e996cc30f07601">More...</a><br /></td></tr>
 <tr class="separator:a461917f173e81d62e6e996cc30f07601"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2c1e396e0bb24774358d4a6ad00d35d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_shader.html#ad2c1e396e0bb24774358d4a6ad00d35d">~Shader</a> () override</td></tr>
-<tr class="memdesc:ad2c1e396e0bb24774358d4a6ad00d35d"><td class="mdescLeft">&#160;</td><td class="mdescRight">default destructor  <a href="#ad2c1e396e0bb24774358d4a6ad00d35d">More...</a><br /></td></tr>
+<tr class="memdesc:ad2c1e396e0bb24774358d4a6ad00d35d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#ad2c1e396e0bb24774358d4a6ad00d35d">More...</a><br /></td></tr>
 <tr class="separator:ad2c1e396e0bb24774358d4a6ad00d35d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e87ca3a9a6bdda3f81f6a0044e4144a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_shader.html#a2e87ca3a9a6bdda3f81f6a0044e4144a">destroy</a> ()</td></tr>
+<tr class="memdesc:a2e87ca3a9a6bdda3f81f6a0044e4144a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy this shader.  <a href="#a2e87ca3a9a6bdda3f81f6a0044e4144a">More...</a><br /></td></tr>
 <tr class="separator:a2e87ca3a9a6bdda3f81f6a0044e4144a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e8bf166fb472fca33a2c4495e913149"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_shader.html#a9e8bf166fb472fca33a2c4495e913149">addSource</a> (const char *source)</td></tr>
-<tr class="memdesc:a9e8bf166fb472fca33a2c4495e913149"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add source.  <a href="#a9e8bf166fb472fca33a2c4495e913149">More...</a><br /></td></tr>
+<tr class="memdesc:a9e8bf166fb472fca33a2c4495e913149"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add shader source.  <a href="#a9e8bf166fb472fca33a2c4495e913149">More...</a><br /></td></tr>
 <tr class="separator:a9e8bf166fb472fca33a2c4495e913149"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4aa75f91944460eaf2ab718cab100542"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_shader.html#a4aa75f91944460eaf2ab718cab100542">compile</a> (const <a class="el" href="classjop_1_1_shader.html#a724c16662be5bdff4957aefb77dc9cdb">Type</a> type, const bool preprocess=true)</td></tr>
 <tr class="memdesc:a4aa75f91944460eaf2ab718cab100542"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile shader.  <a href="#a4aa75f91944460eaf2ab718cab100542">More...</a><br /></td></tr>
@@ -138,11 +140,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3f9f8765c4cee31f3248fb2046de19ee"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_shader.html#a3f9f8765c4cee31f3248fb2046de19ee">load</a> (const std::string &amp;path, <a class="el" href="classjop_1_1_shader.html#a724c16662be5bdff4957aefb77dc9cdb">Type</a> type, const bool preprocess=true)</td></tr>
 <tr class="memdesc:a3f9f8765c4cee31f3248fb2046de19ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load shader.  <a href="#a3f9f8765c4cee31f3248fb2046de19ee">More...</a><br /></td></tr>
 <tr class="separator:a3f9f8765c4cee31f3248fb2046de19ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af061c2b1b88df8936e4ad9ddfb2559de"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_shader.html#af061c2b1b88df8936e4ad9ddfb2559de">getType</a> () const </td></tr>
-<tr class="memdesc:af061c2b1b88df8936e4ad9ddfb2559de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get shader type (<a class="el" href="classjop_1_1_vertex.html">Vertex</a> / Geometry / Fragment)  <a href="#af061c2b1b88df8936e4ad9ddfb2559de">More...</a><br /></td></tr>
-<tr class="separator:af061c2b1b88df8936e4ad9ddfb2559de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1dbf95971da567ffd3cd667d1273858"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjop_1_1_shader.html#a724c16662be5bdff4957aefb77dc9cdb">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_shader.html#af1dbf95971da567ffd3cd667d1273858">getType</a> () const </td></tr>
+<tr class="memdesc:af1dbf95971da567ffd3cd667d1273858"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the shader type.  <a href="#af1dbf95971da567ffd3cd667d1273858">More...</a><br /></td></tr>
+<tr class="separator:af1dbf95971da567ffd3cd667d1273858"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c690da9c8dee69b5ca74427e418d026"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_shader.html#a2c690da9c8dee69b5ca74427e418d026">getHandle</a> () const </td></tr>
-<tr class="memdesc:a2c690da9c8dee69b5ca74427e418d026"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get shader handle.  <a href="#a2c690da9c8dee69b5ca74427e418d026">More...</a><br /></td></tr>
+<tr class="memdesc:a2c690da9c8dee69b5ca74427e418d026"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the OpenGL handle.  <a href="#a2c690da9c8dee69b5ca74427e418d026">More...</a><br /></td></tr>
 <tr class="separator:a2c690da9c8dee69b5ca74427e418d026"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classjop_1_1_resource"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classjop_1_1_resource')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classjop_1_1_resource.html">jop::Resource</a></td></tr>
 <tr class="memitem:aed0f13541ccb3b57e1e005121651b4de inherit pub_methods_classjop_1_1_resource"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_resource.html#aed0f13541ccb3b57e1e005121651b4de">Resource</a> (const std::string &amp;name)</td></tr>
@@ -183,9 +185,10 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aefbb1a9f9937599749a01f1f2eb658f3"><td class="memItemLeft" align="right" valign="top">static const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_shader.html#aefbb1a9f9937599749a01f1f2eb658f3">getVersionString</a> ()</td></tr>
-<tr class="memdesc:aefbb1a9f9937599749a01f1f2eb658f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get OpenGL version number.  <a href="#aefbb1a9f9937599749a01f1f2eb658f3">More...</a><br /></td></tr>
+<tr class="memdesc:aefbb1a9f9937599749a01f1f2eb658f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the version definition string.  <a href="#aefbb1a9f9937599749a01f1f2eb658f3">More...</a><br /></td></tr>
 <tr class="separator:aefbb1a9f9937599749a01f1f2eb658f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5253fa59e0b8847670380fa182b4d37b"><td class="memItemLeft" align="right" valign="top">static const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_shader.html#a5253fa59e0b8847670380fa182b4d37b">getExtensionString</a> ()</td></tr>
+<tr class="memdesc:a5253fa59e0b8847670380fa182b4d37b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the extension definition string.  <a href="#a5253fa59e0b8847670380fa182b4d37b">More...</a><br /></td></tr>
 <tr class="separator:a5253fa59e0b8847670380fa182b4d37b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -229,7 +232,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The shader type enum </p>
+<p><a class="el" href="classjop_1_1_shader.html">Shader</a> type </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a724c16662be5bdff4957aefb77dc9cdbab22b929ba52471a02d18bb3a4e4472e6"></a>Vertex&#160;</td><td class="fielddoc">
 </td></tr>
@@ -266,7 +269,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>default constructor </p>
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Name of the resource </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -291,7 +300,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>default destructor </p>
+<p>Destructor. </p>
 
 </div>
 </div>
@@ -310,8 +319,14 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Add source. </p>
-<p>The string must stay in existence until after <a class="el" href="classjop_1_1_shader.html#a4aa75f91944460eaf2ab718cab100542" title="Compile shader. ">compile()</a> is called. </p>
+<p>Add shader source. </p>
+<p>The string must stay in existence until after <a class="el" href="classjop_1_1_shader.html#a4aa75f91944460eaf2ab718cab100542" title="Compile shader. ">compile()</a> is called.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>The shader source </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -342,11 +357,12 @@ Additional Inherited Members</h2></td></tr>
 <p>Compile shader. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">type</td><td><a class="el" href="classjop_1_1_shader.html">Shader</a> Type:: (<a class="el" href="classjop_1_1_vertex.html">Vertex</a> / Geometry / Fragment) </td></tr>
-    <tr><td class="paramname">preprocess</td><td>Should shader be preprocessed? (True by default) </td></tr>
+    <tr><td class="paramname">type</td><td><a class="el" href="classjop_1_1_shader.html">Shader</a> type </td></tr>
+    <tr><td class="paramname">preprocess</td><td>Should shader be preprocessed?</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>True if successful </dd></dl>
 
 </div>
 </div>
@@ -362,6 +378,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Destroy this shader. </p>
 
 </div>
 </div>
@@ -386,6 +404,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Get the extension definition string. </p>
+<dl class="section return"><dt>Returns</dt><dd>The extension string </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a2c690da9c8dee69b5ca74427e418d026"></a>
@@ -401,16 +422,17 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get shader handle. </p>
+<p>Get the OpenGL handle. </p>
+<dl class="section return"><dt>Returns</dt><dd>The shader handle </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="af061c2b1b88df8936e4ad9ddfb2559de"></a>
+<a class="anchor" id="af1dbf95971da567ffd3cd667d1273858"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int jop::Shader::getType </td>
+          <td class="memname"><a class="el" href="classjop_1_1_shader.html#a724c16662be5bdff4957aefb77dc9cdb">Type</a> jop::Shader::getType </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -418,7 +440,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get shader type (<a class="el" href="classjop_1_1_vertex.html">Vertex</a> / Geometry / Fragment) </p>
+<p>Get the shader type. </p>
+<dl class="section return"><dt>Returns</dt><dd>The shader type </dd></dl>
 
 </div>
 </div>
@@ -443,7 +466,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get OpenGL version number. </p>
+<p>Get the version definition string. </p>
+<dl class="section return"><dt>Returns</dt><dd>The version string </dd></dl>
 
 </div>
 </div>
@@ -481,11 +505,12 @@ Additional Inherited Members</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">path</td><td>Path to file containing shader or shaders source code </td></tr>
-    <tr><td class="paramname">type</td><td><a class="el" href="classjop_1_1_shader.html">Shader</a> Type:: (<a class="el" href="classjop_1_1_vertex.html">Vertex</a> / Geometry / Fragment) </td></tr>
-    <tr><td class="paramname">preprocess</td><td>Should shader be preprocessed? (True by default) </td></tr>
+    <tr><td class="paramname">type</td><td><a class="el" href="classjop_1_1_shader.html">Shader</a> type </td></tr>
+    <tr><td class="paramname">preprocess</td><td>Should shader be preprocessed?</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>True if successful </dd></dl>
 
 </div>
 </div>
@@ -495,7 +520,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 18 2016 12:34:42 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 9 2016 08:47:41 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -4,7 +4,7 @@ var searchData=
   ['terminate',['terminate',['../classjop_1_1_thread.html#abe09a103f396bf0e249d7145476a344f',1,'jop::Thread']]],
   ['terrainshape',['TerrainShape',['../classjop_1_1_terrain_shape.html#ab540ab71862c4f64c34a947ab400e3ac',1,'jop::TerrainShape']]],
   ['terrainshape2d',['TerrainShape2D',['../classjop_1_1_terrain_shape2_d.html#ac036850184927dd84c9340a7241964fb',1,'jop::TerrainShape2D']]],
-  ['text',['Text',['../classjop_1_1_text.html#ad959b38b8d108979490d2856d1657dde',1,'jop::Text::Text(Object &amp;object, Renderer &amp;renderer, const RenderPass::Pass pass=RenderPass::Pass::AfterPost)'],['../classjop_1_1_text.html#a4ca96cc986c7028b203ec4cb088bd13f',1,'jop::Text::Text(Object &amp;object, RenderPass &amp;pass)']]],
+  ['text',['Text',['../classjop_1_1_text.html#a1c894c516b60bffba4407db454449432',1,'jop::Text::Text(Object &amp;object, Renderer &amp;renderer, const RenderPass::Pass pass=RenderPass::Pass::AfterPost, const bool cull=true)'],['../classjop_1_1_text.html#a14efbb4c153a26f018f737cef4691701',1,'jop::Text::Text(Object &amp;object, RenderPass &amp;pass, const bool cull=true)']]],
   ['textentered',['textEntered',['../classjop_1_1_window_event_handler.html#a0c356a7146b7caafca764259273e20ff',1,'jop::WindowEventHandler']]],
   ['texture',['Texture',['../classjop_1_1_texture.html#ab502e2585d23daa257f3257a3fbc4cae',1,'jop::Texture']]],
   ['texture2d',['Texture2D',['../classjop_1_1_texture2_d.html#a77cd5cefcbdafd446288d8d40b56faa1',1,'jop::Texture2D']]],

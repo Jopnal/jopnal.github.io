@@ -22,11 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Jopnal.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Jopnal Engine
    &#160;<span id="projectnumber">alpha 0.4</span>
    </div>
-   <div id="projectbrief">Simple Component Based 3D Game Engine</div>
+   <div id="projectbrief">Simple Component Based 2D/3D Game Engine</div>
   </td>
  </tr>
  </tbody>
@@ -113,18 +114,6 @@ Inheritance diagram for jop::LightSource:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a9c5356595488cae66315e69cc53075ea"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_light_source.html#a9c5356595488cae66315e69cc53075ea">DepthFace</a> { <br />
-&#160;&#160;<a class="el" href="classjop_1_1_light_source.html#a9c5356595488cae66315e69cc53075eaa92b09c7c48c520c3c55e497875da437c">DepthFace::Right</a>, 
-<a class="el" href="classjop_1_1_light_source.html#a9c5356595488cae66315e69cc53075eaa7fb55ed0b7a30342ba6da306428cae04">DepthFace::First</a> = Right, 
-<a class="el" href="classjop_1_1_light_source.html#a9c5356595488cae66315e69cc53075eaa945d5e233cf7d6240f6b783b36a374ff">DepthFace::Left</a>, 
-<a class="el" href="classjop_1_1_light_source.html#a9c5356595488cae66315e69cc53075eaaa4ffdcf0dc1f31b9acaf295d75b51d00">DepthFace::Top</a>, 
-<br />
-&#160;&#160;<a class="el" href="classjop_1_1_light_source.html#a9c5356595488cae66315e69cc53075eaa2ad9d63b69c4a10a5cc9cad923133bc4">DepthFace::Bottom</a>, 
-<a class="el" href="classjop_1_1_light_source.html#a9c5356595488cae66315e69cc53075eaa0557fa923dcee4d0f86b1409f5c2167f">DepthFace::Back</a>, 
-<a class="el" href="classjop_1_1_light_source.html#a9c5356595488cae66315e69cc53075eaa5835bab1ade0060909e31a06af2e2cde">DepthFace::Front</a>
-<br />
- }</td></tr>
-<tr class="separator:a9c5356595488cae66315e69cc53075ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2823d550fb5e9430dd3a9f3a8d878aee"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_light_source.html#a2823d550fb5e9430dd3a9f3a8d878aee">Type</a> { <a class="el" href="classjop_1_1_light_source.html#a2823d550fb5e9430dd3a9f3a8d878aeea2a3cd5946cfd317eb99c3d32e35e2d4c">Type::Point</a>, 
 <a class="el" href="classjop_1_1_light_source.html#a2823d550fb5e9430dd3a9f3a8d878aeea6c9d6b8aea6f3d16847bdebe05878a2d">Type::Spot</a>, 
 <a class="el" href="classjop_1_1_light_source.html#a2823d550fb5e9430dd3a9f3a8d878aeeab04a8341537fac392bfd17776491d03c">Type::Directional</a>
@@ -158,26 +147,26 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a509e34a0df5b8a8467803caf1c44e9e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjop_1_1_light_source.html#a2823d550fb5e9430dd3a9f3a8d878aee">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_light_source.html#a509e34a0df5b8a8467803caf1c44e9e7">getType</a> () const </td></tr>
 <tr class="memdesc:a509e34a0df5b8a8467803caf1c44e9e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the light type.  <a href="#a509e34a0df5b8a8467803caf1c44e9e7">More...</a><br /></td></tr>
 <tr class="separator:a509e34a0df5b8a8467803caf1c44e9e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06830c5cfaedfb9a90c07b254afb31c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjop_1_1_light_source.html">LightSource</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_light_source.html#a06830c5cfaedfb9a90c07b254afb31c6">setCastShadows</a> (const bool castShadows)</td></tr>
-<tr class="memdesc:a06830c5cfaedfb9a90c07b254afb31c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set shadow casting for this light.  <a href="#a06830c5cfaedfb9a90c07b254afb31c6">More...</a><br /></td></tr>
-<tr class="separator:a06830c5cfaedfb9a90c07b254afb31c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0a8886e33a95f099f0e017c275c6e7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjop_1_1_light_source.html">LightSource</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_light_source.html#ae0a8886e33a95f099f0e017c275c6e7d">setCastShadows</a> (const bool castShadows, const glm::uvec2 &amp;resolution=glm::uvec2(0))</td></tr>
+<tr class="memdesc:ae0a8886e33a95f099f0e017c275c6e7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set shadow casting for this light.  <a href="#ae0a8886e33a95f099f0e017c275c6e7d">More...</a><br /></td></tr>
+<tr class="separator:ae0a8886e33a95f099f0e017c275c6e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f9b4c7a3e46ae9b82712ed0fcfe1b08"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_light_source.html#a6f9b4c7a3e46ae9b82712ed0fcfe1b08">castsShadows</a> () const </td></tr>
 <tr class="memdesc:a6f9b4c7a3e46ae9b82712ed0fcfe1b08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this light casts shadows.  <a href="#a6f9b4c7a3e46ae9b82712ed0fcfe1b08">More...</a><br /></td></tr>
 <tr class="separator:a6f9b4c7a3e46ae9b82712ed0fcfe1b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0f75334f695b2b3ea27003389904a2b"><td class="memItemLeft" align="right" valign="top">const glm::mat4 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_light_source.html#aa0f75334f695b2b3ea27003389904a2b">getLightspaceMatrix</a> (const <a class="el" href="classjop_1_1_light_source.html#a9c5356595488cae66315e69cc53075ea">DepthFace</a> face=<a class="el" href="classjop_1_1_light_source.html#a9c5356595488cae66315e69cc53075eaa7fb55ed0b7a30342ba6da306428cae04">DepthFace::First</a>) const </td></tr>
-<tr class="memdesc:aa0f75334f695b2b3ea27003389904a2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a light space matrix.  <a href="#aa0f75334f695b2b3ea27003389904a2b">More...</a><br /></td></tr>
-<tr class="separator:aa0f75334f695b2b3ea27003389904a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabb8d0948480724c36e4bcf8e1f2896f"><td class="memItemLeft" align="right" valign="top">const glm::mat4 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_light_source.html#aabb8d0948480724c36e4bcf8e1f2896f">getLightspaceMatrix</a> (const <a class="el" href="classjop_1_1_cubemap.html#a57b7949bc969f730543bbd0220c656bd">Cubemap::Face</a> face=<a class="el" href="classjop_1_1_cubemap.html#a57b7949bc969f730543bbd0220c656bda7fb55ed0b7a30342ba6da306428cae04">Cubemap::Face::First</a>) const </td></tr>
+<tr class="memdesc:aabb8d0948480724c36e4bcf8e1f2896f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a light space matrix.  <a href="#aabb8d0948480724c36e4bcf8e1f2896f">More...</a><br /></td></tr>
+<tr class="separator:aabb8d0948480724c36e4bcf8e1f2896f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5a3968f3bc8c39e97b38aee5369d631"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classjop_1_1_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_light_source.html#ae5a3968f3bc8c39e97b38aee5369d631">getShadowMap</a> () const </td></tr>
 <tr class="memdesc:ae5a3968f3bc8c39e97b38aee5369d631"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the shadow map.  <a href="#ae5a3968f3bc8c39e97b38aee5369d631">More...</a><br /></td></tr>
 <tr class="separator:ae5a3968f3bc8c39e97b38aee5369d631"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a374af63627168cc4a9baf414de9ebbf5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjop_1_1_light_source.html">LightSource</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_light_source.html#a374af63627168cc4a9baf414de9ebbf5">setIntensity</a> (const <a class="el" href="classjop_1_1_light_source.html#a42177ded09be49694948ad4412a2169a">Intensity</a> intensity, const <a class="el" href="classjop_1_1_color.html">Color</a> &amp;color)</td></tr>
-<tr class="memdesc:a374af63627168cc4a9baf414de9ebbf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets m_intensities array to color.  <a href="#a374af63627168cc4a9baf414de9ebbf5">More...</a><br /></td></tr>
+<tr class="memdesc:a374af63627168cc4a9baf414de9ebbf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a specific intensity value.  <a href="#a374af63627168cc4a9baf414de9ebbf5">More...</a><br /></td></tr>
 <tr class="separator:a374af63627168cc4a9baf414de9ebbf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c4dc4aba6f7a3ba7c0c7fc72286b6ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjop_1_1_light_source.html">LightSource</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_light_source.html#a2c4dc4aba6f7a3ba7c0c7fc72286b6ef">setIntensity</a> (const <a class="el" href="classjop_1_1_color.html">Color</a> &amp;ambient, const <a class="el" href="classjop_1_1_color.html">Color</a> &amp;diffuse, const <a class="el" href="classjop_1_1_color.html">Color</a> &amp;specular)</td></tr>
-<tr class="memdesc:a2c4dc4aba6f7a3ba7c0c7fc72286b6ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload function for setIntensity.  <a href="#a2c4dc4aba6f7a3ba7c0c7fc72286b6ef">More...</a><br /></td></tr>
+<tr class="memdesc:a2c4dc4aba6f7a3ba7c0c7fc72286b6ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set all intensity values.  <a href="#a2c4dc4aba6f7a3ba7c0c7fc72286b6ef">More...</a><br /></td></tr>
 <tr class="separator:a2c4dc4aba6f7a3ba7c0c7fc72286b6ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82613af005c3ad01e6dc95e235481603"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjop_1_1_light_source.html">LightSource</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_light_source.html#a82613af005c3ad01e6dc95e235481603">setIntensity</a> (const <a class="el" href="classjop_1_1_color.html">Color</a> &amp;intensity)</td></tr>
-<tr class="memdesc:a82613af005c3ad01e6dc95e235481603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set an uniform intensity.  <a href="#a82613af005c3ad01e6dc95e235481603">More...</a><br /></td></tr>
+<tr class="memdesc:a82613af005c3ad01e6dc95e235481603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set all intensity values.  <a href="#a82613af005c3ad01e6dc95e235481603">More...</a><br /></td></tr>
 <tr class="separator:a82613af005c3ad01e6dc95e235481603"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d3509e6a179c4bc910702d7e902bf72"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classjop_1_1_color.html">Color</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_light_source.html#a6d3509e6a179c4bc910702d7e902bf72">getIntensity</a> (const <a class="el" href="classjop_1_1_light_source.html#a42177ded09be49694948ad4412a2169a">Intensity</a> intensity) const </td></tr>
 <tr class="memdesc:a6d3509e6a179c4bc910702d7e902bf72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an intensity value.  <a href="#a6d3509e6a179c4bc910702d7e902bf72">More...</a><br /></td></tr>
@@ -194,9 +183,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aad70936c06f1d29f72ea7b8398e8ec66"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_light_source.html#aad70936c06f1d29f72ea7b8398e8ec66">getAttenuation</a> (const <a class="el" href="classjop_1_1_light_source.html#a96e7e0e65f787f161b8f4d2a5f02780f">Attenuation</a> attenuation) const </td></tr>
 <tr class="memdesc:aad70936c06f1d29f72ea7b8398e8ec66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an attenuation value.  <a href="#aad70936c06f1d29f72ea7b8398e8ec66">More...</a><br /></td></tr>
 <tr class="separator:aad70936c06f1d29f72ea7b8398e8ec66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a938c04d4ac525b6351a3711464b52dd9"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_light_source.html#a938c04d4ac525b6351a3711464b52dd9">getAttenuationVec</a> () const </td></tr>
-<tr class="memdesc:a938c04d4ac525b6351a3711464b52dd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the attenuation values as a vector.  <a href="#a938c04d4ac525b6351a3711464b52dd9">More...</a><br /></td></tr>
-<tr class="separator:a938c04d4ac525b6351a3711464b52dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54e1cf37bed8f84db69924964be22573"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_light_source.html#a54e1cf37bed8f84db69924964be22573">getAttenuation</a> () const </td></tr>
+<tr class="memdesc:a54e1cf37bed8f84db69924964be22573"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the attenuation values as a vector.  <a href="#a54e1cf37bed8f84db69924964be22573">More...</a><br /></td></tr>
+<tr class="separator:a54e1cf37bed8f84db69924964be22573"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af77ba4336e25f4d11fa7e5291149150f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_light_source.html#af77ba4336e25f4d11fa7e5291149150f">getRange</a> () const </td></tr>
 <tr class="memdesc:af77ba4336e25f4d11fa7e5291149150f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the approximate maximum range.  <a href="#af77ba4336e25f4d11fa7e5291149150f">More...</a><br /></td></tr>
 <tr class="separator:af77ba4336e25f4d11fa7e5291149150f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -264,7 +253,7 @@ Friends</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="_light_source_8hpp_source.html#l00047">47</a> of file <a class="el" href="_light_source_8hpp_source.html">LightSource.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_light_source_8hpp_source.html#l00048">48</a> of file <a class="el" href="_light_source_8hpp_source.html">LightSource.hpp</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="a96e7e0e65f787f161b8f4d2a5f02780f"></a>
 <div class="memitem">
@@ -293,46 +282,7 @@ Friends</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="_light_source_8hpp_source.html#l00090">90</a> of file <a class="el" href="_light_source_8hpp_source.html">LightSource.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a9c5356595488cae66315e69cc53075ea"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="classjop_1_1_light_source.html#a9c5356595488cae66315e69cc53075ea">jop::LightSource::DepthFace</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>The shadow map faces </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a9c5356595488cae66315e69cc53075eaa92b09c7c48c520c3c55e497875da437c"></a>Right&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a9c5356595488cae66315e69cc53075eaa7fb55ed0b7a30342ba6da306428cae04"></a>First&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a9c5356595488cae66315e69cc53075eaa945d5e233cf7d6240f6b783b36a374ff"></a>Left&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a9c5356595488cae66315e69cc53075eaaa4ffdcf0dc1f31b9acaf295d75b51d00"></a>Top&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a9c5356595488cae66315e69cc53075eaa2ad9d63b69c4a10a5cc9cad923133bc4"></a>Bottom&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a9c5356595488cae66315e69cc53075eaa0557fa923dcee4d0f86b1409f5c2167f"></a>Back&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a9c5356595488cae66315e69cc53075eaa5835bab1ade0060909e31a06af2e2cde"></a>Front&#160;</td><td class="fielddoc">
-</td></tr>
-</table>
-
-<p>Definition at line <a class="el" href="_light_source_8hpp_source.html#l00059">59</a> of file <a class="el" href="_light_source_8hpp_source.html">LightSource.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_light_source_8hpp_source.html#l00078">78</a> of file <a class="el" href="_light_source_8hpp_source.html">LightSource.hpp</a>.</p>
 
 </div>
 </div>
@@ -363,7 +313,7 @@ Friends</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="_light_source_8hpp_source.html#l00081">81</a> of file <a class="el" href="_light_source_8hpp_source.html">LightSource.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_light_source_8hpp_source.html#l00069">69</a> of file <a class="el" href="_light_source_8hpp_source.html">LightSource.hpp</a>.</p>
 
 </div>
 </div>
@@ -394,7 +344,7 @@ Friends</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="_light_source_8hpp_source.html#l00072">72</a> of file <a class="el" href="_light_source_8hpp_source.html">LightSource.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_light_source_8hpp_source.html#l00060">60</a> of file <a class="el" href="_light_source_8hpp_source.html">LightSource.hpp</a>.</p>
 
 </div>
 </div>
@@ -481,8 +431,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Check if this light casts shadows. </p>
-<dl class="section return"><dt>Returns</dt><dd>True if this light casts shadows</dd></dl>
-<dl class="section user"><dt>This method is exposed as command named setCastShadows</dt><dd></dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if this light casts shadows </dd></dl>
 
 </div>
 </div>
@@ -511,12 +460,12 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a938c04d4ac525b6351a3711464b52dd9"></a>
+<a class="anchor" id="a54e1cf37bed8f84db69924964be22573"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">glm::vec3 jop::LightSource::getAttenuationVec </td>
+          <td class="memname">glm::vec3 jop::LightSource::getAttenuation </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -570,19 +519,19 @@ Friends</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The intensity color </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The intensity value </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="aa0f75334f695b2b3ea27003389904a2b"></a>
+<a class="anchor" id="aabb8d0948480724c36e4bcf8e1f2896f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">const glm::mat4&amp; jop::LightSource::getLightspaceMatrix </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classjop_1_1_light_source.html#a9c5356595488cae66315e69cc53075ea">DepthFace</a>&#160;</td>
-          <td class="paramname"><em>face</em> = <code><a class="el" href="classjop_1_1_light_source.html#a9c5356595488cae66315e69cc53075eaa7fb55ed0b7a30342ba6da306428cae04">DepthFace::First</a></code></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classjop_1_1_cubemap.html#a57b7949bc969f730543bbd0220c656bd">Cubemap::Face</a>&#160;</td>
+          <td class="paramname"><em>face</em> = <code><a class="el" href="classjop_1_1_cubemap.html#a57b7949bc969f730543bbd0220c656bda7fb55ed0b7a30342ba6da306428cae04">Cubemap::Face::First</a></code></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -666,8 +615,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the render mask. </p>
-<dl class="section return"><dt>Returns</dt><dd>The render mask</dd></dl>
-<dl class="section user"><dt>This method is exposed as command named setRenderMask_LightSource</dt><dd></dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The render mask </dd></dl>
 
 </div>
 </div>
@@ -685,7 +633,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the shadow map. </p>
-<dl class="section return"><dt>Returns</dt><dd>Const reference to the shadow map. Nullptr if no shadow map exists </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Const reference to the shadow map. nullptr if no shadow map exists </dd></dl>
 
 </div>
 </div>
@@ -860,7 +808,6 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set the attenuation values. </p>
-<dl class="section user"><dt>This method is exposed as command named setAttenuation</dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">constant</td><td>The constant attenuation </td></tr>
@@ -869,7 +816,8 @@ Friends</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Reference to self </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to self</dd></dl>
+<dl class="section user"><dt>This method is exposed as command named setAttenuation</dt><dd></dd></dl>
 
 </div>
 </div>
@@ -899,7 +847,7 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a06830c5cfaedfb9a90c07b254afb31c6"></a>
+<a class="anchor" id="ae0a8886e33a95f099f0e017c275c6e7d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -907,16 +855,28 @@ Friends</h2></td></tr>
           <td class="memname"><a class="el" href="classjop_1_1_light_source.html">LightSource</a>&amp; jop::LightSource::setCastShadows </td>
           <td>(</td>
           <td class="paramtype">const bool&#160;</td>
-          <td class="paramname"><em>castShadows</em></td><td>)</td>
+          <td class="paramname"><em>castShadows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const glm::uvec2 &amp;&#160;</td>
+          <td class="paramname"><em>resolution</em> = <code>glm::uvec2(0)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Set shadow casting for this light. </p>
+<p>This can be an expensive function, do not call frequently.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">castShadows</td><td>True to cast shadows</td></tr>
+    <tr><td class="paramname">castShadows</td><td>True to cast shadows </td></tr>
+    <tr><td class="paramname">resolution</td><td>The shadow map resolution, glm::uvec2(0) to use the default</td></tr>
   </table>
   </dd>
 </dl>
@@ -950,7 +910,6 @@ Friends</h2></td></tr>
 
 <p>Set the cutoff. </p>
 <p>This only affects spot lights. The inner and outer cutoff control the dimming near the edges of the spot light.</p>
-<dl class="section user"><dt>This method is exposed as command named setCutoff</dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">inner</td><td>The inner cutoff in radians. The light will be at its maximum intensity inside this angle </td></tr>
@@ -958,7 +917,8 @@ Friends</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Reference to self </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to self</dd></dl>
+<dl class="section user"><dt>This method is exposed as command named setCutoff</dt><dd></dd></dl>
 
 </div>
 </div>
@@ -986,16 +946,16 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets m_intensities array to color. </p>
-<dl class="section user"><dt>This method is exposed as command named setIntensity</dt><dd></dd></dl>
+<p>Set a specific intensity value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">intensity</td><td>Intensity type from enum </td></tr>
-    <tr><td class="paramname">color</td><td><a class="el" href="classjop_1_1_color.html">Color</a> type as RGB vector</td></tr>
+    <tr><td class="paramname">intensity</td><td>The intensity type </td></tr>
+    <tr><td class="paramname">color</td><td>The color value to set</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Reference to self </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to self</dd></dl>
+<dl class="section user"><dt>This method is exposed as command named setIntensity</dt><dd></dd></dl>
 
 </div>
 </div>
@@ -1029,12 +989,12 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Overload function for setIntensity. </p>
+<p>Set all intensity values. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ambient</td><td><a class="el" href="classjop_1_1_color.html">Color</a> value for ambient lighting </td></tr>
-    <tr><td class="paramname">diffuse</td><td><a class="el" href="classjop_1_1_color.html">Color</a> value for diffuse lighting </td></tr>
-    <tr><td class="paramname">specular</td><td><a class="el" href="classjop_1_1_color.html">Color</a> value for specular lighting</td></tr>
+    <tr><td class="paramname">ambient</td><td>Ambient intensity </td></tr>
+    <tr><td class="paramname">diffuse</td><td>Diffuse intensity </td></tr>
+    <tr><td class="paramname">specular</td><td>Specular intensity</td></tr>
   </table>
   </dd>
 </dl>
@@ -1056,8 +1016,8 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set an uniform intensity. </p>
-<p>All the intensity values will be set to the given color value</p>
+<p>Set all intensity values. </p>
+<p>All the intensity values will be set to the given color value.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">intensity</td><td>The intensity to set</td></tr>
@@ -1111,7 +1071,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_light_source_8hpp_source.html#l00053">53</a> of file <a class="el" href="_light_source_8hpp_source.html">LightSource.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_light_source_8hpp_source.html#l00054">54</a> of file <a class="el" href="_light_source_8hpp_source.html">LightSource.hpp</a>.</p>
 
 </div>
 </div>
@@ -1121,7 +1081,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 18 2016 12:34:41 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 9 2016 08:47:39 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

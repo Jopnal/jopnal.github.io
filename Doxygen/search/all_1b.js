@@ -1,8 +1,8 @@
 var searchData=
 [
   ['_7eanimatedsprite',['~AnimatedSprite',['../classjop_1_1_animated_sprite.html#a7af2150626d00f93353de979b0468392',1,'jop::AnimatedSprite']]],
-  ['_7eanimationatlas',['~AnimationAtlas',['../classjop_1_1_animation_atlas.html#ae249f1afa80fc65e21b8e474783a914c',1,'jop::AnimationAtlas']]],
   ['_7eaudiodevice',['~AudioDevice',['../classjop_1_1_audio_device.html#ad6a65f1084a61316a68c381d76ad1212',1,'jop::AudioDevice']]],
+  ['_7ebroadphasecallback',['~BroadphaseCallback',['../structjop_1_1_world_1_1_broadphase_callback.html#a3c024c7b1bae052f5c64f211b07b1760',1,'jop::World::BroadphaseCallback']]],
   ['_7ebuffer',['~Buffer',['../classjop_1_1_buffer.html#a516811721868484798f532ad0251b675',1,'jop::Buffer']]],
   ['_7ecamera',['~Camera',['../classjop_1_1_camera.html#a38429abae72ace90d48140796c0a914d',1,'jop::Camera']]],
   ['_7ecollider',['~Collider',['../classjop_1_1_collider.html#aa9c6ad56a573dbdcf33c39acc2e9a23b',1,'jop::Collider']]],
@@ -21,6 +21,7 @@ var searchData=
   ['_7ejoint2d',['~Joint2D',['../classjop_1_1_joint2_d.html#a71fea1d4cd7ed25d444fb02f35935cec',1,'jop::Joint2D']]],
   ['_7elightsource',['~LightSource',['../classjop_1_1_light_source.html#af59a17b93b4c6b68f4add9bdd1fac220',1,'jop::LightSource']]],
   ['_7eobject',['~Object',['../classjop_1_1_object.html#ae39467f26d5fb768aa4c82f4f729f447',1,'jop::Object']]],
+  ['_7ephantombody',['~PhantomBody',['../classjop_1_1_phantom_body.html#a1ef1ec98899cb8dfc934e379502b0fcf',1,'jop::PhantomBody']]],
   ['_7epostprocessor',['~PostProcessor',['../classjop_1_1_post_processor.html#a7e1d20369acdb49e6afcadc8b60f7da0',1,'jop::PostProcessor']]],
   ['_7erenderpass',['~RenderPass',['../classjop_1_1_render_pass.html#a1e47f8f7367facce0064dae156b0939e',1,'jop::RenderPass']]],
   ['_7erendertarget',['~RenderTarget',['../classjop_1_1_render_target.html#a0a028b9a92d97f6934c3b9cd2edfa379',1,'jop::RenderTarget']]],
@@ -43,7 +44,7 @@ var searchData=
   ['_7eterrainshape',['~TerrainShape',['../classjop_1_1_terrain_shape.html#ab4780b91ed024201e34eef2ae97a7475',1,'jop::TerrainShape']]],
   ['_7eterrainshape2d',['~TerrainShape2D',['../classjop_1_1_terrain_shape2_d.html#a3f8ed5c570fa8b7356d2c305b9452d11',1,'jop::TerrainShape2D']]],
   ['_7etexture',['~Texture',['../classjop_1_1_texture.html#a29601645964111892264fd5ffffa9b28',1,'jop::Texture']]],
-  ['_7etextureatlas',['~TextureAtlas',['../classjop_1_1_texture_atlas.html#a844f0c162add69c02c868bea57edfb50',1,'jop::TextureAtlas']]],
+  ['_7etextureatlas',['~TextureAtlas',['../classjop_1_1_texture_atlas.html#a00e3da44c933d1e931d56da237fd64d9',1,'jop::TextureAtlas']]],
   ['_7etexturesampler',['~TextureSampler',['../classjop_1_1_texture_sampler.html#a1a7144a6f52fe0a9beed44190ae27bec',1,'jop::TextureSampler']]],
   ['_7ethread',['~Thread',['../classjop_1_1_thread.html#a3dcda53a37b87356be0733bb8c9a2672',1,'jop::Thread']]],
   ['_7ewindow',['~Window',['../classjop_1_1_window.html#a9090006a4ece548034b4d405eee435fd',1,'jop::Window']]],

@@ -22,11 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Jopnal.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Jopnal Engine
    &#160;<span id="projectnumber">alpha 0.4</span>
    </div>
-   <div id="projectbrief">Simple Component Based 3D Game Engine</div>
+   <div id="projectbrief">Simple Component Based 2D/3D Game Engine</div>
   </td>
  </tr>
  </tbody>
@@ -134,13 +135,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="structjop_1_1_controller_1_1_x_box.html#ae8feb6df11c088c92c2e471757b5776ba59d7475553486d1524929ece8b63c42e">jop::Controller::XBox</a>
 , <a class="el" href="classjop_1_1_keyboard.html#a031d3cfecc413d6690697b49ddfdbfada267588894aeef4bc600a5ec62184d38a">jop::Keyboard</a>
 </li>
-<li>addAttributes()
-: <a class="el" href="classjop_1_1_drawable.html#a4c059b53c194c569c2ff96a9552661b8">jop::Drawable</a>
-, <a class="el" href="classjop_1_1_material.html#a719ea9e54c27ff1e03a126c55673e104">jop::Material</a>
-</li>
 <li>addChild()
 : <a class="el" href="classjop_1_1_compound_shape2_d.html#a6bef5aac50593b85e0626a7f8b281781">jop::CompoundShape2D</a>
 , <a class="el" href="classjop_1_1_compound_shape.html#a54abd9b934659b338d362ccd1fd93214">jop::CompoundShape</a>
+</li>
+<li>addCubemapAttachment()
+: <a class="el" href="classjop_1_1_render_texture.html#a0e2b3ef9598bb9eb81b37206f7e58eac">jop::RenderTexture</a>
 </li>
 <li>addPlugin()
 : <a class="el" href="classjop_1_1_shader_assembler.html#adfd05ce4b5ea54e6fc2f68c463e874e7">jop::ShaderAssembler</a>
@@ -173,7 +173,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classjop_1_1_engine.html#a491e39f9169a4c43c7a82c20149ddcb4">jop::Engine</a>
 </li>
 <li>AllBit
-: <a class="el" href="classjop_1_1_render_target.html#a2679e9f13005ca0cc0ae6ca51485649aad04c3fbedff55ca8b3c1297f8aafbf30">jop::RenderTarget</a>
+: <a class="el" href="classjop_1_1_render_target.html#a44137c7882ea285c52705685cb4d6df8ad04c3fbedff55ca8b3c1297f8aafbf30">jop::RenderTarget</a>
 </li>
 <li>allowGenMipmaps()
 : <a class="el" href="classjop_1_1_texture.html#a5b83d8b9fbc87e17c788f98ade34b71d">jop::Texture</a>
@@ -185,19 +185,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classjop_1_1_color.html#a7124738e5bfc80bacf39d750358b9004">jop::Color</a>
 </li>
 <li>Alt
-: <a class="el" href="structjop_1_1_keyboard_1_1_modifier.html#a8e41d55ae075dfd62497cb736cca4035a6d9a97cbdc8cc29a6607ca6d72f32a32">jop::Keyboard::Modifier</a>
+: <a class="el" href="structjop_1_1_keyboard_1_1_modifier.html#a17b2a77b53f9ad35c893d8bb096d9d18a6d9a97cbdc8cc29a6607ca6d72f32a32">jop::Keyboard::Modifier</a>
 </li>
 <li>AnimatedSprite()
-: <a class="el" href="classjop_1_1_animated_sprite.html#a6e98eea9e035a2d341050633743bdacf">jop::AnimatedSprite</a>
+: <a class="el" href="classjop_1_1_animated_sprite.html#a54d40cdab8f3a5168d6665242f63beb3">jop::AnimatedSprite</a>
 </li>
 <li>AnimationAtlas()
 : <a class="el" href="classjop_1_1_animation_atlas.html#ad11edb921a63bf1a8d5290f9cd525cb9">jop::AnimationAtlas</a>
 </li>
 <li>Apostrophe
 : <a class="el" href="classjop_1_1_keyboard.html#a031d3cfecc413d6690697b49ddfdbfada4b82655f2424fbcd3093e72d2ee68952">jop::Keyboard</a>
-</li>
-<li>applyAngularImpulse()
-: <a class="el" href="classjop_1_1_rigid_body2_d.html#a4a9803966ec3b1927a7f8f56b5879357">jop::RigidBody2D</a>
 </li>
 <li>applyCentralForce()
 : <a class="el" href="classjop_1_1_rigid_body2_d.html#a38059282a060739442a24551c57afb99">jop::RigidBody2D</a>
@@ -222,7 +219,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classjop_1_1_rigid_body.html#aeb270db217171d03fab5e4fde90f90ac">jop::RigidBody</a>
 </li>
 <li>applyTorqueImpulse()
-: <a class="el" href="classjop_1_1_rigid_body.html#a0c09a0558f94b2d4502168edd038be25">jop::RigidBody</a>
+: <a class="el" href="classjop_1_1_rigid_body2_d.html#afcafdb0e5551cdb0bcfb2e9479c95591">jop::RigidBody2D</a>
+, <a class="el" href="classjop_1_1_rigid_body.html#a0c09a0558f94b2d4502168edd038be25">jop::RigidBody</a>
 </li>
 <li>applyViewport()
 : <a class="el" href="classjop_1_1_camera.html#ad187c733247a247bed14e5a9f4556541">jop::Camera</a>
@@ -278,7 +276,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 18 2016 12:34:42 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 9 2016 08:47:43 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

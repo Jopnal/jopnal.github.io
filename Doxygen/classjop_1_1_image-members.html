@@ -22,11 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Jopnal.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Jopnal Engine
    &#160;<span id="projectnumber">alpha 0.4</span>
    </div>
-   <div id="projectbrief">Simple Component Based 3D Game Engine</div>
+   <div id="projectbrief">Simple Component Based 2D/3D Game Engine</div>
   </td>
  </tr>
  </tbody>
@@ -98,9 +99,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr class="even"><td class="entry"><a class="el" href="classjop_1_1_image.html#ad39cfc5762f4819f98be7eab51ef184a">flipHorizontally</a>()</td><td class="entry"><a class="el" href="classjop_1_1_image.html">jop::Image</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classjop_1_1_image.html#a8f28989a3505dcaddc6fb5efa2506a86">flipVertically</a>()</td><td class="entry"><a class="el" href="classjop_1_1_image.html">jop::Image</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classjop_1_1_image.html#a60d437db693add43b758aac0fd18b9c0">Format</a> enum name</td><td class="entry"><a class="el" href="classjop_1_1_image.html">jop::Image</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classjop_1_1_image.html#a0f109bc1fd9493ea51411c566d8f4522">getDepth</a>() const </td><td class="entry"><a class="el" href="classjop_1_1_image.html">jop::Image</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classjop_1_1_image.html#a60c9147dce08b33fbeb5ed603d4b4ee8">getFormat</a>() const </td><td class="entry"><a class="el" href="classjop_1_1_image.html">jop::Image</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classjop_1_1_image.html#a04c4510bec4e079b8d6f77078c1bc0b0">getMipMapCount</a>() const </td><td class="entry"><a class="el" href="classjop_1_1_image.html">jop::Image</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classjop_1_1_image.html#a60c9147dce08b33fbeb5ed603d4b4ee8">getFormat</a>() const </td><td class="entry"><a class="el" href="classjop_1_1_image.html">jop::Image</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classjop_1_1_image.html#a04c4510bec4e079b8d6f77078c1bc0b0">getMipMapCount</a>() const </td><td class="entry"><a class="el" href="classjop_1_1_image.html">jop::Image</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classjop_1_1_image.html#a0585bcd9d9927a302a476433f2de401d">getPixelDepth</a>() const </td><td class="entry"><a class="el" href="classjop_1_1_image.html">jop::Image</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classjop_1_1_image.html#ac05a042faef4da1f34e99e2f02857f5a">getPixels</a>() const </td><td class="entry"><a class="el" href="classjop_1_1_image.html">jop::Image</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classjop_1_1_image.html#a02217f2bbf1e2cc8a6364920296fdbae">getPixelSize</a>() const </td><td class="entry"><a class="el" href="classjop_1_1_image.html">jop::Image</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classjop_1_1_image.html#ac55a2e9376d567a9bc24be7d750ee05c">getSize</a>() const </td><td class="entry"><a class="el" href="classjop_1_1_image.html">jop::Image</a></td><td class="entry"></td></tr>
@@ -109,11 +110,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr><td class="entry"><a class="el" href="classjop_1_1_image.html#ab288913ebe1469788d68697231fa866e">isCubemap</a>() const </td><td class="entry"><a class="el" href="classjop_1_1_image.html">jop::Image</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classjop_1_1_image.html#aa45e820115ab41d998a6bca175d1810d">load</a>(const std::string &amp;path, const bool allowCompression=true)</td><td class="entry"><a class="el" href="classjop_1_1_image.html">jop::Image</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classjop_1_1_image.html#ab396d56272909f60b67b66c9e5bdd363">load</a>(const void *ptr, const uint32 size)</td><td class="entry"><a class="el" href="classjop_1_1_image.html">jop::Image</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classjop_1_1_image.html#abfe31757f42e8dee2e0571231249cc22">load</a>(const glm::uvec2 &amp;size, const uint32 bytesPerpixel, const unsigned char *pixels)</td><td class="entry"><a class="el" href="classjop_1_1_image.html">jop::Image</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classjop_1_1_image.html#a938062c33643d717b5662a8b0cd91ab1">load</a>(const glm::uvec2 &amp;size, const uint32 bytesPerPixel, const unsigned char *pixels)</td><td class="entry"><a class="el" href="classjop_1_1_image.html">jop::Image</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 18 2016 12:34:41 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 9 2016 08:47:39 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -22,11 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Jopnal.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Jopnal Engine
    &#160;<span id="projectnumber">alpha 0.4</span>
    </div>
-   <div id="projectbrief">Simple Component Based 3D Game Engine</div>
+   <div id="projectbrief">Simple Component Based 2D/3D Game Engine</div>
   </td>
  </tr>
  </tbody>
@@ -689,13 +690,13 @@ Protected Member Functions</h2></td></tr>
 
 <p>Set the aspect ratio. </p>
 <p>This call is only valid in perspective mode.</p>
-<dl class="section user"><dt>This method is exposed as command named setAspectRatio</dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ratio</td><td>The new aspect ratio to be set </td></tr>
+    <tr><td class="paramname">ratio</td><td>The new aspect ratio to be set</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section user"><dt>This method is exposed as command named setAspectRatio</dt><dd></dd></dl>
 
 </div>
 </div>
@@ -725,14 +726,15 @@ Protected Member Functions</h2></td></tr>
 
 <p>Set the near and far clipping planes. </p>
 <p>In perspective projection the clipping planes need to be positive. Otherwise, the projection result is undefined.</p>
-<dl class="section user"><dt>This method is exposed as command named setClippingPlanes</dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">clipNear</td><td>The near clipping plane </td></tr>
-    <tr><td class="paramname">clipFar</td><td>The far clipping plane </td></tr>
+    <tr><td class="paramname">clipFar</td><td>The far clipping plane</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to self</dd></dl>
+<dl class="section user"><dt>This method is exposed as command named setClippingPlanes</dt><dd></dd></dl>
 
 </div>
 </div>
@@ -752,13 +754,14 @@ Protected Member Functions</h2></td></tr>
 
 <p>Set the vertical field of view. </p>
 <p>The minimum value is glm::radians(1) and maximum glm::radians(179). The value will be clamped inside this range.</p>
-<dl class="section user"><dt>This method is exposed as command named setFieldOfView</dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fovY</td><td>The new field of view value </td></tr>
+    <tr><td class="paramname">fovY</td><td>The new field of view value</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to self</dd></dl>
+<dl class="section user"><dt>This method is exposed as command named setFieldOfView</dt><dd></dd></dl>
 
 </div>
 </div>
@@ -778,13 +781,14 @@ Protected Member Functions</h2></td></tr>
 
 <p>Set the projection mode. </p>
 <p>You need to accompany this call with calls to set the camera properties, as they won't be set to defaults automatically. Failing to set the properties will cause the projection to malfunction.</p>
-<dl class="section user"><dt>This method is exposed as command named setProjectionMode</dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mode</td><td>The mode to be set </td></tr>
+    <tr><td class="paramname">mode</td><td>The mode to be set</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to self</dd></dl>
+<dl class="section user"><dt>This method is exposed as command named setProjectionMode</dt><dd></dd></dl>
 
 </div>
 </div>
@@ -830,10 +834,11 @@ Protected Member Functions</h2></td></tr>
 <p>In perspective mode this call is equal to calling setAspectRatio(size.x / size.y)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">size</td><td>The new size of the projection </td></tr>
+    <tr><td class="paramname">size</td><td>The new size of the projection</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to self </dd></dl>
 
 </div>
 </div>
@@ -862,14 +867,15 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Brief set the size of the projection. </p>
-<dl class="section user"><dt>This method is exposed as command named setSize</dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>The width </td></tr>
-    <tr><td class="paramname">y</td><td>The height </td></tr>
+    <tr><td class="paramname">y</td><td>The height</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to self</dd></dl>
+<dl class="section user"><dt>This method is exposed as command named setSize</dt><dd></dd></dl>
 
 </div>
 </div>
@@ -898,8 +904,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set the view port. </p>
-<p>The values are in relative coordinates. For example, [0.5,0.5] and [1.0,1.0] will select the right half of the screen</p>
-<dl class="section user"><dt>This method is exposed as command named setViewport</dt><dd></dd></dl>
+<p>The values are in relative coordinates. For example, [0.5,0.5] and [1.0,1.0] will select the right half of the screen.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">start</td><td>The start coordinates </td></tr>
@@ -907,7 +912,8 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Reference to self </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to self</dd></dl>
+<dl class="section user"><dt>This method is exposed as command named setViewport</dt><dd></dd></dl>
 
 </div>
 </div>
@@ -917,7 +923,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 18 2016 12:34:41 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 9 2016 08:47:37 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

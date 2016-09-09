@@ -22,11 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Jopnal.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Jopnal Engine
    &#160;<span id="projectnumber">alpha 0.4</span>
    </div>
-   <div id="projectbrief">Simple Component Based 3D Game Engine</div>
+   <div id="projectbrief">Simple Component Based 2D/3D Game Engine</div>
   </td>
  </tr>
  </tbody>
@@ -109,9 +110,9 @@ Inheritance diagram for jop::RotationJoint:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a22fd0d506066f982bbb929a372501b2d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_rotation_joint.html#a22fd0d506066f982bbb929a372501b2d">RotationJoint</a> (<a class="el" href="classjop_1_1_world.html">World</a> &amp;worldRef, <a class="el" href="classjop_1_1_rigid_body.html">RigidBody</a> &amp;bodyA, <a class="el" href="classjop_1_1_rigid_body.html">RigidBody</a> &amp;bodyB, const bool collide, const glm::vec3 &amp;jPos=glm::vec3(0.f, 0.f, FLT_MAX))</td></tr>
-<tr class="memdesc:a22fd0d506066f982bbb929a372501b2d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjop_1_1_rotation_joint.html">RotationJoint</a> constructor.  <a href="#a22fd0d506066f982bbb929a372501b2d">More...</a><br /></td></tr>
-<tr class="separator:a22fd0d506066f982bbb929a372501b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa26cafbd5e863a7759fd9f6135256475"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_rotation_joint.html#aa26cafbd5e863a7759fd9f6135256475">RotationJoint</a> (<a class="el" href="classjop_1_1_world.html">World</a> &amp;worldRef, <a class="el" href="classjop_1_1_rigid_body.html">RigidBody</a> &amp;bodyA, <a class="el" href="classjop_1_1_rigid_body.html">RigidBody</a> &amp;bodyB, const bool collide, const glm::vec3 &amp;anchor=glm::vec3(0.f, 0.f, FLT_MAX))</td></tr>
+<tr class="memdesc:aa26cafbd5e863a7759fd9f6135256475"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjop_1_1_rotation_joint.html">RotationJoint</a> constructor.  <a href="#aa26cafbd5e863a7759fd9f6135256475">More...</a><br /></td></tr>
+<tr class="separator:aa26cafbd5e863a7759fd9f6135256475"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a6dd8ee6454d106b3c12fca288c709e"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_rotation_joint.html#a4a6dd8ee6454d106b3c12fca288c709e">getAngLimits</a> (const bool lower) const </td></tr>
 <tr class="separator:a4a6dd8ee6454d106b3c12fca288c709e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03b1adb9bc7eee61339e8c49dd538aaf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjop_1_1_rotation_joint.html">RotationJoint</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_rotation_joint.html#a03b1adb9bc7eee61339e8c49dd538aaf">setAngLimits</a> (const bool lower, const glm::vec3 &amp;limits)</td></tr>
@@ -151,7 +152,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:aba0eae9a1ec6d5ab1d5d5b262379e1c2 inherit pro_methods_classjop_1_1_joint"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_joint.html#aba0eae9a1ec6d5ab1d5d5b262379e1c2">defaultCenter</a> (const glm::vec3 &amp;jPos) const </td></tr>
 <tr class="separator:aba0eae9a1ec6d5ab1d5d5b262379e1c2 inherit pro_methods_classjop_1_1_joint"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35ff102ba2ed51cc75049f688fc90bb0 inherit pro_methods_classjop_1_1_joint"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_joint.html#a35ff102ba2ed51cc75049f688fc90bb0">computeCenter</a> () const </td></tr>
-<tr class="memdesc:a35ff102ba2ed51cc75049f688fc90bb0 inherit pro_methods_classjop_1_1_joint"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the point in the middle between the m_bodies of this.  <a href="#a35ff102ba2ed51cc75049f688fc90bb0">More...</a><br /></td></tr>
+<tr class="memdesc:a35ff102ba2ed51cc75049f688fc90bb0 inherit pro_methods_classjop_1_1_joint"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the point in the middle between this' m_bodies.  <a href="#a35ff102ba2ed51cc75049f688fc90bb0">More...</a><br /></td></tr>
 <tr class="separator:a35ff102ba2ed51cc75049f688fc90bb0 inherit pro_methods_classjop_1_1_joint"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classjop_1_1_joint"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classjop_1_1_joint')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classjop_1_1_joint.html">jop::Joint</a></td></tr>
 <tr class="memitem:a81f99bf765801d3a9d68340fa9aed51f inherit pro_attribs_classjop_1_1_joint"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_joint.html#a81f99bf765801d3a9d68340fa9aed51f">m_collide</a></td></tr>
@@ -167,7 +168,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock">
 <p>Definition at line <a class="el" href="_rotation_joint_8hpp_source.html#l00035">35</a> of file <a class="el" href="_rotation_joint_8hpp_source.html">RotationJoint.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a22fd0d506066f982bbb929a372501b2d"></a>
+<a class="anchor" id="aa26cafbd5e863a7759fd9f6135256475"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -199,7 +200,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const glm::vec3 &amp;&#160;</td>
-          <td class="paramname"><em>jPos</em> = <code>glm::vec3(0.f,&#160;0.f,&#160;FLT_MAX)</code>&#160;</td>
+          <td class="paramname"><em>anchor</em> = <code>glm::vec3(0.f,&#160;0.f,&#160;FLT_MAX)</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -212,8 +213,7 @@ Additional Inherited Members</h2></td></tr>
 <p><a class="el" href="classjop_1_1_rotation_joint.html">RotationJoint</a> constructor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">collide</td><td>Joined bodies collide with each other. </td></tr>
-    <tr><td class="paramname">jPos</td><td>Position of the joint in world coordinates. </td></tr>
+    <tr><td class="paramname">anchor</td><td>Position of the joint in world coordinates. Default in the middle between the bodies. </td></tr>
   </table>
   </dd>
 </dl>
@@ -285,7 +285,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 18 2016 12:34:42 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 9 2016 08:47:41 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

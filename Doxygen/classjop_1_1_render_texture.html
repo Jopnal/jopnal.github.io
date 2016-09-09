@@ -22,11 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Jopnal.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Jopnal Engine
    &#160;<span id="projectnumber">alpha 0.4</span>
    </div>
-   <div id="projectbrief">Simple Component Based 3D Game Engine</div>
+   <div id="projectbrief">Simple Component Based 2D/3D Game Engine</div>
   </td>
  </tr>
  </tbody>
@@ -123,12 +124,12 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr class="separator:a1e4ed28416106b7cc26ebf8bea80a930"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classjop_1_1_render_target"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classjop_1_1_render_target')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classjop_1_1_render_target.html">jop::RenderTarget</a></td></tr>
-<tr class="memitem:a2679e9f13005ca0cc0ae6ca51485649a inherit pub_types_classjop_1_1_render_target"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classjop_1_1_render_target.html#a2679e9f13005ca0cc0ae6ca51485649aa953e7b3de8ef6491fa1f00a462b0c1d0">ColorBit</a> = 1, 
-<a class="el" href="classjop_1_1_render_target.html#a2679e9f13005ca0cc0ae6ca51485649aa5da08ed947cdab5a4709436b1658990d">DepthBit</a> = 1 &lt;&lt; 1, 
-<a class="el" href="classjop_1_1_render_target.html#a2679e9f13005ca0cc0ae6ca51485649aa0cacb3172096635f326cc57e1fa06a9d">StencilBit</a> = 1 &lt;&lt; 2, 
-<a class="el" href="classjop_1_1_render_target.html#a2679e9f13005ca0cc0ae6ca51485649aad04c3fbedff55ca8b3c1297f8aafbf30">AllBit</a> = ColorBit | DepthBit | StencilBit
+<tr class="memitem:a44137c7882ea285c52705685cb4d6df8 inherit pub_types_classjop_1_1_render_target"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classjop_1_1_render_target.html#a44137c7882ea285c52705685cb4d6df8a953e7b3de8ef6491fa1f00a462b0c1d0">ColorBit</a> = 1, 
+<a class="el" href="classjop_1_1_render_target.html#a44137c7882ea285c52705685cb4d6df8a5da08ed947cdab5a4709436b1658990d">DepthBit</a> = 1 &lt;&lt; 1, 
+<a class="el" href="classjop_1_1_render_target.html#a44137c7882ea285c52705685cb4d6df8a0cacb3172096635f326cc57e1fa06a9d">StencilBit</a> = 1 &lt;&lt; 2, 
+<a class="el" href="classjop_1_1_render_target.html#a44137c7882ea285c52705685cb4d6df8ad04c3fbedff55ca8b3c1297f8aafbf30">AllBit</a> = ColorBit | DepthBit | StencilBit
  }</td></tr>
-<tr class="separator:a2679e9f13005ca0cc0ae6ca51485649a inherit pub_types_classjop_1_1_render_target"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a44137c7882ea285c52705685cb4d6df8 inherit pub_types_classjop_1_1_render_target"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -139,8 +140,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ad3441da1bc9513e6cc427ec3e5b65b51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#ad3441da1bc9513e6cc427ec3e5b65b51">More...</a><br /></td></tr>
 <tr class="separator:ad3441da1bc9513e6cc427ec3e5b65b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdc46c7a00f3ac6844b8346deb7f6be8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_render_texture.html#acdc46c7a00f3ac6844b8346deb7f6be8">addTextureAttachment</a> (const <a class="el" href="classjop_1_1_render_texture.html#a1e4ed28416106b7cc26ebf8bea80a930">Slot</a> slot, const <a class="el" href="classjop_1_1_texture.html#ab080c99bde97d27b175b1e8db234a27d">Texture::Format</a> format)</td></tr>
+<tr class="memdesc:acdc46c7a00f3ac6844b8346deb7f6be8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a texture attachment.  <a href="#acdc46c7a00f3ac6844b8346deb7f6be8">More...</a><br /></td></tr>
 <tr class="separator:acdc46c7a00f3ac6844b8346deb7f6be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e2b3ef9598bb9eb81b37206f7e58eac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_render_texture.html#a0e2b3ef9598bb9eb81b37206f7e58eac">addCubemapAttachment</a> (const <a class="el" href="classjop_1_1_render_texture.html#a1e4ed28416106b7cc26ebf8bea80a930">Slot</a> slot, const <a class="el" href="classjop_1_1_texture.html#ab080c99bde97d27b175b1e8db234a27d">Texture::Format</a> format)</td></tr>
+<tr class="memdesc:a0e2b3ef9598bb9eb81b37206f7e58eac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a cube map attachment.  <a href="#a0e2b3ef9598bb9eb81b37206f7e58eac">More...</a><br /></td></tr>
+<tr class="separator:a0e2b3ef9598bb9eb81b37206f7e58eac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d236cdfb21a5171d084afe592e3eb71"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_render_texture.html#a2d236cdfb21a5171d084afe592e3eb71">addRenderbufferAttachment</a> (const <a class="el" href="classjop_1_1_render_texture.html#a1e4ed28416106b7cc26ebf8bea80a930">Slot</a> slot, const <a class="el" href="classjop_1_1_texture.html#ab080c99bde97d27b175b1e8db234a27d">Texture::Format</a> format)</td></tr>
+<tr class="memdesc:a2d236cdfb21a5171d084afe592e3eb71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a render buffer attachment.  <a href="#a2d236cdfb21a5171d084afe592e3eb71">More...</a><br /></td></tr>
 <tr class="separator:a2d236cdfb21a5171d084afe592e3eb71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5905bb79c4c7b1e0a2950697b48cc954"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_render_texture.html#a5905bb79c4c7b1e0a2950697b48cc954">destroy</a> (const bool framebuffer, const bool attachments)</td></tr>
 <tr class="memdesc:a5905bb79c4c7b1e0a2950697b48cc954"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy this frame buffer.  <a href="#a5905bb79c4c7b1e0a2950697b48cc954">More...</a><br /></td></tr>
@@ -149,10 +155,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a1edd9f9b8813828dad5f8148126fb3bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind this frame buffer for drawing.  <a href="#a1edd9f9b8813828dad5f8148126fb3bc">More...</a><br /></td></tr>
 <tr class="separator:a1edd9f9b8813828dad5f8148126fb3bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a0cbc7455d75b6a281ef08570b26323"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_render_texture.html#a2a0cbc7455d75b6a281ef08570b26323">bindRead</a> () const </td></tr>
+<tr class="memdesc:a2a0cbc7455d75b6a281ef08570b26323"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind this frame buffer for reading.  <a href="#a2a0cbc7455d75b6a281ef08570b26323">More...</a><br /></td></tr>
 <tr class="separator:a2a0cbc7455d75b6a281ef08570b26323"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3e50150ad34c70b9ad6819cb6872941"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_render_texture.html#ab3e50150ad34c70b9ad6819cb6872941">bindDraw</a> () const </td></tr>
+<tr class="memdesc:ab3e50150ad34c70b9ad6819cb6872941"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind this frame buffer for drawing.  <a href="#ab3e50150ad34c70b9ad6819cb6872941">More...</a><br /></td></tr>
 <tr class="separator:ab3e50150ad34c70b9ad6819cb6872941"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a460b2dce895b2f8f02f3f4399e01c915"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_render_texture.html#a460b2dce895b2f8f02f3f4399e01c915">bindCubeFace</a> (const <a class="el" href="classjop_1_1_render_texture.html#a1e4ed28416106b7cc26ebf8bea80a930">Slot</a> slot, const <a class="el" href="classjop_1_1_cubemap.html#a57b7949bc969f730543bbd0220c656bd">Cubemap::Face</a> face) const </td></tr>
+<tr class="memdesc:a460b2dce895b2f8f02f3f4399e01c915"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind cube map face.  <a href="#a460b2dce895b2f8f02f3f4399e01c915">More...</a><br /></td></tr>
+<tr class="separator:a460b2dce895b2f8f02f3f4399e01c915"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0edfa21170129e96b423639ac0dcf08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_render_texture.html#ae0edfa21170129e96b423639ac0dcf08">setSize</a> (const glm::uvec2 &amp;size)</td></tr>
+<tr class="memdesc:ae0edfa21170129e96b423639ac0dcf08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the size for attachments.  <a href="#ae0edfa21170129e96b423639ac0dcf08">More...</a><br /></td></tr>
 <tr class="separator:ae0edfa21170129e96b423639ac0dcf08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8058fac69ef1606c4da5a829181c55de"><td class="memItemLeft" align="right" valign="top">glm::uvec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_render_texture.html#a8058fac69ef1606c4da5a829181c55de">getSize</a> () const  override</td></tr>
 <tr class="memdesc:a8058fac69ef1606c4da5a829181c55de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the frame buffer texture size.  <a href="#a8058fac69ef1606c4da5a829181c55de">More...</a><br /></td></tr>
@@ -161,8 +173,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a75c1fa3dbf843cd979dec55c390a2f51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this frame buffer is valid.  <a href="#a75c1fa3dbf843cd979dec55c390a2f51">More...</a><br /></td></tr>
 <tr class="separator:a75c1fa3dbf843cd979dec55c390a2f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab36dd92d2821a7989b8aae57e6d1d896"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjop_1_1_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_render_texture.html#ab36dd92d2821a7989b8aae57e6d1d896">getTextureAttachment</a> (const <a class="el" href="classjop_1_1_render_texture.html#a1e4ed28416106b7cc26ebf8bea80a930">Slot</a> slot)</td></tr>
+<tr class="memdesc:ab36dd92d2821a7989b8aae57e6d1d896"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a texture attachment.  <a href="#ab36dd92d2821a7989b8aae57e6d1d896">More...</a><br /></td></tr>
 <tr class="separator:ab36dd92d2821a7989b8aae57e6d1d896"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8bc3f51a90df7279129e6ecdbacd3a5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classjop_1_1_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_render_texture.html#ac8bc3f51a90df7279129e6ecdbacd3a5">getTextureAttachment</a> (const <a class="el" href="classjop_1_1_render_texture.html#a1e4ed28416106b7cc26ebf8bea80a930">Slot</a> slot) const </td></tr>
+<tr class="memdesc:ac8bc3f51a90df7279129e6ecdbacd3a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a texture attachment.  <a href="#ac8bc3f51a90df7279129e6ecdbacd3a5">More...</a><br /></td></tr>
 <tr class="separator:ac8bc3f51a90df7279129e6ecdbacd3a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classjop_1_1_render_target"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classjop_1_1_render_target')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classjop_1_1_render_target.html">jop::RenderTarget</a></td></tr>
 <tr class="memitem:a8a0ef6f5d1df0a5b0ea1fb9fde3bfd8c inherit pub_methods_classjop_1_1_render_target"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_render_target.html#a8a0ef6f5d1df0a5b0ea1fb9fde3bfd8c">RenderTarget</a> ()</td></tr>
@@ -184,21 +198,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ac0caa42d42b1b5311aa4ec9c6b402165 inherit pub_methods_classjop_1_1_render_target"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the clear depth.  <a href="#ac0caa42d42b1b5311aa4ec9c6b402165">More...</a><br /></td></tr>
 <tr class="separator:ac0caa42d42b1b5311aa4ec9c6b402165 inherit pub_methods_classjop_1_1_render_target"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad69b8a91cadc46906935eb5b61d4739b inherit pub_methods_classjop_1_1_render_target"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_render_target.html#ad69b8a91cadc46906935eb5b61d4739b">getClearDepth</a> () const </td></tr>
-<tr class="memdesc:ad69b8a91cadc46906935eb5b61d4739b inherit pub_methods_classjop_1_1_render_target"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the clear depth.  <a href="#ad69b8a91cadc46906935eb5b61d4739b">More...</a><br /></td></tr>
+<tr class="memdesc:ad69b8a91cadc46906935eb5b61d4739b inherit pub_methods_classjop_1_1_render_target"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the clear depth value.  <a href="#ad69b8a91cadc46906935eb5b61d4739b">More...</a><br /></td></tr>
 <tr class="separator:ad69b8a91cadc46906935eb5b61d4739b inherit pub_methods_classjop_1_1_render_target"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8aa4fb99685d18b3921c841979470c5e inherit pub_methods_classjop_1_1_render_target"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjop_1_1_render_target.html">RenderTarget</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_render_target.html#a8aa4fb99685d18b3921c841979470c5e">setClearStencil</a> (const int stencil)</td></tr>
 <tr class="memdesc:a8aa4fb99685d18b3921c841979470c5e inherit pub_methods_classjop_1_1_render_target"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the clear stencil.  <a href="#a8aa4fb99685d18b3921c841979470c5e">More...</a><br /></td></tr>
 <tr class="separator:a8aa4fb99685d18b3921c841979470c5e inherit pub_methods_classjop_1_1_render_target"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af755f72816b49fb5bf020aa35780b998 inherit pub_methods_classjop_1_1_render_target"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_render_target.html#af755f72816b49fb5bf020aa35780b998">getClearStencil</a> () const </td></tr>
-<tr class="memdesc:af755f72816b49fb5bf020aa35780b998 inherit pub_methods_classjop_1_1_render_target"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the clear stencil.  <a href="#af755f72816b49fb5bf020aa35780b998">More...</a><br /></td></tr>
+<tr class="memdesc:af755f72816b49fb5bf020aa35780b998 inherit pub_methods_classjop_1_1_render_target"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the clear stencil value.  <a href="#af755f72816b49fb5bf020aa35780b998">More...</a><br /></td></tr>
 <tr class="separator:af755f72816b49fb5bf020aa35780b998 inherit pub_methods_classjop_1_1_render_target"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a6088bb594fe983a046032098f96ba9b3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_render_texture.html#a6088bb594fe983a046032098f96ba9b3">unbind</a> ()</td></tr>
-<tr class="memdesc:a6088bb594fe983a046032098f96ba9b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unbind the currently bound frame buffer.  <a href="#a6088bb594fe983a046032098f96ba9b3">More...</a><br /></td></tr>
+<tr class="memdesc:a6088bb594fe983a046032098f96ba9b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unbind the currently bound draw frame buffer.  <a href="#a6088bb594fe983a046032098f96ba9b3">More...</a><br /></td></tr>
 <tr class="separator:a6088bb594fe983a046032098f96ba9b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a821cf59dc10ae2d13fe92fd5a202a6d4"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_render_texture.html#a821cf59dc10ae2d13fe92fd5a202a6d4">getMaximumRenderbufferSize</a> ()</td></tr>
+<tr class="memdesc:a821cf59dc10ae2d13fe92fd5a202a6d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum render buffer size.  <a href="#a821cf59dc10ae2d13fe92fd5a202a6d4">More...</a><br /></td></tr>
 <tr class="separator:a821cf59dc10ae2d13fe92fd5a202a6d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -210,7 +225,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="_render_texture_8hpp_source.html#l00041">41</a> of file <a class="el" href="_render_texture_8hpp_source.html">RenderTexture.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_render_texture_8hpp_source.html#l00042">42</a> of file <a class="el" href="_render_texture_8hpp_source.html">RenderTexture.hpp</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="a1e4ed28416106b7cc26ebf8bea80a930"></a>
 <div class="memitem">
@@ -232,19 +247,23 @@ Additional Inherited Members</h2></td></tr>
 <p><a class="el" href="classjop_1_1_color.html">Color</a> attachment slot </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a1e4ed28416106b7cc26ebf8bea80a930a675056ad1441b6375b2c5abd48c27ef1"></a>Depth&#160;</td><td class="fielddoc">
+<p>Depth attachment slot. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a1e4ed28416106b7cc26ebf8bea80a930ad821e7ccd4d4c25a491ba1a9ea248895"></a>Stencil&#160;</td><td class="fielddoc">
+<p>Stencil attachment slot. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a1e4ed28416106b7cc26ebf8bea80a930a2fa8076285272883c91e14402975a441"></a>DepthStencil&#160;</td><td class="fielddoc">
+<p>Depth-stencil attachment slot. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a1e4ed28416106b7cc26ebf8bea80a930aa0a1f5336d1ce1e6ed36df3ae4ea3a5a"></a>Color0&#160;</td><td class="fielddoc">
+<p>First color attachment slot. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a1e4ed28416106b7cc26ebf8bea80a930a632d2e75d8e985aa41d30f20d1d4c0fe"></a>__Count&#160;</td><td class="fielddoc">
 <p>For internal functionality, do not use. </p>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="_render_texture_8hpp_source.html#l00051">51</a> of file <a class="el" href="_render_texture_8hpp_source.html">RenderTexture.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_render_texture_8hpp_source.html#l00052">52</a> of file <a class="el" href="_render_texture_8hpp_source.html">RenderTexture.hpp</a>.</p>
 
 </div>
 </div>
@@ -293,6 +312,42 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a0e2b3ef9598bb9eb81b37206f7e58eac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jop::RenderTexture::addCubemapAttachment </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classjop_1_1_render_texture.html#a1e4ed28416106b7cc26ebf8bea80a930">Slot</a>&#160;</td>
+          <td class="paramname"><em>slot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classjop_1_1_texture.html#ab080c99bde97d27b175b1e8db234a27d">Texture::Format</a>&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a cube map attachment. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">slot</td><td>The attachment slot </td></tr>
+    <tr><td class="paramname">format</td><td>The cube map format</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if added successfully </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a2d236cdfb21a5171d084afe592e3eb71"></a>
 <div class="memitem">
 <div class="memproto">
@@ -316,6 +371,20 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Add a render buffer attachment. </p>
+<p>This will always return false when the size hasn't been set.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">slot</td><td>The attachment slot </td></tr>
+    <tr><td class="paramname">format</td><td>The render buffer format</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if added successfully</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classjop_1_1_render_texture.html#a821cf59dc10ae2d13fe92fd5a202a6d4" title="Get the maximum render buffer size. ">getMaximumRenderbufferSize()</a> </dd>
+<dd>
+<a class="el" href="classjop_1_1_render_texture.html#ae0edfa21170129e96b423639ac0dcf08" title="Set the size for attachments. ">setSize()</a> </dd></dl>
 
 </div>
 </div>
@@ -342,6 +411,18 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Add a texture attachment. </p>
+<p>This will always return false when the size hasn't been set.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">slot</td><td>The attachment slot </td></tr>
+    <tr><td class="paramname">format</td><td>The texture format</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if added successfully</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classjop_1_1_render_texture.html#ae0edfa21170129e96b423639ac0dcf08" title="Set the size for attachments. ">setSize()</a> </dd></dl>
 
 </div>
 </div>
@@ -373,6 +454,44 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a460b2dce895b2f8f02f3f4399e01c915"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jop::RenderTexture::bindCubeFace </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classjop_1_1_render_texture.html#a1e4ed28416106b7cc26ebf8bea80a930">Slot</a>&#160;</td>
+          <td class="paramname"><em>slot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classjop_1_1_cubemap.html#a57b7949bc969f730543bbd0220c656bd">Cubemap::Face</a>&#160;</td>
+          <td class="paramname"><em>face</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bind cube map face. </p>
+<dl class="section note"><dt>Note</dt><dd>This will also bind the frame buffer object as the draw frame buffer</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>If the texture in the slot is not actually a cube map, but a regular 2D texture, it will be bound instead</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">slot</td><td>The attachment slot </td></tr>
+    <tr><td class="paramname">face</td><td>The cube map face to bind</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if successful </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ab3e50150ad34c70b9ad6819cb6872941"></a>
 <div class="memitem">
 <div class="memproto">
@@ -385,6 +504,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Bind this frame buffer for drawing. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if successful </dd></dl>
 
 </div>
 </div>
@@ -400,6 +522,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Bind this frame buffer for reading. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if successful </dd></dl>
 
 </div>
 </div>
@@ -428,6 +553,13 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Destroy this frame buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">framebuffer</td><td>Destroy the frame buffer object? </td></tr>
+    <tr><td class="paramname">attachments</td><td>Destroy the attachments? </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -451,6 +583,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Get the maximum render buffer size. </p>
+<dl class="section return"><dt>Returns</dt><dd>The maximum render buffer size </dd></dl>
 
 </div>
 </div>
@@ -476,7 +611,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the frame buffer texture size. </p>
-<dl class="section return"><dt>Returns</dt><dd>glm::vec2 with the size </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The size in pixels </dd></dl>
 
 <p>Implements <a class="el" href="classjop_1_1_render_target.html#a0af37365297c7b9374078a49d8d33e5f">jop::RenderTarget</a>.</p>
 
@@ -496,6 +631,15 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get a texture attachment. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">slot</td><td>The attachment slot</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the texture. nullptr if none exists in the slot </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="ac8bc3f51a90df7279129e6ecdbacd3a5"></a>
@@ -511,6 +655,15 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get a texture attachment. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">slot</td><td>The attachment slot</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the texture. nullptr if none exists in the slot </dd></dl>
 
 </div>
 </div>
@@ -546,6 +699,15 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Set the size for attachments. </p>
+<p>Must be called before attempting to add attachments. Has no effect when already called once before <a class="el" href="classjop_1_1_render_texture.html#a5905bb79c4c7b1e0a2950697b48cc954" title="Destroy this frame buffer. ">destroy()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>The size to set </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a6088bb594fe983a046032098f96ba9b3"></a>
@@ -569,7 +731,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Unbind the currently bound frame buffer. </p>
+<p>Unbind the currently bound draw frame buffer. </p>
 <p>Rebinds the window as the frame buffer </p>
 
 </div>
@@ -580,7 +742,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 18 2016 12:34:42 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 9 2016 08:47:40 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

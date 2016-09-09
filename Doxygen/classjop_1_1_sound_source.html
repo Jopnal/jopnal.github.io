@@ -22,11 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Jopnal.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Jopnal Engine
    &#160;<span id="projectnumber">alpha 0.4</span>
    </div>
-   <div id="projectbrief">Simple Component Based 3D Game Engine</div>
+   <div id="projectbrief">Simple Component Based 2D/3D Game Engine</div>
   </td>
  </tr>
  </tbody>
@@ -166,9 +167,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac0000fdb1228600106fccbf310323092"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjop_1_1_sound_source.html#a91650fce115d94e5858d1d0c976a02ed">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_sound_source.html#ac0000fdb1228600106fccbf310323092">getStatus</a> () const </td></tr>
 <tr class="memdesc:ac0000fdb1228600106fccbf310323092"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns status of the sound (Stopped,Paused,Playing)  <a href="#ac0000fdb1228600106fccbf310323092">More...</a><br /></td></tr>
 <tr class="separator:ac0000fdb1228600106fccbf310323092"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a315c28b81a673bc4c9c3371eab466adc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjop_1_1_sound_source.html">SoundSource</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_sound_source.html#a315c28b81a673bc4c9c3371eab466adc">useDirection</a> (bool use)</td></tr>
-<tr class="memdesc:a315c28b81a673bc4c9c3371eab466adc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use object's direction for sound.  <a href="#a315c28b81a673bc4c9c3371eab466adc">More...</a><br /></td></tr>
-<tr class="separator:a315c28b81a673bc4c9c3371eab466adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75fd259192dbd9673c96985b41342a16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjop_1_1_sound_source.html">SoundSource</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_sound_source.html#a75fd259192dbd9673c96985b41342a16">useDirection</a> (const bool use)</td></tr>
+<tr class="memdesc:a75fd259192dbd9673c96985b41342a16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use object's direction for sound.  <a href="#a75fd259192dbd9673c96985b41342a16">More...</a><br /></td></tr>
+<tr class="separator:a75fd259192dbd9673c96985b41342a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90ed9daabb524cd5cabd96a966637980"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_sound_source.html#a90ed9daabb524cd5cabd96a966637980">isDirection</a> () const </td></tr>
 <tr class="memdesc:a90ed9daabb524cd5cabd96a966637980"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if sound has direction.  <a href="#a90ed9daabb524cd5cabd96a966637980">More...</a><br /></td></tr>
 <tr class="separator:a90ed9daabb524cd5cabd96a966637980"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -575,14 +576,14 @@ Friends</h2></td></tr>
 
 <p>Change sound's fade-out distance. </p>
 <p>Higher values mean that the sound will fade out more quickly.</p>
-<dl class="section user"><dt>This method is exposed as command named setAttenuation</dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">at</td><td>Attenuation 0-100.0f</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Reference to self </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to self</dd></dl>
+<dl class="section user"><dt>This method is exposed as command named setAttenuation</dt><dd></dd></dl>
 
 </div>
 </div>
@@ -601,14 +602,14 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Change sound's distance when it is heard in max volume. </p>
-<dl class="section user"><dt>This method is exposed as command named setMinDistance</dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">min</td><td>MinDistance 1&lt;x</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Reference to self </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to self</dd></dl>
+<dl class="section user"><dt>This method is exposed as command named setMinDistance</dt><dd></dd></dl>
 
 </div>
 </div>
@@ -628,14 +629,14 @@ Friends</h2></td></tr>
 
 <p>Set pitch. </p>
 <p>Be careful with this function. Setting the pitch too high or low can lead to sound artifacts or even crashes. The safe range seems to be between 0.1 and 8.</p>
-<dl class="section user"><dt>This method is exposed as command named setPitch</dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">value</td><td>The pitch value. Default is 1</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Reference to self </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to self</dd></dl>
+<dl class="section user"><dt>This method is exposed as command named setPitch</dt><dd></dd></dl>
 
 </div>
 </div>
@@ -654,14 +655,14 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Toggle listener on/off. </p>
-<dl class="section user"><dt>This method is exposed as command named setListener</dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">toggle</td><td>True enables spatialization(default) and makes sound relative to listener</td></tr>
+    <tr><td class="paramname">toggle</td><td>True enables spatialization (default) and makes sound relative to listener</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Reference to self </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to self</dd></dl>
+<dl class="section user"><dt>This method is exposed as command named setListener</dt><dd></dd></dl>
 
 </div>
 </div>
@@ -681,14 +682,14 @@ Friends</h2></td></tr>
 
 <p>Set sound's volume. </p>
 <p>The value will be clamped inside the appropriate range.</p>
-<dl class="section user"><dt>This method is exposed as command named setVolume</dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">vol</td><td>Float 0-100.0f default is 100.0f</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Reference to self </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to self</dd></dl>
+<dl class="section user"><dt>This method is exposed as command named setVolume</dt><dd></dd></dl>
 
 </div>
 </div>
@@ -729,14 +730,14 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a315c28b81a673bc4c9c3371eab466adc"></a>
+<a class="anchor" id="a75fd259192dbd9673c96985b41342a16"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classjop_1_1_sound_source.html">SoundSource</a>&amp; jop::SoundSource::useDirection </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
+          <td class="paramtype">const bool&#160;</td>
           <td class="paramname"><em>use</em></td><td>)</td>
           <td></td>
         </tr>
@@ -746,7 +747,7 @@ Friends</h2></td></tr>
 <p>Use object's direction for sound. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">Bool</td><td>true will make sound to use direction </td></tr>
+    <tr><td class="paramname">use</td><td>true will make sound to use direction </td></tr>
   </table>
   </dd>
 </dl>
@@ -855,7 +856,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 18 2016 12:34:42 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 9 2016 08:47:41 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

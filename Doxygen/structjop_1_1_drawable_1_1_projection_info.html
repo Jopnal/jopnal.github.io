@@ -22,11 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Jopnal.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Jopnal Engine
    &#160;<span id="projectnumber">alpha 0.4</span>
    </div>
-   <div id="projectbrief">Simple Component Based 3D Game Engine</div>
+   <div id="projectbrief">Simple Component Based 2D/3D Game Engine</div>
   </td>
  </tr>
  </tbody>
@@ -104,20 +105,25 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae4516352d7f7a0e158c92c5c1b3fc3a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjop_1_1_drawable_1_1_projection_info.html#ae4516352d7f7a0e158c92c5c1b3fc3a5">JOP_DISALLOW_COPY_MOVE</a> (<a class="el" href="structjop_1_1_drawable_1_1_projection_info.html">ProjectionInfo</a>)</td></tr>
 <tr class="separator:ae4516352d7f7a0e158c92c5c1b3fc3a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24f7208af7c3913ee949a7f32b89f69c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjop_1_1_drawable_1_1_projection_info.html#a24f7208af7c3913ee949a7f32b89f69c">ProjectionInfo</a> (const glm::mat4 &amp;view, const glm::mat4 &amp;proj, const glm::vec3 &amp;camPos)</td></tr>
+<tr class="memdesc:a24f7208af7c3913ee949a7f32b89f69c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a24f7208af7c3913ee949a7f32b89f69c">More...</a><br /></td></tr>
 <tr class="separator:a24f7208af7c3913ee949a7f32b89f69c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a0c0eb9d164e1c65db08bc6570c31d863"><td class="memItemLeft" align="right" valign="top">const glm::mat4 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjop_1_1_drawable_1_1_projection_info.html#a0c0eb9d164e1c65db08bc6570c31d863">viewMatrix</a></td></tr>
+<tr class="memdesc:a0c0eb9d164e1c65db08bc6570c31d863"><td class="mdescLeft">&#160;</td><td class="mdescRight">View matrix.  <a href="#a0c0eb9d164e1c65db08bc6570c31d863">More...</a><br /></td></tr>
 <tr class="separator:a0c0eb9d164e1c65db08bc6570c31d863"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fa770fb553ebfab5d356c339f5f8d04"><td class="memItemLeft" align="right" valign="top">const glm::mat4 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjop_1_1_drawable_1_1_projection_info.html#a7fa770fb553ebfab5d356c339f5f8d04">projectionMatrix</a></td></tr>
+<tr class="memdesc:a7fa770fb553ebfab5d356c339f5f8d04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Projection matrix.  <a href="#a7fa770fb553ebfab5d356c339f5f8d04">More...</a><br /></td></tr>
 <tr class="separator:a7fa770fb553ebfab5d356c339f5f8d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99285505c197b85ef3399b20436da030"><td class="memItemLeft" align="right" valign="top">const glm::vec3 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjop_1_1_drawable_1_1_projection_info.html#a99285505c197b85ef3399b20436da030">cameraPosition</a></td></tr>
+<tr class="memdesc:a99285505c197b85ef3399b20436da030"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjop_1_1_camera.html">Camera</a> position.  <a href="#a99285505c197b85ef3399b20436da030">More...</a><br /></td></tr>
 <tr class="separator:a99285505c197b85ef3399b20436da030"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="_drawable_8hpp_source.html#l00074">74</a> of file <a class="el" href="_drawable_8hpp_source.html">Drawable.hpp</a>.</p>
+<div class="textblock"><p>Projection info </p>
+
+<p>Definition at line <a class="el" href="_drawable_8hpp_source.html#l00081">81</a> of file <a class="el" href="_drawable_8hpp_source.html">Drawable.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a24f7208af7c3913ee949a7f32b89f69c"></a>
 <div class="memitem">
@@ -149,6 +155,16 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">view</td><td>The view matrix </td></tr>
+    <tr><td class="paramname">proj</td><td>The projection matrix </td></tr>
+    <tr><td class="paramname">camPos</td><td>The camera position </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -179,7 +195,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_drawable_8hpp_source.html#l00082">82</a> of file <a class="el" href="_drawable_8hpp_source.html">Drawable.hpp</a>.</p>
+<p><a class="el" href="classjop_1_1_camera.html">Camera</a> position. </p>
+
+<p>Definition at line <a class="el" href="_drawable_8hpp_source.html#l00097">97</a> of file <a class="el" href="_drawable_8hpp_source.html">Drawable.hpp</a>.</p>
 
 </div>
 </div>
@@ -193,7 +211,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_drawable_8hpp_source.html#l00081">81</a> of file <a class="el" href="_drawable_8hpp_source.html">Drawable.hpp</a>.</p>
+<p>Projection matrix. </p>
+
+<p>Definition at line <a class="el" href="_drawable_8hpp_source.html#l00096">96</a> of file <a class="el" href="_drawable_8hpp_source.html">Drawable.hpp</a>.</p>
 
 </div>
 </div>
@@ -207,7 +227,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_drawable_8hpp_source.html#l00080">80</a> of file <a class="el" href="_drawable_8hpp_source.html">Drawable.hpp</a>.</p>
+<p>View matrix. </p>
+
+<p>Definition at line <a class="el" href="_drawable_8hpp_source.html#l00095">95</a> of file <a class="el" href="_drawable_8hpp_source.html">Drawable.hpp</a>.</p>
 
 </div>
 </div>
@@ -217,7 +239,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 18 2016 12:34:41 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 9 2016 08:47:39 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

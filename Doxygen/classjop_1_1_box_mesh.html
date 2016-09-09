@@ -22,11 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Jopnal.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Jopnal Engine
    &#160;<span id="projectnumber">alpha 0.4</span>
    </div>
-   <div id="projectbrief">Simple Component Based 3D Game Engine</div>
+   <div id="projectbrief">Simple Component Based 2D/3D Game Engine</div>
   </td>
  </tr>
  </tbody>
@@ -113,7 +114,7 @@ Inheritance diagram for jop::BoxMesh:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a894dd0c77f385ce6cd91285c76d79630"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_box_mesh.html#a894dd0c77f385ce6cd91285c76d79630">BoxMesh</a> (const std::string &amp;name)</td></tr>
-<tr class="memdesc:a894dd0c77f385ce6cd91285c76d79630"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a894dd0c77f385ce6cd91285c76d79630">More...</a><br /></td></tr>
+<tr class="memdesc:a894dd0c77f385ce6cd91285c76d79630"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a894dd0c77f385ce6cd91285c76d79630">More...</a><br /></td></tr>
 <tr class="separator:a894dd0c77f385ce6cd91285c76d79630"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad12247b0e3a016a02d5c4c7f2bc393b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_box_mesh.html#ad12247b0e3a016a02d5c4c7f2bc393b9">BoxMesh</a> (const <a class="el" href="classjop_1_1_box_mesh.html">BoxMesh</a> &amp;other, const std::string &amp;newName)</td></tr>
 <tr class="memdesc:ad12247b0e3a016a02d5c4c7f2bc393b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="#ad12247b0e3a016a02d5c4c7f2bc393b9">More...</a><br /></td></tr>
@@ -135,25 +136,31 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a690f4acf82b16f5333089f92f6305203"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classjop_1_1_mesh"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classjop_1_1_mesh')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classjop_1_1_mesh.html">jop::Mesh</a></td></tr>
 <tr class="memitem:a578a44bcd6a0ed3039cf2a4822e69300 inherit pub_methods_classjop_1_1_mesh"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_mesh.html#a578a44bcd6a0ed3039cf2a4822e69300">Mesh</a> (const std::string &amp;name)</td></tr>
-<tr class="memdesc:a578a44bcd6a0ed3039cf2a4822e69300 inherit pub_methods_classjop_1_1_mesh"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a578a44bcd6a0ed3039cf2a4822e69300">More...</a><br /></td></tr>
+<tr class="memdesc:a578a44bcd6a0ed3039cf2a4822e69300 inherit pub_methods_classjop_1_1_mesh"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a578a44bcd6a0ed3039cf2a4822e69300">More...</a><br /></td></tr>
 <tr class="separator:a578a44bcd6a0ed3039cf2a4822e69300 inherit pub_methods_classjop_1_1_mesh"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49742abb7621381eee641b45888ea5e3 inherit pub_methods_classjop_1_1_mesh"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_mesh.html#a49742abb7621381eee641b45888ea5e3">Mesh</a> (const <a class="el" href="classjop_1_1_mesh.html">Mesh</a> &amp;other, const std::string &amp;newName)</td></tr>
+<tr class="memdesc:a49742abb7621381eee641b45888ea5e3 inherit pub_methods_classjop_1_1_mesh"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="#a49742abb7621381eee641b45888ea5e3">More...</a><br /></td></tr>
+<tr class="separator:a49742abb7621381eee641b45888ea5e3 inherit pub_methods_classjop_1_1_mesh"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4eb581318c8025270b73a95ee856287c inherit pub_methods_classjop_1_1_mesh"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_mesh.html#a4eb581318c8025270b73a95ee856287c">load</a> (const void *vertexData, const <a class="el" href="namespacejop.html#a73e1cf7200a4729fd1c89af2f63ba79e">uint32</a> vertexBytes, const <a class="el" href="namespacejop.html#a73e1cf7200a4729fd1c89af2f63ba79e">uint32</a> vertexComponents, const void *indexData=nullptr, const <a class="el" href="namespacejop.html#a087da006235185373118500ad1b52ffc">uint16</a> indexSize=0, const <a class="el" href="namespacejop.html#a73e1cf7200a4729fd1c89af2f63ba79e">uint32</a> indexAmount=0)</td></tr>
 <tr class="memdesc:a4eb581318c8025270b73a95ee856287c inherit pub_methods_classjop_1_1_mesh"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load mesh from memory.  <a href="#a4eb581318c8025270b73a95ee856287c">More...</a><br /></td></tr>
 <tr class="separator:a4eb581318c8025270b73a95ee856287c inherit pub_methods_classjop_1_1_mesh"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac301edef6dfca6944ae9a9d163d9bcb4 inherit pub_methods_classjop_1_1_mesh"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_mesh.html#ac301edef6dfca6944ae9a9d163d9bcb4">load</a> (const std::vector&lt; <a class="el" href="classjop_1_1_vertex.html">Vertex</a> &gt; &amp;vertexArray, const std::vector&lt; unsigned int &gt; &amp;indexArray)</td></tr>
 <tr class="memdesc:ac301edef6dfca6944ae9a9d163d9bcb4 inherit pub_methods_classjop_1_1_mesh"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load mesh from memory using default vertex format.  <a href="#ac301edef6dfca6944ae9a9d163d9bcb4">More...</a><br /></td></tr>
 <tr class="separator:ac301edef6dfca6944ae9a9d163d9bcb4 inherit pub_methods_classjop_1_1_mesh"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92256768a3b6fa79dcf16e0b39cdae82 inherit pub_methods_classjop_1_1_mesh"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_mesh.html#a92256768a3b6fa79dcf16e0b39cdae82">draw</a> (const <a class="el" href="namespacejop.html#a7633375dc03eb5d946e51ce0ad3ab0f9">uint64</a> materialAttributes) const </td></tr>
-<tr class="separator:a92256768a3b6fa79dcf16e0b39cdae82 inherit pub_methods_classjop_1_1_mesh"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cf19afc61f7e336698f77a1caed2c64 inherit pub_methods_classjop_1_1_mesh"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_mesh.html#a2cf19afc61f7e336698f77a1caed2c64">draw</a> () const </td></tr>
+<tr class="memdesc:a2cf19afc61f7e336698f77a1caed2c64 inherit pub_methods_classjop_1_1_mesh"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw this mesh.  <a href="#a2cf19afc61f7e336698f77a1caed2c64">More...</a><br /></td></tr>
+<tr class="separator:a2cf19afc61f7e336698f77a1caed2c64 inherit pub_methods_classjop_1_1_mesh"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08d8955aeae254d394a52b3d10817943 inherit pub_methods_classjop_1_1_mesh"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_mesh.html#a08d8955aeae254d394a52b3d10817943">destroy</a> ()</td></tr>
+<tr class="memdesc:a08d8955aeae254d394a52b3d10817943 inherit pub_methods_classjop_1_1_mesh"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy this mesh.  <a href="#a08d8955aeae254d394a52b3d10817943">More...</a><br /></td></tr>
 <tr class="separator:a08d8955aeae254d394a52b3d10817943 inherit pub_methods_classjop_1_1_mesh"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b8b3975a34fd20c772d6648542fee38 inherit pub_methods_classjop_1_1_mesh"><td class="memItemLeft" align="right" valign="top">const std::pair&lt; glm::vec3, glm::vec3 &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_mesh.html#a2b8b3975a34fd20c772d6648542fee38">getBounds</a> () const </td></tr>
+<tr class="memdesc:a2b8b3975a34fd20c772d6648542fee38 inherit pub_methods_classjop_1_1_mesh"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the bounds of this mesh.  <a href="#a2b8b3975a34fd20c772d6648542fee38">More...</a><br /></td></tr>
 <tr class="separator:a2b8b3975a34fd20c772d6648542fee38 inherit pub_methods_classjop_1_1_mesh"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac82fa31099a1d9b7c95edf981fe8d8a3 inherit pub_methods_classjop_1_1_mesh"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_mesh.html#ac82fa31099a1d9b7c95edf981fe8d8a3">getVertexAmount</a> () const </td></tr>
 <tr class="memdesc:ac82fa31099a1d9b7c95edf981fe8d8a3 inherit pub_methods_classjop_1_1_mesh"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the vertex amount.  <a href="#ac82fa31099a1d9b7c95edf981fe8d8a3">More...</a><br /></td></tr>
 <tr class="separator:ac82fa31099a1d9b7c95edf981fe8d8a3 inherit pub_methods_classjop_1_1_mesh"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fd6336c8b7bb5d569024049fcf3fa62 inherit pub_methods_classjop_1_1_mesh"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejop.html#a087da006235185373118500ad1b52ffc">uint16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_mesh.html#a0fd6336c8b7bb5d569024049fcf3fa62">getVertexSize</a> () const </td></tr>
-<tr class="memdesc:a0fd6336c8b7bb5d569024049fcf3fa62 inherit pub_methods_classjop_1_1_mesh"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the vertex size.  <a href="#a0fd6336c8b7bb5d569024049fcf3fa62">More...</a><br /></td></tr>
+<tr class="memdesc:a0fd6336c8b7bb5d569024049fcf3fa62 inherit pub_methods_classjop_1_1_mesh"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total vertex size.  <a href="#a0fd6336c8b7bb5d569024049fcf3fa62">More...</a><br /></td></tr>
 <tr class="separator:a0fd6336c8b7bb5d569024049fcf3fa62 inherit pub_methods_classjop_1_1_mesh"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4908c41158b3260cc0853c42f26c09a9 inherit pub_methods_classjop_1_1_mesh"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_mesh.html#a4908c41158b3260cc0853c42f26c09a9">getVertexOffset</a> (const <a class="el" href="classjop_1_1_mesh.html#afd0516b7f59e6d2f5f7a49dc6130f92b">VertexComponent</a> component) const </td></tr>
 <tr class="memdesc:a4908c41158b3260cc0853c42f26c09a9 inherit pub_methods_classjop_1_1_mesh"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the byte offset for the given component.  <a href="#a4908c41158b3260cc0853c42f26c09a9">More...</a><br /></td></tr>
@@ -177,6 +184,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a0a9a586aa2c2703d1caa4b89bab2e111 inherit pub_methods_classjop_1_1_mesh"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns vertex buffer.  <a href="#a0a9a586aa2c2703d1caa4b89bab2e111">More...</a><br /></td></tr>
 <tr class="separator:a0a9a586aa2c2703d1caa4b89bab2e111 inherit pub_methods_classjop_1_1_mesh"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79199df486eaa411f45fed2a082d38de inherit pub_methods_classjop_1_1_mesh"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_mesh.html#a79199df486eaa411f45fed2a082d38de">updateBounds</a> (const glm::vec3 &amp;min, const glm::vec3 &amp;max)</td></tr>
+<tr class="memdesc:a79199df486eaa411f45fed2a082d38de inherit pub_methods_classjop_1_1_mesh"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manually update the bounds of this mesh.  <a href="#a79199df486eaa411f45fed2a082d38de">More...</a><br /></td></tr>
 <tr class="separator:a79199df486eaa411f45fed2a082d38de inherit pub_methods_classjop_1_1_mesh"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classjop_1_1_resource"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classjop_1_1_resource')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classjop_1_1_resource.html">jop::Resource</a></td></tr>
 <tr class="memitem:aed0f13541ccb3b57e1e005121651b4de inherit pub_methods_classjop_1_1_resource"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_resource.html#aed0f13541ccb3b57e1e005121651b4de">Resource</a> (const std::string &amp;name)</td></tr>
@@ -271,11 +279,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Default constructor. </p>
-<p>Does not initialize the vertices.</p>
+<p>Constructor. </p>
+<p>Does not initialize any vertices.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td>Name of the box </td></tr>
+    <tr><td class="paramname">name</td><td>Name of the resource </td></tr>
   </table>
   </dd>
 </dl>
@@ -307,6 +315,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Copy constructor. </p>
+<dl class="section warning"><dt>Warning</dt><dd>A mesh on OpenGL ES 2.0 cannot be copied. The resulting copied mesh won't be valid.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">other</td><td>The other mesh to be copied </td></tr>
@@ -351,10 +360,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Load this box. </p>
-<p>This will set up the vertices and create the buffers</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">size</td><td>Size of the box as vector</td></tr>
+    <tr><td class="paramname">size</td><td>Extents of the box</td></tr>
   </table>
   </dd>
 </dl>
@@ -398,7 +406,6 @@ Additional Inherited Members</h2></td></tr>
     <tr><td class="paramname">size</td><td>Size of the box </td></tr>
     <tr><td class="paramname">min</td><td>Minimum bound of texture </td></tr>
     <tr><td class="paramname">max</td><td>Maximum bound of texture </td></tr>
-    <tr><td class="paramname">invert</td><td>Is cube inside-out? </td></tr>
   </table>
   </dd>
 </dl>
@@ -476,7 +483,6 @@ Additional Inherited Members</h2></td></tr>
     <tr><td class="paramname">right</td><td>Index to the texture to be placed in to right face </td></tr>
     <tr><td class="paramname">top</td><td>Index to the texture to be placed in to top face </td></tr>
     <tr><td class="paramname">bottom</td><td>Index to the texture to be placed in to bottom face </td></tr>
-    <tr><td class="paramname">invert</td><td>Is cube inside-out? </td></tr>
   </table>
   </dd>
 </dl>
@@ -547,7 +553,6 @@ Additional Inherited Members</h2></td></tr>
     <tr><td class="paramname">right</td><td>Coordinates of the texture to be placed in right face </td></tr>
     <tr><td class="paramname">top</td><td>Coordinates of the texture to be placed in top face </td></tr>
     <tr><td class="paramname">bottom</td><td>Coordinates of the texture to be placed in bottom face </td></tr>
-    <tr><td class="paramname">invert</td><td>Is cube inside-out? </td></tr>
   </table>
   </dd>
 </dl>
@@ -560,7 +565,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 18 2016 12:34:41 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 9 2016 08:47:37 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

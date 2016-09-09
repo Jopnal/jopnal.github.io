@@ -22,11 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Jopnal.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Jopnal Engine
    &#160;<span id="projectnumber">alpha 0.4</span>
    </div>
-   <div id="projectbrief">Simple Component Based 3D Game Engine</div>
+   <div id="projectbrief">Simple Component Based 2D/3D Game Engine</div>
   </td>
  </tr>
  </tbody>
@@ -116,7 +117,8 @@ Public Types</h2></td></tr>
 <tr class="memitem:ab63036e734cbc5a48e667a90c43e9133"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_texture_atlas.html#ab63036e734cbc5a48e667a90c43e9133">LoadMode</a> { <a class="el" href="classjop_1_1_texture_atlas.html#ab63036e734cbc5a48e667a90c43e9133a8244cf379b2a4a11d4706e53f510a5f6">LoadMode::Separate</a>, 
 <a class="el" href="classjop_1_1_texture_atlas.html#ab63036e734cbc5a48e667a90c43e9133a83a293c58d996a90ac357b10ba864c83">LoadMode::Sheet</a>, 
 <a class="el" href="classjop_1_1_texture_atlas.html#ab63036e734cbc5a48e667a90c43e9133a981a49de2fad02f0cd6f7aa03e8453b7">LoadMode::TextureOnly</a>
- }</td></tr>
+ }<tr class="memdesc:ab63036e734cbc5a48e667a90c43e9133"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load mode.  <a href="classjop_1_1_texture_atlas.html#ab63036e734cbc5a48e667a90c43e9133">More...</a><br /></td></tr>
+</td></tr>
 <tr class="separator:ab63036e734cbc5a48e667a90c43e9133"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -124,19 +126,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae040092ca96c3a6d973e4cf6c90b3d28"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_texture_atlas.html#ae040092ca96c3a6d973e4cf6c90b3d28">TextureAtlas</a> (const std::string &amp;name)</td></tr>
 <tr class="memdesc:ae040092ca96c3a6d973e4cf6c90b3d28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#ae040092ca96c3a6d973e4cf6c90b3d28">More...</a><br /></td></tr>
 <tr class="separator:ae040092ca96c3a6d973e4cf6c90b3d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a844f0c162add69c02c868bea57edfb50"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_texture_atlas.html#a844f0c162add69c02c868bea57edfb50">~TextureAtlas</a> ()</td></tr>
-<tr class="memdesc:a844f0c162add69c02c868bea57edfb50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a844f0c162add69c02c868bea57edfb50">More...</a><br /></td></tr>
-<tr class="separator:a844f0c162add69c02c868bea57edfb50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00e3da44c933d1e931d56da237fd64d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_texture_atlas.html#a00e3da44c933d1e931d56da237fd64d9">~TextureAtlas</a> () override</td></tr>
+<tr class="memdesc:a00e3da44c933d1e931d56da237fd64d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a00e3da44c933d1e931d56da237fd64d9">More...</a><br /></td></tr>
+<tr class="separator:a00e3da44c933d1e931d56da237fd64d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a702d6baf4cfadbb9e087b53cc9546e13"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_texture_atlas.html#a702d6baf4cfadbb9e087b53cc9546e13">load</a> (const glm::uvec2 &amp;atlasSize)</td></tr>
-<tr class="memdesc:a702d6baf4cfadbb9e087b53cc9546e13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load atlas.  <a href="#a702d6baf4cfadbb9e087b53cc9546e13">More...</a><br /></td></tr>
+<tr class="memdesc:a702d6baf4cfadbb9e087b53cc9546e13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load an empty atlas.  <a href="#a702d6baf4cfadbb9e087b53cc9546e13">More...</a><br /></td></tr>
 <tr class="separator:a702d6baf4cfadbb9e087b53cc9546e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea4bf22567ac000c5d574566938c46dc"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
 <tr class="memitem:aea4bf22567ac000c5d574566938c46dc"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classjop_1_1_texture_atlas.html#aea4bf22567ac000c5d574566938c46dc">load</a> (const glm::uvec2 &amp;atlasSize, const Args &amp;...args)</td></tr>
-<tr class="memdesc:aea4bf22567ac000c5d574566938c46dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load atlas.  <a href="#aea4bf22567ac000c5d574566938c46dc">More...</a><br /></td></tr>
+<tr class="memdesc:aea4bf22567ac000c5d574566938c46dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load this atlas.  <a href="#aea4bf22567ac000c5d574566938c46dc">More...</a><br /></td></tr>
 <tr class="separator:aea4bf22567ac000c5d574566938c46dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43357e9d490e1ea155201a845cd4ba75"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_texture_atlas.html#a43357e9d490e1ea155201a845cd4ba75">load</a> (const std::string &amp;path, const <a class="el" href="classjop_1_1_texture_atlas.html#ab63036e734cbc5a48e667a90c43e9133">LoadMode</a> mode=<a class="el" href="classjop_1_1_texture_atlas.html#ab63036e734cbc5a48e667a90c43e9133a8244cf379b2a4a11d4706e53f510a5f6">LoadMode::Separate</a>)</td></tr>
-<tr class="memdesc:a43357e9d490e1ea155201a845cd4ba75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load from JSON file.  <a href="#a43357e9d490e1ea155201a845cd4ba75">More...</a><br /></td></tr>
-<tr class="separator:a43357e9d490e1ea155201a845cd4ba75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fa5725540254a844ac460ed6b6c0e0d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_texture_atlas.html#a9fa5725540254a844ac460ed6b6c0e0d">load</a> (const std::string &amp;path, const <a class="el" href="classjop_1_1_texture_atlas.html#ab63036e734cbc5a48e667a90c43e9133">LoadMode</a> mode)</td></tr>
+<tr class="memdesc:a9fa5725540254a844ac460ed6b6c0e0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load from JSON file.  <a href="#a9fa5725540254a844ac460ed6b6c0e0d">More...</a><br /></td></tr>
+<tr class="separator:a9fa5725540254a844ac460ed6b6c0e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54f910c9ccc76c1fe3005e81a0ab4955"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_texture_atlas.html#a54f910c9ccc76c1fe3005e81a0ab4955">destroy</a> ()</td></tr>
+<tr class="memdesc:a54f910c9ccc76c1fe3005e81a0ab4955"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy this atlas.  <a href="#a54f910c9ccc76c1fe3005e81a0ab4955">More...</a><br /></td></tr>
+<tr class="separator:a54f910c9ccc76c1fe3005e81a0ab4955"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe1e97cb04d04a9ce4b13dbfc9820973"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_texture_atlas.html#abe1e97cb04d04a9ce4b13dbfc9820973">addTexture</a> (const <a class="el" href="classjop_1_1_image.html">Image</a> &amp;image)</td></tr>
 <tr class="memdesc:abe1e97cb04d04a9ce4b13dbfc9820973"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add texture from image to the atlas.  <a href="#abe1e97cb04d04a9ce4b13dbfc9820973">More...</a><br /></td></tr>
 <tr class="separator:abe1e97cb04d04a9ce4b13dbfc9820973"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -235,16 +240,21 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Load mode. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ab63036e734cbc5a48e667a90c43e9133a8244cf379b2a4a11d4706e53f510a5f6"></a>Separate&#160;</td><td class="fielddoc">
+<p>Load from separate textures. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ab63036e734cbc5a48e667a90c43e9133a83a293c58d996a90ac357b10ba864c83"></a>Sheet&#160;</td><td class="fielddoc">
+<p>Use if you have a complete sheet (inside a single texture) </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ab63036e734cbc5a48e667a90c43e9133a981a49de2fad02f0cd6f7aa03e8453b7"></a>TextureOnly&#160;</td><td class="fielddoc">
+<p>Only load the texture. </p>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="_texture_atlas_8hpp_source.html#l00046">46</a> of file <a class="el" href="_texture_atlas_8hpp_source.html">TextureAtlas.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_texture_atlas_8hpp_source.html#l00047">47</a> of file <a class="el" href="_texture_atlas_8hpp_source.html">TextureAtlas.hpp</a>.</p>
 
 </div>
 </div>
@@ -273,9 +283,12 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a844f0c162add69c02c868bea57edfb50"></a>
+<a class="anchor" id="a00e3da44c933d1e931d56da237fd64d9"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">jop::TextureAtlas::~TextureAtlas </td>
@@ -284,6 +297,11 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Destructor. </p>
@@ -308,10 +326,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Add texture from image to the atlas. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">image</td><td><a class="el" href="classjop_1_1_image.html">Image</a> to be added </td></tr>
+    <tr><td class="paramname">image</td><td><a class="el" href="classjop_1_1_image.html">Image</a> to be added</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The texture index </dd></dl>
 
 </div>
 </div>
@@ -332,10 +351,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Add texture to the atlas. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">texture</td><td><a class="el" href="classjop_1_1_texture.html">Texture</a> to be added </td></tr>
+    <tr><td class="paramname">texture</td><td><a class="el" href="classjop_1_1_texture.html">Texture</a> to be added</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The texture index </dd></dl>
 
 </div>
 </div>
@@ -356,10 +376,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Add texture from file to atlas. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">texturePath</td><td>Path to the texture in file </td></tr>
+    <tr><td class="paramname">texturePath</td><td>Path to the texture in file</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The texture index </dd></dl>
 
 </div>
 </div>
@@ -388,7 +409,33 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Define a texture. </p>
-<p>Adds a texture to memory with given dimension </p>
+<p>Adds a texture to memory with given dimension. This call must not be mixed with <a class="el" href="classjop_1_1_texture_atlas.html#abe1e97cb04d04a9ce4b13dbfc9820973" title="Add texture from image to the atlas. ">addTexture()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">start</td><td>The start coordinates </td></tr>
+    <tr><td class="paramname">end</td><td>The end coordinates</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The texture index </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a54f910c9ccc76c1fe3005e81a0ab4955"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void jop::TextureAtlas::destroy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroy this atlas. </p>
+<p>Called implicitly by all load methods. </p>
 
 </div>
 </div>
@@ -409,10 +456,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Get texture location inside atlas. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>Index of the texture </td></tr>
+    <tr><td class="paramname">index</td><td>Index of the texture</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The texture coordinates. First = min, second = max </dd></dl>
 
 </div>
 </div>
@@ -430,7 +478,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the texture of atlas. </p>
-<p>If no textures have been added to atlas default texture will be returned </p>
+<p>If no textures have been added to atlas default texture will be returned.</p>
+<dl class="section return"><dt>Returns</dt><dd>Reference to the internal atlas texture </dd></dl>
 
 </div>
 </div>
@@ -448,6 +497,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get amount of textures inside atlas. </p>
+<dl class="section return"><dt>Returns</dt><dd>The amount of textures inside atlas </dd></dl>
 
 </div>
 </div>
@@ -465,13 +515,14 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Load atlas. </p>
+<p>Load an empty atlas. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">atlasSize</td><td>Size of the atlas to be created. </td></tr>
+    <tr><td class="paramname">atlasSize</td><td>Size of the atlas to be created</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>True if successful </dd></dl>
 
 </div>
 </div>
@@ -501,19 +552,20 @@ template&lt;typename... Args&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Load atlas. </p>
-<p>Loads atlas of given size and with variable amount of given Images, <a class="el" href="classjop_1_1_texture2_d.html">Texture2D</a>'s or filepath's using the addTexture method for each argument</p>
+<p>Load this atlas. </p>
+<p>Loads this atlas of given size and with variable amount of given Images, <a class="el" href="classjop_1_1_texture2_d.html">Texture2D</a>'s or file paths using <a class="el" href="classjop_1_1_texture_atlas.html#abe1e97cb04d04a9ce4b13dbfc9820973" title="Add texture from image to the atlas. ">addTexture()</a> for each argument.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">atlasSize</td><td>Size of the atlas to be created. </td></tr>
-    <tr><td class="paramname">args</td><td>Variable amount of <a class="el" href="classjop_1_1_texture2_d.html">Texture2D</a>'s, <a class="el" href="classjop_1_1_image.html">Image</a>'s or file paths </td></tr>
+    <tr><td class="paramname">atlasSize</td><td>Size of the atlas to be created </td></tr>
+    <tr><td class="paramname">args</td><td>Variable amount of <a class="el" href="classjop_1_1_texture2_d.html">Texture2D</a>'s, Images or file paths</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>True if successful </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a43357e9d490e1ea155201a845cd4ba75"></a>
+<a class="anchor" id="a9fa5725540254a844ac460ed6b6c0e0d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -527,7 +579,7 @@ template&lt;typename... Args&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classjop_1_1_texture_atlas.html#ab63036e734cbc5a48e667a90c43e9133">LoadMode</a>&#160;</td>
-          <td class="paramname"><em>mode</em> = <code><a class="el" href="classjop_1_1_texture_atlas.html#ab63036e734cbc5a48e667a90c43e9133a8244cf379b2a4a11d4706e53f510a5f6">LoadMode::Separate</a></code>&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -540,10 +592,13 @@ template&lt;typename... Args&gt; </div>
 <p>Load from JSON file. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mode</td><td>Load mode - if you have a complete sheet use <a class="el" href="classjop_1_1_texture_atlas.html#ab63036e734cbc5a48e667a90c43e9133a83a293c58d996a90ac357b10ba864c83">LoadMode::Sheet</a>, otherwise use LoadMode::Seperate (which is on by default) </td></tr>
+    <tr><td class="paramname">path</td><td>Path to the JSON file </td></tr>
+    <tr><td class="paramname">mode</td><td>Load mode</td></tr>
   </table>
   </dd>
 </dl>
+<p><a href="https://github.com/Jopnal/Jopnal/wiki/TextureAtlas">Information about the JSON formats.</a></p>
+<dl class="section return"><dt>Returns</dt><dd>True if successful </dd></dl>
 
 </div>
 </div>
@@ -553,7 +608,7 @@ template&lt;typename... Args&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 18 2016 12:34:42 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 9 2016 08:47:42 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

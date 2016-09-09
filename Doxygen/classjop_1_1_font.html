@@ -22,11 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Jopnal.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Jopnal Engine
    &#160;<span id="projectnumber">alpha 0.4</span>
    </div>
-   <div id="projectbrief">Simple Component Based 3D Game Engine</div>
+   <div id="projectbrief">Simple Component Based 2D/3D Game Engine</div>
   </td>
  </tr>
  </tbody>
@@ -119,7 +120,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:acbaa3322935612ed31ef650bd7175f2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#acbaa3322935612ed31ef650bd7175f2b">More...</a><br /></td></tr>
 <tr class="separator:acbaa3322935612ed31ef650bd7175f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a42aa08f9acfb7b653422ebb7737c97"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_font.html#a2a42aa08f9acfb7b653422ebb7737c97">load</a> (const std::string &amp;path, const int fontSize)</td></tr>
-<tr class="memdesc:a2a42aa08f9acfb7b653422ebb7737c97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a font from targeted path.  <a href="#a2a42aa08f9acfb7b653422ebb7737c97">More...</a><br /></td></tr>
+<tr class="memdesc:a2a42aa08f9acfb7b653422ebb7737c97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load from file.  <a href="#a2a42aa08f9acfb7b653422ebb7737c97">More...</a><br /></td></tr>
 <tr class="separator:a2a42aa08f9acfb7b653422ebb7737c97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa17594ecb4aff4f0ec49ef8d61e75912"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_font.html#aa17594ecb4aff4f0ec49ef8d61e75912">load</a> (const void *ptr, const <a class="el" href="namespacejop.html#a73e1cf7200a4729fd1c89af2f63ba79e">uint32</a> size, const int fontSize)</td></tr>
 <tr class="memdesc:aa17594ecb4aff4f0ec49ef8d61e75912"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a font from memory.  <a href="#aa17594ecb4aff4f0ec49ef8d61e75912">More...</a><br /></td></tr>
@@ -131,10 +132,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a1b2c3e8048d7996334dc1b0f8fdc0160"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a single glyph from given codepoint.  <a href="#a1b2c3e8048d7996334dc1b0f8fdc0160">More...</a><br /></td></tr>
 <tr class="separator:a1b2c3e8048d7996334dc1b0f8fdc0160"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94891a2a145bfe0ffda40ad83ea85ba8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_font.html#a94891a2a145bfe0ffda40ad83ea85ba8">getLineSpacing</a> () const </td></tr>
-<tr class="memdesc:a94891a2a145bfe0ffda40ad83ea85ba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the spacing between two rows in the font.  <a href="#a94891a2a145bfe0ffda40ad83ea85ba8">More...</a><br /></td></tr>
+<tr class="memdesc:a94891a2a145bfe0ffda40ad83ea85ba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the spacing between two rows in the font.  <a href="#a94891a2a145bfe0ffda40ad83ea85ba8">More...</a><br /></td></tr>
 <tr class="separator:a94891a2a145bfe0ffda40ad83ea85ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ff2b40790f81e3eba75aef60685b081"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classjop_1_1_texture2_d.html">Texture2D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_font.html#a1ff2b40790f81e3eba75aef60685b081">getTexture</a> () const </td></tr>
-<tr class="memdesc:a1ff2b40790f81e3eba75aef60685b081"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the texture that contains all loaded glyphs.  <a href="#a1ff2b40790f81e3eba75aef60685b081">More...</a><br /></td></tr>
+<tr class="memdesc:a1ff2b40790f81e3eba75aef60685b081"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the texture that contains all loaded glyphs.  <a href="#a1ff2b40790f81e3eba75aef60685b081">More...</a><br /></td></tr>
 <tr class="separator:a1ff2b40790f81e3eba75aef60685b081"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5b3c7f6a48dc24ea3e19ec9a9eeda06"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_font.html#ad5b3c7f6a48dc24ea3e19ec9a9eeda06">getSize</a> () const </td></tr>
 <tr class="memdesc:ad5b3c7f6a48dc24ea3e19ec9a9eeda06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns pixel size of the font.  <a href="#ad5b3c7f6a48dc24ea3e19ec9a9eeda06">More...</a><br /></td></tr>
@@ -297,13 +298,14 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns a single glyph from given codepoint. </p>
-<p>If glyph with the given codepoint does not exist yet calls packGlyph() and create and pack it</p>
+<p>If glyph with the given codepoint does not exist yet calls packGlyph() to create and pack it.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">codepoint</td><td>Unicode codepoint of a character </td></tr>
+    <tr><td class="paramname">codepoint</td><td>Unicode codepoint of a character</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to the glyph </dd></dl>
 
 </div>
 </div>
@@ -334,12 +336,13 @@ Additional Inherited Members</h2></td></tr>
 <p>Returns the necessary kerning advancement between two characters. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">left</td><td>Codepoint value pointing to the desired character </td></tr>
-    <tr><td class="paramname">right</td><td>Codepoint value pointing to the next character</td></tr>
+    <tr><td class="paramname">left</td><td>Code point value pointing to the desired character </td></tr>
+    <tr><td class="paramname">right</td><td>Code point value pointing to the next character</td></tr>
   </table>
   </dd>
 </dl>
-<p>NOTE: Every font does NOT have support for this! </p>
+<dl class="section warning"><dt>Warning</dt><dd>Every font does NOT have support for this!</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if successful </dd></dl>
 
 </div>
 </div>
@@ -356,7 +359,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the spacing between two rows in the font. </p>
+<p>Return the spacing between two rows in the font. </p>
+<dl class="section return"><dt>Returns</dt><dd>The line spacing </dd></dl>
 
 </div>
 </div>
@@ -374,6 +378,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns pixel size of the font. </p>
+<dl class="section return"><dt>Returns</dt><dd>The font pixel size </dd></dl>
 
 </div>
 </div>
@@ -390,7 +395,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the texture that contains all loaded glyphs. </p>
+<p>Return the texture that contains all loaded glyphs. </p>
+<dl class="section return"><dt>Returns</dt><dd>Reference to the font texture </dd></dl>
 
 </div>
 </div>
@@ -418,14 +424,15 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Loads a font from targeted path. </p>
+<p>Load from file. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">path</td><td>Path to desired .ttf font file </td></tr>
-    <tr><td class="paramname">fontSize</td><td><a class="el" href="classjop_1_1_glyph.html">Glyph</a> size in texture </td></tr>
+    <tr><td class="paramname">fontSize</td><td><a class="el" href="classjop_1_1_glyph.html">Glyph</a> size in texture</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>True if successful </dd></dl>
 
 </div>
 </div>
@@ -465,10 +472,11 @@ Additional Inherited Members</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">ptr</td><td>Pointer to memory </td></tr>
     <tr><td class="paramname">size</td><td>Amount of bytes to read </td></tr>
-    <tr><td class="paramname">pixelSize</td><td><a class="el" href="classjop_1_1_glyph.html">Glyph</a> size in texture </td></tr>
+    <tr><td class="paramname">fontSize</td><td><a class="el" href="classjop_1_1_glyph.html">Glyph</a> size in texture</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>True if successful </dd></dl>
 
 </div>
 </div>
@@ -478,7 +486,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 18 2016 12:34:41 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 9 2016 08:47:39 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

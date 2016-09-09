@@ -12,6 +12,5 @@ var searchData=
   ['flush',['flush',['../classjop_1_1_file_loader.html#aefee462215eaaad6cb7e61041ffc9091',1,'jop::FileLoader::flush()'],['../classjop_1_1_gl_state.html#aac8171cc09d0e5fad2a74048bd678410',1,'jop::GlState::flush()']]],
   ['font',['Font',['../classjop_1_1_font.html#a593cc80044aa53299a692122a398e70b',1,'jop::Font']]],
   ['formatbundle',['FormatBundle',['../classjop_1_1_texture_1_1_format_bundle.html#a8ac8a11faa8f56ba2171667520d234f3',1,'jop::Texture::FormatBundle']]],
-  ['frustumshape',['FrustumShape',['../classjop_1_1_frustum_shape.html#a304bbba79a5bcc00b3e523e3c9f3e60e',1,'jop::FrustumShape']]],
-  ['functionenabled',['functionEnabled',['../classjop_1_1_post_processor.html#ad942ce569671c850b4bb1f0e0e3976c6',1,'jop::PostProcessor']]]
+  ['frustumshape',['FrustumShape',['../classjop_1_1_frustum_shape.html#a304bbba79a5bcc00b3e523e3c9f3e60e',1,'jop::FrustumShape']]]
 ];

@@ -22,11 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Jopnal.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Jopnal Engine
    &#160;<span id="projectnumber">alpha 0.4</span>
    </div>
-   <div id="projectbrief">Simple Component Based 3D Game Engine</div>
+   <div id="projectbrief">Simple Component Based 2D/3D Game Engine</div>
   </td>
  </tr>
  </tbody>
@@ -160,6 +161,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>LightContainer()
 : <a class="el" href="classjop_1_1_light_container.html#a51bebea1846fb35c3eb360066713192b">jop::LightContainer</a>
 </li>
+<li>LightingAttribs
+: <a class="el" href="classjop_1_1_material.html#a37400e6a137fbd0e80b79bb44a18e4a3">jop::Material</a>
+</li>
+<li>LightingModel
+: <a class="el" href="classjop_1_1_material.html#afba278e574e94ce2be75e2d2620c39ae">jop::Material</a>
+</li>
 <li>LightSource()
 : <a class="el" href="classjop_1_1_light_source.html#a22b6be7e7ba308d8f4aa08893d34e074">jop::LightSource</a>
 , <a class="el" href="classjop_1_1_renderer.html#a971d7f7b2685acda99cf00ca1c51e00d">jop::Renderer</a>
@@ -169,8 +176,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classjop_1_1_rotation_joint2_d.html#a37b2fdb0935423eed5d9e903d7e9fc5e">jop::RotationJoint2D</a>
 </li>
 <li>link()
-: <a class="el" href="classjop_1_1_rigid_body2_d.html#aecae74a7ba48b946f09e4c8cd8c3b40d">jop::RigidBody2D</a>
-, <a class="el" href="classjop_1_1_rigid_body.html#adf79db02bb40baf7c230f954ca561a23">jop::RigidBody</a>
+: <a class="el" href="classjop_1_1_rigid_body2_d.html#a4dbf3196edc112ce7561ebf60cb977a0">jop::RigidBody2D</a>
+, <a class="el" href="classjop_1_1_rigid_body.html#a1104fe30c1adf4400d96f554eb1f111a">jop::RigidBody</a>
 , <a class="el" href="classjop_1_1_shader_program.html#a69e3b155166b3da5d6fab46105ff5c86">jop::ShaderProgram</a>
 </li>
 <li>Listener()
@@ -195,33 +202,34 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classjop_1_1_cone_mesh.html#ad38320d5b47a5eea84e0f1219e88a408">jop::ConeMesh</a>
 , <a class="el" href="classjop_1_1_cone_shape2_d.html#a1b6d891040f264e70ca57eb812ba818d">jop::ConeShape2D</a>
 , <a class="el" href="classjop_1_1_cone_shape.html#a6ccdb27eb76deee549d612420ccc7989">jop::ConeShape</a>
-, <a class="el" href="classjop_1_1_convex_hull_shape2_d.html#a80df91e20e1a4dbd59c7c349446350be">jop::ConvexHullShape2D</a>
+, <a class="el" href="classjop_1_1_convex_hull_shape2_d.html#a890a48d495a714f1bf1e43520227b18d">jop::ConvexHullShape2D</a>
 , <a class="el" href="classjop_1_1_convex_hull_shape.html#ae246f84f6055f8a162bb017d519ae488">jop::ConvexHullShape</a>
 , <a class="el" href="classjop_1_1_cubemap.html#a86cec321fe28bc620d176f414ba12fb6">jop::Cubemap</a>
 , <a class="el" href="classjop_1_1_cylinder_mesh.html#a0ced18338c13a1fee76997b864433db0">jop::CylinderMesh</a>
 , <a class="el" href="classjop_1_1_cylinder_shape.html#a1fe0996dd38a43ad619e8d46430e9ffc">jop::CylinderShape</a>
 , <a class="el" href="classjop_1_1_font.html#a2a42aa08f9acfb7b653422ebb7737c97">jop::Font</a>
-, <a class="el" href="classjop_1_1_image.html#ab396d56272909f60b67b66c9e5bdd363">jop::Image</a>
+, <a class="el" href="classjop_1_1_frustum_shape.html#ad4d26622cd0d8d413a6f0c6d25e73045">jop::FrustumShape</a>
+, <a class="el" href="classjop_1_1_image.html#aa45e820115ab41d998a6bca175d1810d">jop::Image</a>
 , <a class="el" href="classjop_1_1_infinite_plane_shape.html#a2d296086f685ac3bfb6339faa71a7b50">jop::InfinitePlaneShape</a>
 , <a class="el" href="classjop_1_1_mesh.html#a4eb581318c8025270b73a95ee856287c">jop::Mesh</a>
 , <a class="el" href="classjop_1_1_model_loader.html#ac7ceaeae822af2dbbe13f297ff3157d7">jop::ModelLoader</a>
-, <a class="el" href="classjop_1_1_rectangle_mesh.html#ad492eb52ffcceeed4243b3b3814703b0">jop::RectangleMesh</a>
-, <a class="el" href="classjop_1_1_rectangle_shape2_d.html#a73a79aede37a2ccc1e641cf048a0b495">jop::RectangleShape2D</a>
+, <a class="el" href="classjop_1_1_rectangle_mesh.html#ad7959ac95bb2df8a01f550a153892dc2">jop::RectangleMesh</a>
+, <a class="el" href="classjop_1_1_rectangle_shape2_d.html#a6b7e591cf5dd030625316af66f0473cc">jop::RectangleShape2D</a>
 , <a class="el" href="classjop_1_1_rectangle_shape.html#aeb00bef048938aabfc15d66917cadaa6">jop::RectangleShape</a>
 </li>
 <li>Load
-: <a class="el" href="structjop_1_1_serializer_1_1_function_i_d.html#afee0360b341ec6cd066341e5511afeefa6d6bc7697cfaac3412cc80fa8b3509d1">jop::Serializer::FunctionID</a>
+: <a class="el" href="structjop_1_1_serializer_1_1_function_i_d.html#a3d82d6e7b83b9dbaebf121292a1d09c9a6d6bc7697cfaac3412cc80fa8b3509d1">jop::Serializer::FunctionID</a>
 </li>
 <li>load()
 : <a class="el" href="classjop_1_1_serializer.html#a8ecd52b95dc3f4d1974a652a4f2872bc">jop::Serializer</a>
 , <a class="el" href="classjop_1_1_shader.html#a3f9f8765c4cee31f3248fb2046de19ee">jop::Shader</a>
 , <a class="el" href="classjop_1_1_shader_program.html#a0b9a838fc1dc2020cdf7cd68698a627e">jop::ShaderProgram</a>
-, <a class="el" href="classjop_1_1_sound_buffer.html#a795a658a474bf3c1542a347716cad008">jop::SoundBuffer</a>
+, <a class="el" href="classjop_1_1_sound_buffer.html#a1ac888287c90cac8e2b5251d9fc6b187">jop::SoundBuffer</a>
 , <a class="el" href="classjop_1_1_sphere_mesh.html#afc8d0a464876c2e3cc7805a7c15f1091">jop::SphereMesh</a>
 , <a class="el" href="classjop_1_1_sphere_shape.html#a648c96527c4ca69513bb5caa5562be48">jop::SphereShape</a>
 , <a class="el" href="classjop_1_1_terrain_shape2_d.html#a684ffb58cc0f6221076008ef2bb7ca47">jop::TerrainShape2D</a>
-, <a class="el" href="classjop_1_1_terrain_shape.html#a98879be692ef38993b9fc08e07da9797">jop::TerrainShape</a>
-, <a class="el" href="classjop_1_1_texture2_d.html#a0b7162999087dd5f375875d5c8ff689a">jop::Texture2D</a>
+, <a class="el" href="classjop_1_1_terrain_shape.html#aad57077dba3628c2e9f405ac0c96368e">jop::TerrainShape</a>
+, <a class="el" href="classjop_1_1_texture2_d.html#a062b521fa8742a2acbd93e98519c2dae">jop::Texture2D</a>
 , <a class="el" href="classjop_1_1_texture_atlas.html#a702d6baf4cfadbb9e087b53cc9546e13">jop::TextureAtlas</a>
 </li>
 <li>loadDefaultConfiguration()
@@ -261,7 +269,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 18 2016 12:34:42 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 9 2016 08:47:43 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -22,11 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Jopnal.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Jopnal Engine
    &#160;<span id="projectnumber">alpha 0.4</span>
    </div>
-   <div id="projectbrief">Simple Component Based 3D Game Engine</div>
+   <div id="projectbrief">Simple Component Based 2D/3D Game Engine</div>
   </td>
  </tr>
  </tbody>
@@ -153,7 +154,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:aba0eae9a1ec6d5ab1d5d5b262379e1c2"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_joint.html#aba0eae9a1ec6d5ab1d5d5b262379e1c2">defaultCenter</a> (const glm::vec3 &amp;jPos) const </td></tr>
 <tr class="separator:aba0eae9a1ec6d5ab1d5d5b262379e1c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35ff102ba2ed51cc75049f688fc90bb0"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_joint.html#a35ff102ba2ed51cc75049f688fc90bb0">computeCenter</a> () const </td></tr>
-<tr class="memdesc:a35ff102ba2ed51cc75049f688fc90bb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the point in the middle between the m_bodies of this.  <a href="#a35ff102ba2ed51cc75049f688fc90bb0">More...</a><br /></td></tr>
+<tr class="memdesc:a35ff102ba2ed51cc75049f688fc90bb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the point in the middle between this' m_bodies.  <a href="#a35ff102ba2ed51cc75049f688fc90bb0">More...</a><br /></td></tr>
 <tr class="separator:a35ff102ba2ed51cc75049f688fc90bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
@@ -215,8 +216,10 @@ Friends</h2></td></tr>
 <p><a class="el" href="classjop_1_1_joint.html">Joint</a> constructor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">worldRef</td><td>Reference to the current world. Obtained and handled by the engine. </td></tr>
     <tr><td class="paramname">bodyA</td><td><a class="el" href="classjop_1_1_rigid_body.html">RigidBody</a> where to attach this joint. Received automatically from the calling function. </td></tr>
     <tr><td class="paramname">bodyB</td><td><a class="el" href="classjop_1_1_rigid_body.html">RigidBody</a> in which to attach the second end of the joint. Given by user as the first argument. </td></tr>
+    <tr><td class="paramname">collide</td><td>Boolean whether the linked bodies should collide with each other. </td></tr>
   </table>
   </dd>
 </dl>
@@ -268,7 +271,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Calculates the point in the middle between the m_bodies of this. </p>
+<p>Calculates the point in the middle between this' m_bodies. </p>
 <dl class="section return"><dt>Returns</dt><dd>Returns the point as glm::vec3. </dd></dl>
 
 </div>
@@ -294,7 +297,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Checks if the joint position is default (declared in the function) Returns the current position if not default. Returns the middle of the m_bodies if default.</p>
+<p>Checks if the joint position is default (declared in the function) Returns the current position if not default. Returns the middle between the m_bodies if default.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">jPos</td><td>Current position of the joint.</td></tr>
@@ -450,7 +453,7 @@ Friends</h2></td></tr>
 
 <p>Pointer to bodyA. </p>
 
-<p>Definition at line <a class="el" href="_joint_8hpp_source.html#l00074">74</a> of file <a class="el" href="_joint_8hpp_source.html">Joint.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_joint_8hpp_source.html#l00075">75</a> of file <a class="el" href="_joint_8hpp_source.html">Joint.hpp</a>.</p>
 
 </div>
 </div>
@@ -466,7 +469,7 @@ Friends</h2></td></tr>
 
 <p>Pointer to bodyB. </p>
 
-<p>Definition at line <a class="el" href="_joint_8hpp_source.html#l00075">75</a> of file <a class="el" href="_joint_8hpp_source.html">Joint.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_joint_8hpp_source.html#l00076">76</a> of file <a class="el" href="_joint_8hpp_source.html">Joint.hpp</a>.</p>
 
 </div>
 </div>
@@ -488,7 +491,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_joint_8hpp_source.html#l00111">111</a> of file <a class="el" href="_joint_8hpp_source.html">Joint.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_joint_8hpp_source.html#l00112">112</a> of file <a class="el" href="_joint_8hpp_source.html">Joint.hpp</a>.</p>
 
 </div>
 </div>
@@ -512,7 +515,7 @@ Friends</h2></td></tr>
 
 <p><a class="el" href="classjop_1_1_joint.html">Joint</a> ID. </p>
 
-<p>Definition at line <a class="el" href="_joint_8hpp_source.html#l00113">113</a> of file <a class="el" href="_joint_8hpp_source.html">Joint.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_joint_8hpp_source.html#l00114">114</a> of file <a class="el" href="_joint_8hpp_source.html">Joint.hpp</a>.</p>
 
 </div>
 </div>
@@ -537,7 +540,7 @@ Friends</h2></td></tr>
 <p>&lt; Should the linked bodies collide. </p>
 <p>Pointer to Bullet joint. </p>
 
-<p>Definition at line <a class="el" href="_joint_8hpp_source.html#l00112">112</a> of file <a class="el" href="_joint_8hpp_source.html">Joint.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_joint_8hpp_source.html#l00113">113</a> of file <a class="el" href="_joint_8hpp_source.html">Joint.hpp</a>.</p>
 
 </div>
 </div>
@@ -553,7 +556,7 @@ Friends</h2></td></tr>
 
 <p>Pointer to the world. </p>
 
-<p>Definition at line <a class="el" href="_joint_8hpp_source.html#l00073">73</a> of file <a class="el" href="_joint_8hpp_source.html">Joint.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_joint_8hpp_source.html#l00074">74</a> of file <a class="el" href="_joint_8hpp_source.html">Joint.hpp</a>.</p>
 
 </div>
 </div>
@@ -563,7 +566,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 18 2016 12:34:41 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 9 2016 08:47:39 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

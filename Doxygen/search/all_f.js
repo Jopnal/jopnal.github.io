@@ -1,9 +1,8 @@
 var searchData=
 [
   ['o',['O',['../structjop_1_1_controller_1_1_playstation.html#a4bce1b1449d32ba223a01a77f6a08e48a6f2b7bd6f79579bc77322fb34c3b3e9b',1,'jop::Controller::Playstation::O()'],['../classjop_1_1_keyboard.html#a031d3cfecc413d6690697b49ddfdbfadafc03f837b6f1c3548a5bbeafb0c1b1e3',1,'jop::Keyboard::O()']]],
-  ['object',['Object',['../classjop_1_1_object.html',1,'jop']]],
   ['object',['Object',['../classjop_1_1_component.html#a0720b5f434e636e22a3ed34f847eec57',1,'jop::Component::Object()'],['../classjop_1_1_scene.html#a0720b5f434e636e22a3ed34f847eec57',1,'jop::Scene::Object()'],['../classjop_1_1_message.html#a08a6e2f546a05901128b647df54a6959ab6a8964730d55be9bd393705f3f7cd5f',1,'jop::Message::Object()'],['../classjop_1_1_object.html#a2a5033da0a267613dd077e1200ec9377',1,'jop::Object::Object(const std::string &amp;ID)'],['../classjop_1_1_object.html#a03ee1a55c265db47a3549a6b02a698e4',1,'jop::Object::Object(const Object &amp;other, const std::string &amp;newID, const Transform::Variables &amp;newTransform)'],['../classjop_1_1_object.html#a2e1af5edb8055b60286ec913cd34e1ca',1,'jop::Object::Object(Object &amp;&amp;other)']]],
-  ['obsidian',['Obsidian',['../classjop_1_1_material.html#adcd9c26a9e7ce1c47c882404474aa520aa1b97edc1a72ab1252ed75a4241a657d',1,'jop::Material']]],
+  ['object',['Object',['../classjop_1_1_object.html',1,'jop']]],
   ['ogg',['ogg',['../classjop_1_1_sound_buffer.html#a4fe07db5944a663f8c471e46b596653ba34da450e959d17db92f6876051d0faac',1,'jop::SoundBuffer']]],
   ['one',['One',['../classjop_1_1_keyboard.html#a031d3cfecc413d6690697b49ddfdbfada09ecd261b4b941c2ea74a0d085ae4b29',1,'jop::Keyboard::One()'],['../classjop_1_1_gl_state.html#ae8c0bc8edb1adaf9c8e5c97025865a06a06c2cea18679d64399783748fa367bdd',1,'jop::GlState::One()']]],
   ['oneminusconstantalpha',['OneMinusConstantAlpha',['../classjop_1_1_gl_state.html#ae8c0bc8edb1adaf9c8e5c97025865a06a9a1874144125c69e93ec99f17e985e41',1,'jop::GlState']]],
@@ -12,11 +11,10 @@ var searchData=
   ['oneminusdstcolor',['OneMinusDstColor',['../classjop_1_1_gl_state.html#ae8c0bc8edb1adaf9c8e5c97025865a06a09f1a054ebd4d3850fd248bd2fa7b325',1,'jop::GlState']]],
   ['oneminussrcalpha',['OneMinusSrcAlpha',['../classjop_1_1_gl_state.html#ae8c0bc8edb1adaf9c8e5c97025865a06ac00a6016489cff63d50d489ce52254cc',1,'jop::GlState']]],
   ['oneminussrccolor',['OneMinusSrcColor',['../classjop_1_1_gl_state.html#ae8c0bc8edb1adaf9c8e5c97025865a06a09d3240b4e2481b1a729da24e9bfddf7',1,'jop::GlState']]],
-  ['opacity',['Opacity',['../classjop_1_1_material.html#a2f0824a478178fbf48d6381c242e4b04abad6a5dd8c28e6b14f8e986615e3dc98',1,'jop::Material']]],
-  ['opacitymap',['OpacityMap',['../structjop_1_1_material_1_1_attribute.html#a43524314a63d040d03f775497520b30fae87dd17757dd8dcbae8eaa7a870cd07a',1,'jop::Material::Attribute']]],
+  ['opacity',['Opacity',['../classjop_1_1_material.html#a6c98634da5479829690b75b27dceee32abad6a5dd8c28e6b14f8e986615e3dc98',1,'jop::Material']]],
   ['open',['open',['../classjop_1_1_file_loader.html#ae634510d8a9cb6413a9d9af8b1f57bc0',1,'jop::FileLoader::open(const std::string &amp;path)'],['../classjop_1_1_file_loader.html#ab01c0f1a02ca257870e8b060cac87e8a',1,'jop::FileLoader::open(const Directory dir, const std::string &amp;path, const bool append)'],['../classjop_1_1_window.html#a5ce017d8a48cbe4ba2ad92fed444b941',1,'jop::Window::open()']]],
   ['operator_20bool',['operator bool',['../classjop_1_1_file_loader.html#a60a4efe1cf1a3b4cfd0865fd3a363967',1,'jop::FileLoader::operator bool()'],['../classjop_1_1_message.html#a89085585572f9811434677853bd95ebf',1,'jop::Message::operator bool()'],['../classjop_1_1_weak_reference.html#a1297f1a088f24beb10a959d0afd3d6be',1,'jop::WeakReference::operator bool()']]],
-  ['operator_20const_20t_20_26',['operator const T &amp;',['../classjop_1_1_weak_reference.html#a12ce812a1ca2bb915648e651b2edf344',1,'jop::WeakReference']]],
+  ['operator_20const_20t_20_26',['operator const T &amp;',['../structjop_1_1_dynamic_setting.html#a6536e2f85d595d1587a26d5fe23bf78a',1,'jop::DynamicSetting::operator const T &amp;()'],['../classjop_1_1_weak_reference.html#a12ce812a1ca2bb915648e651b2edf344',1,'jop::WeakReference::operator const T &amp;()']]],
   ['operator_20t_20_26',['operator T &amp;',['../classjop_1_1_weak_reference.html#a9d9bab967e9d0d337a7f12266b03bc4d',1,'jop::WeakReference']]],
   ['operator_21_3d',['operator!=',['../classjop_1_1_color.html#aa5777a1e821ce76a710fd273c6d6c76c',1,'jop::Color::operator!=()'],['../classjop_1_1_date_time.html#a0bb05474221215bfbb9b1f5682744de8',1,'jop::DateTime::operator!=()']]],
   ['operator_28_29',['operator()',['../classjop_1_1_randomizer.html#ad49031a7c849950f4c753d8a03453dbe',1,'jop::Randomizer']]],
@@ -32,6 +30,8 @@ var searchData=
   ['operator_3d_3d',['operator==',['../classjop_1_1_color.html#a8a8d04bfe23e7aad01d227c146674f96',1,'jop::Color::operator==()'],['../classjop_1_1_date_time.html#a492f56143617fe97445f07ac8811110c',1,'jop::DateTime::operator==()'],['../structjop_1_1_directory_watcher_1_1_info.html#a4aa5086aa15f759bbfa625963c3f1041',1,'jop::DirectoryWatcher::Info::operator==()']]],
   ['operator_5b_5d',['operator[]',['../classjop_1_1_light_container.html#a61a0a21378968fe8be5359c2cd96c72b',1,'jop::LightContainer::operator[](const LightSource::Type type)'],['../classjop_1_1_light_container.html#ad8f85b22619522292181edeba834054f',1,'jop::LightContainer::operator[](const LightSource::Type type) const ']]],
   ['orange',['Orange',['../classjop_1_1_color.html#a12a7e7ace070c09800cbf0dbd2534459',1,'jop::Color']]],
+  ['orderedrenderpass',['OrderedRenderPass',['../structjop_1_1_ordered_render_pass.html',1,'jop']]],
+  ['orderedrenderpass',['OrderedRenderPass',['../structjop_1_1_ordered_render_pass.html#a501f42a1717bdec471448a84624c4a53',1,'jop::OrderedRenderPass']]],
   ['orientation',['Orientation',['../classjop_1_1_sensor.html#a62f967ee686c612a18b2c1f78517f8d2aabbd64f40c34c537d3a571af068fce29',1,'jop::Sensor']]],
-  ['orthographic',['Orthographic',['../classjop_1_1_camera.html#a37b0efda6edba7f8663658c7c7707061a03424250432f2aa71de95579d2c0eaeb',1,'jop::Camera::Orthographic()'],['../unionjop_1_1_camera_1_1_projection_data.html#ac3a149c5cc8aa8fff5afcc71ad4e71a5',1,'jop::Camera::ProjectionData::orthographic()']]]
+  ['orthographic',['Orthographic',['../classjop_1_1_camera.html#a37b0efda6edba7f8663658c7c7707061a03424250432f2aa71de95579d2c0eaeb',1,'jop::Camera::Orthographic()'],['../unionjop_1_1_camera_1_1_projection_data.html#a29fa8d5123d7e572dad08d820ae71718',1,'jop::Camera::ProjectionData::orthographic()']]]
 ];

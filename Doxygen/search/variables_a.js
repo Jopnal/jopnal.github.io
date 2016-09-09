@@ -1,8 +1,9 @@
 var searchData=
 [
   ['m_5factive',['m_active',['../classjop_1_1_render_pass.html#a30ada38ec3d4ce76deebba94dc0d194f',1,'jop::RenderPass']]],
-  ['m_5fallowsleep',['m_allowSleep',['../classjop_1_1_rigid_body.html#a0290733ef37fea8a1916dfa6acb057ce',1,'jop::RigidBody']]],
+  ['m_5fallowsleep',['m_allowSleep',['../classjop_1_1_collider.html#afe2eac62716598a6bb5f4337abdcfecb',1,'jop::Collider']]],
   ['m_5fasset',['m_asset',['../classjop_1_1_file_loader.html#ab4bc5f28e0324785bce0b080c098d552',1,'jop::FileLoader']]],
+  ['m_5fattributes',['m_attributes',['../classjop_1_1_drawable.html#a2ffa4519ce8b4b2435ecaadfe1f71165',1,'jop::Drawable']]],
   ['m_5fbody',['m_body',['../classjop_1_1_collider.html#afa3c62c93939431b969138a568db3472',1,'jop::Collider::m_body()'],['../classjop_1_1_collider2_d.html#a6dccfb6f97186c40d57a06d3d7a1b9a6',1,'jop::Collider2D::m_body()']]],
   ['m_5fbodya',['m_bodyA',['../classjop_1_1_joint.html#a3385856ffc2f9820b861227e1765fc43',1,'jop::Joint::m_bodyA()'],['../classjop_1_1_joint2_d.html#a94156c4cd4b429472f196277c2124379',1,'jop::Joint2D::m_bodyA()']]],
   ['m_5fbodyb',['m_bodyB',['../classjop_1_1_joint.html#a5f307d6428a709e1b9d2d73dacb938cb',1,'jop::Joint::m_bodyB()'],['../classjop_1_1_joint2_d.html#a5b15aece6ff3efc1e0144f63d988922c',1,'jop::Joint2D::m_bodyB()']]],
@@ -27,7 +28,7 @@ var searchData=
   ['m_5flisteners',['m_listeners',['../classjop_1_1_collider.html#a8afd977fe99567eb9d4cb74f2d6936f2',1,'jop::Collider::m_listeners()'],['../classjop_1_1_collider2_d.html#a497ce897b2dd3eaf0af8ce4dc22c0f14',1,'jop::Collider2D::m_listeners()']]],
   ['m_5fmass',['m_mass',['../classjop_1_1_rigid_body.html#a6398215b1da1326556f6380f661a5338',1,'jop::RigidBody']]],
   ['m_5fmatrix',['m_matrix',['../classjop_1_1_transform.html#a1cc9760aaad8fbd5e6ee7a413f52dad0',1,'jop::Transform']]],
-  ['m_5fmotionstate',['m_motionState',['../classjop_1_1_collider.html#a11ad68930c22a87b6d53d4153a204e54',1,'jop::Collider']]],
+  ['m_5fmotionstate',['m_motionState',['../classjop_1_1_rigid_body.html#ab2c64c0ccd45872c1dee935393bcbb27',1,'jop::RigidBody']]],
   ['m_5fmutex',['m_mutex',['../classjop_1_1_render_target.html#ae6f0e557296b7f075b336d67977a4416',1,'jop::RenderTarget']]],
   ['m_5fpass',['m_pass',['../classjop_1_1_render_pass.html#a87deee377e4208b86be26aada3c04c8f',1,'jop::RenderPass']]],
   ['m_5frendererref',['m_rendererRef',['../classjop_1_1_render_pass.html#ad8e0a63f00d2adf4f30259a497241161',1,'jop::RenderPass']]],

@@ -22,11 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Jopnal.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Jopnal Engine
    &#160;<span id="projectnumber">alpha 0.4</span>
    </div>
-   <div id="projectbrief">Simple Component Based 3D Game Engine</div>
+   <div id="projectbrief">Simple Component Based 2D/3D Game Engine</div>
   </td>
  </tr>
  </tbody>
@@ -89,8 +90,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classjop_1_1_phantom_body-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">jop::PhantomBody Class Reference<div class="ingroups"><a class="el" href="group__physics.html">Physics</a></div></div>  </div>
@@ -104,26 +106,40 @@ Inheritance diagram for jop::PhantomBody:</div>
  <div class="center">
   <img src="classjop_1_1_phantom_body.png" usemap="#jop::PhantomBody_map" alt=""/>
   <map id="jop::PhantomBody_map" name="jop::PhantomBody_map">
-<area href="classjop_1_1_collider.html" alt="jop::Collider" shape="rect" coords="111,56,323,80"/>
-<area href="classjop_1_1_component.html" alt="jop::Component" shape="rect" coords="0,0,212,24"/>
-<area href="classjop_1_1_safe_referenceable.html" alt="jop::SafeReferenceable&lt; Collider &gt;" shape="rect" coords="222,0,434,24"/>
+<area href="classjop_1_1_collider.html" alt="jop::Collider" shape="rect" coords="666,56,878,80"/>
+<area href="classjop_1_1_component.html" alt="jop::Component" shape="rect" coords="555,0,767,24"/>
+<area href="classjop_1_1_safe_referenceable.html" alt="jop::SafeReferenceable&lt; Collider &gt;" shape="rect" coords="777,0,989,24"/>
+<area href="classjop_1_1_culler_component.html" alt="jop::CullerComponent" shape="rect" coords="666,168,878,192"/>
+<area href="classjop_1_1_drawable.html" alt="jop::Drawable" shape="rect" coords="666,224,878,248"/>
+<area href="classjop_1_1_animated_sprite.html" alt="jop::AnimatedSprite" shape="rect" coords="0,280,212,304"/>
+<area href="classjop_1_1_sky_box.html" alt="jop::SkyBox" shape="rect" coords="222,280,434,304"/>
+<area href="classjop_1_1_sky_sphere.html" alt="jop::SkySphere" shape="rect" coords="444,280,656,304"/>
+<area href="classjop_1_1_sprite.html" alt="jop::Sprite" shape="rect" coords="666,280,878,304"/>
+<area href="classjop_1_1_text.html" alt="jop::Text" shape="rect" coords="888,280,1100,304"/>
+<area href="classjop_1_1_world.html" alt="jop::World" shape="rect" coords="1110,280,1322,304"/>
+<area href="classjop_1_1_world2_d.html" alt="jop::World2D" shape="rect" coords="1332,280,1544,304"/>
 </map>
  </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:ac1d7677a4b3010817e8b59ff97edc7e6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_phantom_body.html#ac1d7677a4b3010817e8b59ff97edc7e6">Type</a> { <a class="el" href="classjop_1_1_phantom_body.html#ac1d7677a4b3010817e8b59ff97edc7e6a84a8921b25f505d0d2077aeb5db4bc16">Type::Static</a>, 
-<a class="el" href="classjop_1_1_phantom_body.html#ac1d7677a4b3010817e8b59ff97edc7e6a40c78b58b86002ee38fad2d3c9dd787e">Type::Kinematic</a>
- }</td></tr>
-<tr class="separator:ac1d7677a4b3010817e8b59ff97edc7e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac0c5842cedb8d4a27b26d2605eed6d96"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_phantom_body.html#ac0c5842cedb8d4a27b26d2605eed6d96">PhantomBody</a> (<a class="el" href="classjop_1_1_object.html">Object</a> &amp;object, <a class="el" href="classjop_1_1_world.html">World</a> &amp;world, <a class="el" href="classjop_1_1_collision_shape.html">CollisionShape</a> &amp;shape, const <a class="el" href="classjop_1_1_phantom_body.html#ac1d7677a4b3010817e8b59ff97edc7e6">Type</a> type)</td></tr>
-<tr class="separator:ac0c5842cedb8d4a27b26d2605eed6d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaca0fddabffe6f4d0a5e4c28069d472"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_phantom_body.html#adaca0fddabffe6f4d0a5e4c28069d472">PhantomBody</a> (<a class="el" href="classjop_1_1_object.html">Object</a> &amp;object, <a class="el" href="classjop_1_1_world.html">World</a> &amp;world, <a class="el" href="classjop_1_1_collision_shape.html">CollisionShape</a> &amp;shape, const bool <a class="el" href="classjop_1_1_collider.html#a5b8a128ed4ae80ca4efcbb42e9d6e9f7">attachToWorld</a>)</td></tr>
+<tr class="memdesc:adaca0fddabffe6f4d0a5e4c28069d472"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#adaca0fddabffe6f4d0a5e4c28069d472">More...</a><br /></td></tr>
+<tr class="separator:adaca0fddabffe6f4d0a5e4c28069d472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ef1ec98899cb8dfc934e379502b0fcf"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_phantom_body.html#a1ef1ec98899cb8dfc934e379502b0fcf">~PhantomBody</a> () override</td></tr>
+<tr class="separator:a1ef1ec98899cb8dfc934e379502b0fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af083c18cc0f3105106dfbb98ad14fa79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_phantom_body.html#af083c18cc0f3105106dfbb98ad14fa79">update</a> (const float deltaTime) override</td></tr>
 <tr class="memdesc:af083c18cc0f3105106dfbb98ad14fa79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update function.  <a href="#af083c18cc0f3105106dfbb98ad14fa79">More...</a><br /></td></tr>
 <tr class="separator:af083c18cc0f3105106dfbb98ad14fa79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc9a86b030dc7832f6d600c36f6c6088"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classjop_1_1_collider.html">Collider</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_phantom_body.html#abc9a86b030dc7832f6d600c36f6c6088">getOverlaps</a> ()</td></tr>
+<tr class="memdesc:abc9a86b030dc7832f6d600c36f6c6088"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all the overlapping colliders.  <a href="#abc9a86b030dc7832f6d600c36f6c6088">More...</a><br /></td></tr>
+<tr class="separator:abc9a86b030dc7832f6d600c36f6c6088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a095b424acbdaf6dc4d1ab90c08f9a9f0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; const <a class="el" href="classjop_1_1_collider.html">Collider</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_phantom_body.html#a095b424acbdaf6dc4d1ab90c08f9a9f0">getOverlaps</a> () const </td></tr>
+<tr class="memdesc:a095b424acbdaf6dc4d1ab90c08f9a9f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all the overlapping colliders.  <a href="#a095b424acbdaf6dc4d1ab90c08f9a9f0">More...</a><br /></td></tr>
+<tr class="separator:a095b424acbdaf6dc4d1ab90c08f9a9f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3ffadb308a6cd090499a920fc3912cf"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_phantom_body.html#ac3ffadb308a6cd090499a920fc3912cf">getOverlapAmount</a> () const </td></tr>
+<tr class="memdesc:ac3ffadb308a6cd090499a920fc3912cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of overlapping colliders.  <a href="#ac3ffadb308a6cd090499a920fc3912cf">More...</a><br /></td></tr>
+<tr class="separator:ac3ffadb308a6cd090499a920fc3912cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classjop_1_1_collider"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classjop_1_1_collider')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classjop_1_1_collider.html">jop::Collider</a></td></tr>
 <tr class="memitem:acd51dc3ef30e2d4d47a71fe409dc549f inherit pub_methods_classjop_1_1_collider"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_collider.html#acd51dc3ef30e2d4d47a71fe409dc549f">checkOverlap</a> (const <a class="el" href="classjop_1_1_collider.html">Collider</a> &amp;other) const </td></tr>
 <tr class="memdesc:acd51dc3ef30e2d4d47a71fe409dc549f inherit pub_methods_classjop_1_1_collider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this collider overlaps with another.  <a href="#acd51dc3ef30e2d4d47a71fe409dc549f">More...</a><br /></td></tr>
@@ -144,9 +160,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a394fb2ac0cc6e8bc7ab7639c7d301fdf inherit pub_methods_classjop_1_1_collider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the world this collider belongs to.  <a href="#a394fb2ac0cc6e8bc7ab7639c7d301fdf">More...</a><br /></td></tr>
 <tr class="separator:a394fb2ac0cc6e8bc7ab7639c7d301fdf inherit pub_methods_classjop_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a819bd75044090bbd7c3178db6fa84029 inherit pub_methods_classjop_1_1_collider"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_collider.html#a819bd75044090bbd7c3178db6fa84029">detachFromWorld</a> ()</td></tr>
+<tr class="memdesc:a819bd75044090bbd7c3178db6fa84029 inherit pub_methods_classjop_1_1_collider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detach this body from its world.  <a href="#a819bd75044090bbd7c3178db6fa84029">More...</a><br /></td></tr>
 <tr class="separator:a819bd75044090bbd7c3178db6fa84029 inherit pub_methods_classjop_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b8a128ed4ae80ca4efcbb42e9d6e9f7 inherit pub_methods_classjop_1_1_collider"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_collider.html#a5b8a128ed4ae80ca4efcbb42e9d6e9f7">attachToWorld</a> ()</td></tr>
+<tr class="memdesc:a5b8a128ed4ae80ca4efcbb42e9d6e9f7 inherit pub_methods_classjop_1_1_collider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attach this body to its world if it was previously detached.  <a href="#a5b8a128ed4ae80ca4efcbb42e9d6e9f7">More...</a><br /></td></tr>
 <tr class="separator:a5b8a128ed4ae80ca4efcbb42e9d6e9f7 inherit pub_methods_classjop_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d5e465146e65bd2816f0cb678a1f226 inherit pub_methods_classjop_1_1_collider"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_collider.html#a7d5e465146e65bd2816f0cb678a1f226">isDetachedFromWorld</a> () const </td></tr>
+<tr class="memdesc:a7d5e465146e65bd2816f0cb678a1f226 inherit pub_methods_classjop_1_1_collider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this body is currently detached from its world.  <a href="#a7d5e465146e65bd2816f0cb678a1f226">More...</a><br /></td></tr>
+<tr class="separator:a7d5e465146e65bd2816f0cb678a1f226 inherit pub_methods_classjop_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3b26382ba2c6e89f5c97179d83ca3ed inherit pub_methods_classjop_1_1_collider"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_collider.html#aa3b26382ba2c6e89f5c97179d83ca3ed">updateWorldBounds</a> ()</td></tr>
+<tr class="memdesc:aa3b26382ba2c6e89f5c97179d83ca3ed inherit pub_methods_classjop_1_1_collider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force update of the world space bounds.  <a href="#aa3b26382ba2c6e89f5c97179d83ca3ed">More...</a><br /></td></tr>
+<tr class="separator:aa3b26382ba2c6e89f5c97179d83ca3ed inherit pub_methods_classjop_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88d33afbfd67a06838007fceca704844 inherit pub_methods_classjop_1_1_collider"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_collider.html#a88d33afbfd67a06838007fceca704844">setCollisionShape</a> (<a class="el" href="classjop_1_1_collision_shape.html">CollisionShape</a> &amp;shape)</td></tr>
+<tr class="memdesc:a88d33afbfd67a06838007fceca704844 inherit pub_methods_classjop_1_1_collider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the collision shape.  <a href="#a88d33afbfd67a06838007fceca704844">More...</a><br /></td></tr>
+<tr class="separator:a88d33afbfd67a06838007fceca704844 inherit pub_methods_classjop_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fa663e5dcf3ffd828218be1e7210829 inherit pub_methods_classjop_1_1_collider"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classjop_1_1_collision_shape.html">CollisionShape</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_collider.html#a5fa663e5dcf3ffd828218be1e7210829">getCollisionShape</a> () const </td></tr>
+<tr class="memdesc:a5fa663e5dcf3ffd828218be1e7210829 inherit pub_methods_classjop_1_1_collider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the collision shape.  <a href="#a5fa663e5dcf3ffd828218be1e7210829">More...</a><br /></td></tr>
+<tr class="separator:a5fa663e5dcf3ffd828218be1e7210829 inherit pub_methods_classjop_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classjop_1_1_component"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classjop_1_1_component')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classjop_1_1_component.html">jop::Component</a></td></tr>
 <tr class="memitem:a03e4d9085324bdcba462e11673c7ec73 inherit pub_methods_classjop_1_1_component"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_component.html#a03e4d9085324bdcba462e11673c7ec73">~Component</a> ()=0</td></tr>
 <tr class="memdesc:a03e4d9085324bdcba462e11673c7ec73 inherit pub_methods_classjop_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <a href="#a03e4d9085324bdcba462e11673c7ec73">More...</a><br /></td></tr>
@@ -177,8 +207,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a14b65b47e6de0ff42bd05edf354b0266 inherit pub_methods_classjop_1_1_safe_referenceable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a weak reference to the bound object.  <a href="#a14b65b47e6de0ff42bd05edf354b0266">More...</a><br /></td></tr>
 <tr class="separator:a14b65b47e6de0ff42bd05edf354b0266 inherit pub_methods_classjop_1_1_safe_referenceable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a27e567ab4fea6ff78a0e551b1f72141a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_phantom_body.html#a27e567ab4fea6ff78a0e551b1f72141a">JOP_GENERIC_COMPONENT_CLONE</a> (<a class="el" href="classjop_1_1_phantom_body.html">PhantomBody</a>)</td></tr>
+<tr class="separator:a27e567ab4fea6ff78a0e551b1f72141a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classjop_1_1_collider"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classjop_1_1_collider')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classjop_1_1_collider.html">jop::Collider</a></td></tr>
 <tr class="memitem:abc1725353e6e1215e657f9eebf3f9c7f inherit pro_methods_classjop_1_1_collider"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_collider.html#abc1725353e6e1215e657f9eebf3f9c7f">Collider</a> (<a class="el" href="classjop_1_1_object.html">Object</a> &amp;object, <a class="el" href="classjop_1_1_world.html">World</a> &amp;world, const <a class="el" href="namespacejop.html#a73e1cf7200a4729fd1c89af2f63ba79e">uint32</a> ID)</td></tr>
 <tr class="memdesc:abc1725353e6e1215e657f9eebf3f9c7f inherit pro_methods_classjop_1_1_collider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#abc1725353e6e1215e657f9eebf3f9c7f">More...</a><br /></td></tr>
@@ -189,6 +221,12 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:aa9c6ad56a573dbdcf33c39acc2e9a23b inherit pro_methods_classjop_1_1_collider"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_collider.html#aa9c6ad56a573dbdcf33c39acc2e9a23b">~Collider</a> () override=0</td></tr>
 <tr class="memdesc:aa9c6ad56a573dbdcf33c39acc2e9a23b inherit pro_methods_classjop_1_1_collider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <a href="#aa9c6ad56a573dbdcf33c39acc2e9a23b">More...</a><br /></td></tr>
 <tr class="separator:aa9c6ad56a573dbdcf33c39acc2e9a23b inherit pro_methods_classjop_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42043d953c02fba395b26b0b0d3db4db inherit pro_methods_classjop_1_1_collider"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_collider.html#a42043d953c02fba395b26b0b0d3db4db">setAllowSleep</a> (const bool allow)</td></tr>
+<tr class="memdesc:a42043d953c02fba395b26b0b0d3db4db inherit pro_methods_classjop_1_1_collider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether the collider is allowed to sleep.  <a href="#a42043d953c02fba395b26b0b0d3db4db">More...</a><br /></td></tr>
+<tr class="separator:a42043d953c02fba395b26b0b0d3db4db inherit pro_methods_classjop_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1991a4fd6a115a2e869a247bd5b69209 inherit pro_methods_classjop_1_1_collider"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_collider.html#a1991a4fd6a115a2e869a247bd5b69209">isSleepAllowed</a> () const </td></tr>
+<tr class="memdesc:a1991a4fd6a115a2e869a247bd5b69209 inherit pro_methods_classjop_1_1_collider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if sleep is allowed.  <a href="#a1991a4fd6a115a2e869a247bd5b69209">More...</a><br /></td></tr>
+<tr class="separator:a1991a4fd6a115a2e869a247bd5b69209 inherit pro_methods_classjop_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classjop_1_1_component"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classjop_1_1_component')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classjop_1_1_component.html">jop::Component</a></td></tr>
 <tr class="memitem:a235726e943283819e36d4bea5ad008eb inherit pro_methods_classjop_1_1_component"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_component.html#a235726e943283819e36d4bea5ad008eb">Component</a> (<a class="el" href="classjop_1_1_object.html">Object</a> &amp;object, const <a class="el" href="namespacejop.html#a73e1cf7200a4729fd1c89af2f63ba79e">uint32</a> ID)</td></tr>
 <tr class="memdesc:a235726e943283819e36d4bea5ad008eb inherit pro_methods_classjop_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a235726e943283819e36d4bea5ad008eb">More...</a><br /></td></tr>
@@ -212,10 +250,15 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:ab341c2a259e62ea118af008bba0bfdb8 inherit pro_methods_classjop_1_1_safe_referenceable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_safe_referenceable.html#ab341c2a259e62ea118af008bba0bfdb8">~SafeReferenceable</a> ()</td></tr>
 <tr class="memdesc:ab341c2a259e62ea118af008bba0bfdb8 inherit pro_methods_classjop_1_1_safe_referenceable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Protected destructor.  <a href="#ab341c2a259e62ea118af008bba0bfdb8">More...</a><br /></td></tr>
 <tr class="separator:ab341c2a259e62ea118af008bba0bfdb8 inherit pro_methods_classjop_1_1_safe_referenceable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a6fd6d0de5af6cd0fbb6a4f7e9e1d5999"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_phantom_body.html#a6fd6d0de5af6cd0fbb6a4f7e9e1d5999">CullerComponent</a></td></tr>
+<tr class="separator:a6fd6d0de5af6cd0fbb6a4f7e9e1d5999"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classjop_1_1_collider"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classjop_1_1_collider')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classjop_1_1_collider.html">jop::Collider</a></td></tr>
-<tr class="memitem:a11ad68930c22a87b6d53d4153a204e54 inherit pro_attribs_classjop_1_1_collider"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; btMotionState &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_collider.html#a11ad68930c22a87b6d53d4153a204e54">m_motionState</a></td></tr>
-<tr class="memdesc:a11ad68930c22a87b6d53d4153a204e54 inherit pro_attribs_classjop_1_1_collider"><td class="mdescLeft">&#160;</td><td class="mdescRight">The motion state.  <a href="#a11ad68930c22a87b6d53d4153a204e54">More...</a><br /></td></tr>
-<tr class="separator:a11ad68930c22a87b6d53d4153a204e54 inherit pro_attribs_classjop_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa3c62c93939431b969138a568db3472 inherit pro_attribs_classjop_1_1_collider"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; btCollisionObject &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_collider.html#afa3c62c93939431b969138a568db3472">m_body</a></td></tr>
 <tr class="memdesc:afa3c62c93939431b969138a568db3472 inherit pro_attribs_classjop_1_1_collider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Body data.  <a href="#afa3c62c93939431b969138a568db3472">More...</a><br /></td></tr>
 <tr class="separator:afa3c62c93939431b969138a568db3472 inherit pro_attribs_classjop_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -226,43 +269,17 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memdesc:a8afd977fe99567eb9d4cb74f2d6936f2 inherit pro_attribs_classjop_1_1_collider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listeners registered for this collider.  <a href="#a8afd977fe99567eb9d4cb74f2d6936f2">More...</a><br /></td></tr>
 <tr class="separator:a8afd977fe99567eb9d4cb74f2d6936f2 inherit pro_attribs_classjop_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a370a42570a8ebb387dd40405d1a27ce7 inherit pro_attribs_classjop_1_1_collider"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_collider.html#a370a42570a8ebb387dd40405d1a27ce7">m_detached</a></td></tr>
+<tr class="memdesc:a370a42570a8ebb387dd40405d1a27ce7 inherit pro_attribs_classjop_1_1_collider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is this body detached from the world?  <a href="#a370a42570a8ebb387dd40405d1a27ce7">More...</a><br /></td></tr>
 <tr class="separator:a370a42570a8ebb387dd40405d1a27ce7 inherit pro_attribs_classjop_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe2eac62716598a6bb5f4337abdcfecb inherit pro_attribs_classjop_1_1_collider"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjop_1_1_collider.html#afe2eac62716598a6bb5f4337abdcfecb">m_allowSleep</a></td></tr>
+<tr class="memdesc:afe2eac62716598a6bb5f4337abdcfecb inherit pro_attribs_classjop_1_1_collider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is sleep allowed?  <a href="#afe2eac62716598a6bb5f4337abdcfecb">More...</a><br /></td></tr>
+<tr class="separator:afe2eac62716598a6bb5f4337abdcfecb inherit pro_attribs_classjop_1_1_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>#TODO Detailed description </p>
-
+<div class="textblock">
 <p>Definition at line <a class="el" href="_phantom_body_8hpp_source.html#l00037">37</a> of file <a class="el" href="_phantom_body_8hpp_source.html">PhantomBody.hpp</a>.</p>
-</div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="ac1d7677a4b3010817e8b59ff97edc7e6"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="classjop_1_1_phantom_body.html#ac1d7677a4b3010817e8b59ff97edc7e6">jop::PhantomBody::Type</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ac1d7677a4b3010817e8b59ff97edc7e6a84a8921b25f505d0d2077aeb5db4bc16"></a>Static&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ac1d7677a4b3010817e8b59ff97edc7e6a40c78b58b86002ee38fad2d3c9dd787e"></a>Kinematic&#160;</td><td class="fielddoc">
-</td></tr>
-</table>
-
-<p>Definition at line <a class="el" href="_phantom_body_8hpp_source.html#l00045">45</a> of file <a class="el" href="_phantom_body_8hpp_source.html">PhantomBody.hpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ac0c5842cedb8d4a27b26d2605eed6d96"></a>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="adaca0fddabffe6f4d0a5e4c28069d472"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -287,8 +304,8 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classjop_1_1_phantom_body.html#ac1d7677a4b3010817e8b59ff97edc7e6">Type</a>&#160;</td>
-          <td class="paramname"><em>type</em>&#160;</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>attachToWorld</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -298,9 +315,119 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">object</td><td>The object to bind this component into </td></tr>
+    <tr><td class="paramname">world</td><td>The physics world </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a1ef1ec98899cb8dfc934e379502b0fcf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual jop::PhantomBody::~PhantomBody </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ac3ffadb308a6cd090499a920fc3912cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int jop::PhantomBody::getOverlapAmount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the number of overlapping colliders. </p>
+<dl class="section return"><dt>Returns</dt><dd>The number of overlapping colliders </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abc9a86b030dc7832f6d600c36f6c6088"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classjop_1_1_collider.html">Collider</a>*&gt; jop::PhantomBody::getOverlaps </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get all the overlapping colliders. </p>
+<dl class="section return"><dt>Returns</dt><dd>The overlapping colliders </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a095b424acbdaf6dc4d1ab90c08f9a9f0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;const <a class="el" href="classjop_1_1_collider.html">Collider</a>*&gt; jop::PhantomBody::getOverlaps </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get all the overlapping colliders. </p>
+<dl class="section return"><dt>Returns</dt><dd>The overlapping colliders </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a27e567ab4fea6ff78a0e551b1f72141a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">jop::PhantomBody::JOP_GENERIC_COMPONENT_CLONE </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classjop_1_1_phantom_body.html">PhantomBody</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="af083c18cc0f3105106dfbb98ad14fa79"></a>
 <div class="memitem">
 <div class="memproto">
@@ -333,6 +460,31 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classjop_1_1_collider.html#a0c74db4c85b99335a37c053cfc31cb7f">jop::Collider</a>.</p>
 
+<p>Reimplemented in <a class="el" href="classjop_1_1_world.html#a05edbda052faa1e33c33f6fe0b422e88">jop::World</a>, and <a class="el" href="classjop_1_1_world2_d.html#abb425fa2dccfbc11de4a4212ffaab9b9">jop::World2D</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a class="anchor" id="a6fd6d0de5af6cd0fbb6a4f7e9e1d5999"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classjop_1_1_culler_component.html">CullerComponent</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_phantom_body_8hpp_source.html#l00043">43</a> of file <a class="el" href="_phantom_body_8hpp_source.html">PhantomBody.hpp</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -341,7 +493,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 18 2016 12:34:42 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 9 2016 08:47:40 for Jopnal Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
