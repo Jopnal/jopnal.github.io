@@ -1,96 +1,91 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
+
 <html>
-<head>
-    <meta charset="utf-8">
+	<head>
 
-    <style>
-        div.page {
-            width: 100%;
-            height: 100%;
-        }
+		<meta charset="UTF-8">
 
-        header {
-            padding: 1em;
-            background-color: #366EFF;
-            color: #0000cc;
-            height: 256px;
-            border: 1px solid black;
-        }
+		<title>Jopnal</title>
+		<link rel="icon" href="img/icon.ico"/>
+		<link href="https://fonts.googleapis.com/css?family=Changa" rel="stylesheet">
+		<script src="scripts/jquery-3.1.0.min.js"></script>
+		<script src="scripts/fadeinout.js"></script>
 
-            header center {
-                margin-top: 90px;
-            }
+		<style>
 
-        nav {
-            float: left;
-            max-width: 160px;
-            margin: auto;
-            padding: 1em;
-            background-color: #0A59E8;
-            height: 600px;
-            border: 1px solid black;
-        }
+			body
+			{
+				font-family: 'Changa', sans-serif;
+				text-align: center;
+				color: lightblue;
+			}
 
-            nav ul {
-                list-style-type: none;
-                padding: 0;
-                color:white;
-            }
+			@keyframes imgshadow
+			{
+				from {box-shadow: 0 0 20px lightblue;}
+				to {box-shadow: 0 0 125px lightblue;}
+			}
+			img
+			{
+				display: block;
+				margin: auto;
+				margin-top: 120px;
+				border-radius: 5px;
 
-                nav ul a {
-                    text-decoration: none;
-                    color: white;
-                }
+				box-shadow: 0 0 20px lightblue;
+				animation-name: imgshadow;
+				animation-duration: 3s;
+				animation-iteration-count: infinite;
+				animation-direction: alternate;
+				animation-timing-function: ease-in-out;
+			}
 
-        article {
-            margin-left: 170px;
-            padding: 1em;
-            overflow: hidden;
-            background: repeating-linear-gradient(#3BAFE8, #6F34FF);
-            height: 600px;
-            border: 1px solid black;
-        }
+			h1
+			{
+				font-size: 50px;
+				margin-bottom: 0;
+			}
 
-        body {
-            background: repeating-linear-gradient( #0026ff,#b200ff);
-            background-size: 100% 100%;
-        }
-    </style>
+			h3
+			{
+				font-size: 20px;
+				margin-top: 0;
+			}
 
-    <title> Jopnal</title>
-    <link rel="icon" href="icon.ico" />
+			a
+			{
+				font-size: 20px;
+				color: orange;
+				text-decoration: none;
+				padding-left: 5px;
+				padding-right: 5px;
+			}
+			@keyframes a_underline
+			{
+				from {border-color: rgba(255, 165, 0, 0.0);}
+				to {border-color: rgba(255, 165, 0, 1.0);}
+			}
+			#link_border
+			{
+				border: 2px solid rgba(255, 165, 0, 0.0);
+				animation-name: a_underline;
+				animation-duration: 1s;
+				animation-iteration-count: infinite;
+				animation-direction: alternate;
+			}
 
-</head>
+		</style>
 
-<body>
+	</head>
 
-    <!--HEADER-->
-    <div class="page">
-        <header>
-            <a href="http://jopnal.net"><img src="Images/Jopnal_v20_png.png" width="256" height="256" align="left"></a>
-            <center>
-                <h1>Jopnal</h1>
-                <h2>Component based 3D game engine</h2>
-            </center>
-        </header>
+	<body bgcolor="#061019">
 
-        <!--SIDEBAR-->
-        <nav>
-            <ul>
-                <li><b>Links</b></li>
-                <li><a href="home.html" target="frame"><br>Home</a></li>
-                <li><a href="downloads.html" target="frame"><br>Downloads</a></li>
-                <li><a href="https://github.com/Jopnal/Jopnal/wiki/Tutorial-Index"><br>Tutorials</a></li>
-                <li><a href="http://jopnal.net/Doxygen/index.html"><br>Reference</a></li>
-                <li><a href="https://github.com/Jopnal"><br>View project on GitHub</a></li>
-            </ul>
-        </nav>
+		<img src="img/jopnal.png" width="300px" height="300px">
+		<br>
+		<h1>Jopnal</h1>
+		<h3>Component based C++ 2D/3D game engine</h3>
+		<br>
+		<a href="front.html" id="link_border">Click here</a>
 
-        <!--MAIN_DATA-->
-        <article>
-            <iframe src="home.html" style="border:none;" name="frame" height="100%" width="100%"></iframe>
-        </article>
-    </div>
-
-</body>
+	</body>
 </html>
